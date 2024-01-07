@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Tab, Tabs } from '@mui/material'
 import Work from '../Work'
-import './index.css'
+import styles from './index.module.css'
 
 const Home = props => {
   const [tab, setTab] = useState()
@@ -11,8 +11,8 @@ const Home = props => {
   };
 
   return (
-    <div className='container'>
-      <div className='header'>
+    <div className={styles.container}>
+      <div className={styles.header}>
         <h1>Sabrina</h1>
         <Tabs value={tab} onChange={handleChange}>
           <Tab label='Reel' />
@@ -21,10 +21,10 @@ const Home = props => {
           <Tab label='About Me' />
         </Tabs>
       </div>
-      <div className='content'>
+      <div className={styles.content}>
         <Work />
       </div>
-      <div className='footer'>footer</div>
+      <div className={styles.footer}>footer</div>
     </div>
   )
 }
