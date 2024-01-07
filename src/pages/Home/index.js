@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import "./Home.scss"
 import { Tab, Tabs } from '@mui/material'
+import Work from '../Work'
+import './index.css'
 
 const Home = props => {
   const [tab, setTab] = useState()
@@ -20,7 +21,9 @@ const Home = props => {
           <Tab label='About Me' />
         </Tabs>
       </div>
-      <div className='content'>content</div>
+      <div className='content'>
+        <Work />
+      </div>
       <div className='footer'>footer</div>
     </div>
   )
