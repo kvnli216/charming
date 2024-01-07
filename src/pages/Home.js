@@ -16,8 +16,8 @@ const Home = props => {
         <Tabs value={tab} onChange={handleChange}>
           <Tab label='Reel' />
           <Tab label='Work' />
-          <Tab label='Thesis' />
-          <Tab label='About' />
+          <Tab label='Illustrations' />
+          <Tab label='About Me' />
         </Tabs>
       </div>
       <div className='content'>content</div>
