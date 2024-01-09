@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/charming/static/css/main.0f312a31.css",
-    "main.js": "/charming/static/js/main.4734df6e.js",
+    "main.css": "/charming/static/css/main.84c99911.css",
+    "main.js": "/charming/static/js/main.5432d70b.js",
     "static/js/787.fa634ac6.chunk.js": "/charming/static/js/787.fa634ac6.chunk.js",
     "static/media/003_test2.gif": "/charming/static/media/003_test2.1c7395bb2f82785f42d1.gif",
     "index.html": "/charming/index.html",
-    "main.0f312a31.css.map": "/charming/static/css/main.0f312a31.css.map",
-    "main.4734df6e.js.map": "/charming/static/js/main.4734df6e.js.map",
+    "main.84c99911.css.map": "/charming/static/css/main.84c99911.css.map",
+    "main.5432d70b.js.map": "/charming/static/js/main.5432d70b.js.map",
     "787.fa634ac6.chunk.js.map": "/charming/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f312a31.css",
-    "static/js/main.4734df6e.js"
+    "static/css/main.84c99911.css",
+    "static/js/main.5432d70b.js"
   ]
 }
