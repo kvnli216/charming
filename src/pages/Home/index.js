@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Tab, Tabs } from '@mui/material'
+import { IconButton, Tab, Tabs } from '@mui/material'
 import Work from '../Work'
 import styles from './index.module.css'
 
@@ -24,7 +24,9 @@ const Home = props => {
       <div className={styles.content}>
         <Work />
       </div>
-      <div className={styles.footer}>footer</div>
+      <div className={styles.footer}>
+        <IconButton />
+      </div>
     </div>
   )
 }
