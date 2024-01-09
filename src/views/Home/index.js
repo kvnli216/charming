@@ -4,9 +4,9 @@ import Work from '../Work'
 import styles from './index.module.css'
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import VimeoIcon from '../../assets/VimeoIcon';
 
-const Home = props => {
+const Home = () => {
   const [tab, setTab] = useState()
 
   const handleChange = (event, newValue) => {
@@ -35,7 +35,7 @@ const Home = props => {
           <LinkedInIcon />
         </IconButton>
         <IconButton className={styles['icon-button']} variant='outlined'>
-          <VideoLibraryIcon />
+          <VimeoIcon />
         </IconButton>
       </div>
     </div>
