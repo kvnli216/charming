@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { IconButton, Tab, Tabs } from '@mui/material'
 import Work from '../Work'
 import styles from './index.module.css'
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 
 const Home = props => {
   const [tab, setTab] = useState()
@@ -25,7 +28,15 @@ const Home = props => {
         <Work />
       </div>
       <div className={styles.footer}>
-        <IconButton />
+        <IconButton className={styles['icon-button']} variant='outlined'>
+          <EmailIcon />
+        </IconButton>
+        <IconButton className={styles['icon-button']} variant='outlined'>
+          <LinkedInIcon />
+        </IconButton>
+        <IconButton className={styles['icon-button']} variant='outlined'>
+          <VideoLibraryIcon />
+        </IconButton>
       </div>
     </div>
   )
