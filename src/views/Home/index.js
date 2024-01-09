@@ -28,15 +28,18 @@ const Home = () => {
         <Work />
       </div>
       <div className={styles.footer}>
-        <IconButton className={styles['icon-button']} variant='outlined'>
-          <EmailIcon />
-        </IconButton>
-        <IconButton className={styles['icon-button']} variant='outlined'>
-          <LinkedInIcon />
-        </IconButton>
-        <IconButton className={styles['icon-button']} variant='outlined'>
-          <VimeoIcon />
-        </IconButton>
+        <div>
+          <IconButton className={styles['icon-button']} variant='outlined'>
+            <EmailIcon />
+          </IconButton>
+          <IconButton className={styles['icon-button']} variant='outlined'>
+            <LinkedInIcon />
+          </IconButton>
+          <IconButton className={styles['icon-button']} variant='outlined'>
+            <VimeoIcon />
+          </IconButton>
+        </div>
+        <div className={styles['footer-text']}>Copyright © 2024 Sabrina Chen</div>
       </div>
     </div>
   )
