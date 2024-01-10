@@ -33,6 +33,7 @@
   align-items: center;
   gap: 5px;
   padding: 5px 0 10px 0;
+  position: relative;
 }
 
 .icon-button {
@@ -40,11 +41,12 @@
 }
 
 .header-icon-button {
-  color: gray;
-  position: fixed;
+  color: hotpink !important;
+  position: fixed !important;
   top: 0px;
-  right: 0;
-  margin: 10px;}
+  right: 0px;
+  margin: 10px !important;
+}
 
 .footer-text {
   font-size: 12px;
