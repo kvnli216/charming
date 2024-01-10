@@ -4,8 +4,6 @@
     "header"
     "content"
     "footer";
-  grid-gap: 20px;
-  padding: 20px;
   grid-template-rows: 150px 1fr auto;
   height: 100vh;
   box-sizing: border-box;
@@ -21,6 +19,10 @@
 
 .content {
   grid-area: content;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
 }
 
 .footer {
@@ -29,12 +31,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+  padding: 5px 0 10px 0;
 }
 
 .icon-button {
   color: gray;
 }
+
+.header-icon-button {
+  color: gray;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  margin: 10px;}
 
 .footer-text {
   font-size: 12px;

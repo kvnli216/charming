@@ -9,6 +9,12 @@ const illustrations = [
   gif1,
   gif2,
   gif3,
+  gif1,
+  gif2,
+  gif3,
+  gif1,
+  gif2,
+  gif3,
 ];
 
 const Work = props => {
