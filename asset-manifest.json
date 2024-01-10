@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/charming/static/css/main.b4dbcbe2.css",
-    "main.js": "/charming/static/js/main.be1ed2e4.js",
+    "main.css": "/charming/static/css/main.0a976891.css",
+    "main.js": "/charming/static/js/main.fd8906c4.js",
     "static/js/787.fa634ac6.chunk.js": "/charming/static/js/787.fa634ac6.chunk.js",
+    "static/media/001_test.gif": "/charming/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
     "static/media/003_test2.gif": "/charming/static/media/003_test2.1c7395bb2f82785f42d1.gif",
+    "static/media/002_test.gif": "/charming/static/media/002_test.b52bbd7caa979753f1e4.gif",
     "index.html": "/charming/index.html",
-    "main.b4dbcbe2.css.map": "/charming/static/css/main.b4dbcbe2.css.map",
-    "main.be1ed2e4.js.map": "/charming/static/js/main.be1ed2e4.js.map",
+    "main.0a976891.css.map": "/charming/static/css/main.0a976891.css.map",
+    "main.fd8906c4.js.map": "/charming/static/js/main.fd8906c4.js.map",
     "787.fa634ac6.chunk.js.map": "/charming/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4dbcbe2.css",
-    "static/js/main.be1ed2e4.js"
+    "static/css/main.0a976891.css",
+    "static/js/main.fd8906c4.js"
   ]
 }
