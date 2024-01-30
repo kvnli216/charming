@@ -1,1 +1,44 @@
-.container {}
+.container {
+  display: grid;
+  max-width: 800px;
+  grid-template-rows: 400px 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  grid-template-areas:
+      "avatar intro"
+      "content content";
+}
+
+.avatar {
+  grid-area: avatar;
+  display: flex;
+  justify-content: end;
+  padding: 30px;
+  align-items: center;
+}
+
+.intro {
+  grid-area: intro;
+  max-width: 500px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  grid-template-areas:
+      "education skills"
+      "experience .";
+}
+
+.photo {
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
