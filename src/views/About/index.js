@@ -16,9 +16,14 @@ const About = () => {
         <img className={styles.photo} src={AboutMePhoto}></img>
       </div>
       <div className={styles.intro}>
-        Hello! I'm Sabrina Chen
+        Hello, I'm Sabrina Chen!
         <br />
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        <br />
+        I’m a Motion Designer based in NYC who loves handling a wide range of creative challenges.
+        <br />
+        I am deeply passionate about illustrations and motion arts.
+        With a background in communications, I enjoy understanding different thinking patterns of all groups of people and produce suitable pieces accordingly.
+        I've always been fascinated by how visual arts can be delivered regardless of language and culture; it is a form of art that can strike a chord with audiences worldwide.
       </div>
       <div className={styles.content}>
         <div className={styles.education}>

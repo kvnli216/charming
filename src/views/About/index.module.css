@@ -20,10 +20,11 @@
 .intro {
   grid-area: intro;
   max-width: 500px;
-  padding: 30px;
+  padding-top: 30px;
   justify-content: center;
   align-items: center;
   display: flex;
+  line-height: 25px;
 }
 
 .content {
@@ -39,6 +40,4 @@
 
 .photo {
   height: 350px;
-  border: 1px solid black;
-  border-radius: 100%;
 }
