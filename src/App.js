@@ -9,15 +9,34 @@ import Work from './views/Work';
 import Illustration from './views/Illustration';
 import Reel from './views/Reel';
 
+export const routes = {
+  reel: {
+    id: 0,
+    path: '/reel',
+  },
+  work: {
+    id: 1,
+    path: '/work',
+  },
+  illustration: {
+    id: 2,
+    path: '/illustration',
+  },
+  about: {
+    id: 3,
+    path: '/about',
+  },
+};
+
 function App() {
   return (
-    <Router>
+    <Router basename='/charming'>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<Work />} />
-          <Route path="/reel" element={<Reel />} />
-          <Route path="/illustration" element={<Illustration />} />
-          <Route path="/about" element={<About />} />
+          <Route path={routes.work.path} element={<Work />} />
+          <Route path={routes.reel.path} element={<Reel />} />
+          <Route path={routes.illustration.path} element={<Illustration />} />
+          <Route path={routes.about.path} element={<About />} />
           <Route path="*" element={'404 Page not found'} />
         </Route>
       </Routes>
