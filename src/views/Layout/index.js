@@ -21,7 +21,11 @@ const Layout = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <div>
-          <h1>Sabrina Chen</h1>
+          <Link className={styles['header-link']} to='/'>
+            <h1>Sabrina Chen</h1>
+          </Link>
+
+
           <IconButton
             className={styles['header-icon-button']}
             variant='outlined'

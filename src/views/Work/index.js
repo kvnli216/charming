@@ -20,10 +20,11 @@ const illustrations = [
 const Work = props => {
   return (
     <div className={styles.container}>
-      {illustrations.map((src) => {
+      Work
+      {/* {illustrations.map((src) => {
         console.log('src: ', src);
         return <img className={styles['work-card']} src={src} alt='' loading='lazy' />;
-      })}
+      })} */}
     </div>
   );
 };
