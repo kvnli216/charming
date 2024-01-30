@@ -25,7 +25,6 @@ const Layout = () => {
             <h1>Sabrina Chen</h1>
           </Link>
 
-
           <IconButton
             className={styles['header-icon-button']}
             variant='outlined'
