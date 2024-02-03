@@ -7,8 +7,9 @@ TODO:
 - Responsive design for mobile
 - Handle async loading
 - Styling/Theme pass
+- Update custom URL SabrinaChen.com
 
-Small:
+- upload videos /media to vimeo
+  iframes?
 
-- make nameplate clickable to nav home
-- fix tab highlighting for nav
+- Small:
