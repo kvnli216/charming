@@ -11,6 +11,10 @@
       url('./fonts/Cralika.woff2') format('woff'),
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: 'cralika', sans-serif;
+  font-family: 'Cralika', sans-serif;
 }
