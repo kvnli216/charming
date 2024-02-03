@@ -30,7 +30,7 @@ const Layout = () => {
             href='https://www.instagram.com/sabrina.art21/'
             target='_blank'
           >
-            <InstagramIcon />
+            <InstagramIcon className={styles['instagram-button']} />
           </IconButton>
         </div>
         <Tabs value={routes[pathname.slice(1)].id} onChange={handleChange}>
