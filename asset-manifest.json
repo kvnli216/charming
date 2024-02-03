@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/charming/static/css/main.5ee5a09d.css",
-    "main.js": "/charming/static/js/main.ab79e4f3.js",
+    "main.css": "/charming/static/css/main.518f4a7b.css",
+    "main.js": "/charming/static/js/main.241dcb1c.js",
     "static/js/787.fa634ac6.chunk.js": "/charming/static/js/787.fa634ac6.chunk.js",
     "static/media/001_test.gif": "/charming/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
     "static/media/003_test2.gif": "/charming/static/media/003_test2.1c7395bb2f82785f42d1.gif",
     "static/media/002_test.gif": "/charming/static/media/002_test.b52bbd7caa979753f1e4.gif",
     "static/media/AboutMePhoto.jpg": "/charming/static/media/AboutMePhoto.532fee26c029f958b242.jpg",
     "index.html": "/charming/index.html",
-    "main.5ee5a09d.css.map": "/charming/static/css/main.5ee5a09d.css.map",
-    "main.ab79e4f3.js.map": "/charming/static/js/main.ab79e4f3.js.map",
+    "main.518f4a7b.css.map": "/charming/static/css/main.518f4a7b.css.map",
+    "main.241dcb1c.js.map": "/charming/static/js/main.241dcb1c.js.map",
     "787.fa634ac6.chunk.js.map": "/charming/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ee5a09d.css",
-    "static/js/main.ab79e4f3.js"
+    "static/css/main.518f4a7b.css",
+    "static/js/main.241dcb1c.js"
   ]
 }
