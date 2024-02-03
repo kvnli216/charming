@@ -25,6 +25,7 @@
   align-items: center;
   display: flex;
   line-height: 25px;
+  font-family: cralika;
 }
 
 .content {
@@ -36,6 +37,7 @@
   grid-template-areas:
       "education skills"
       "experience .";
+  font-family: cralika;
 }
 
 .photo {

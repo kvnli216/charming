@@ -8,6 +8,8 @@ import Layout from './views/Layout';
 import Work from './views/Work';
 import Illustration from './views/Illustration';
 import Reel from './views/Reel';
+import { ThemeProvider } from '@mui/material';
+import { theme } from './components/ThemeProvider';
 
 export const routes = {
   reel: {
@@ -30,17 +32,19 @@ export const routes = {
 
 function App() {
   return (
-    <Router basename='/charming'>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path={routes.work.path} element={<Work />} />
-          <Route path={routes.reel.path} element={<Reel />} />
-          <Route path={routes.illustration.path} element={<Illustration />} />
-          <Route path={routes.about.path} element={<About />} />
-          <Route path="*" element={'404 Page not found'} />
-        </Route>
-      </Routes>
-    </Router>
+    <ThemeProvider theme={theme}>
+      <Router basename='/charming'>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path={routes.work.path} element={<Work />} />
+            <Route path={routes.reel.path} element={<Reel />} />
+            <Route path={routes.illustration.path} element={<Illustration />} />
+            <Route path={routes.about.path} element={<About />} />
+            <Route path="*" element={'404 Page not found'} />
+          </Route>
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 

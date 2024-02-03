@@ -10,7 +10,6 @@ import { routes } from '../../App';
 
 const Layout = () => {
   const { pathname } = useLocation();
-
   const [_, setTab] = useState();
 
   const handleChange = (event, newValue) => {
