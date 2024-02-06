@@ -1,7 +1,15 @@
 @font-face {
+  font-family: 'cralika';
+  src: 
+      url('../fonts/Cralika.otf') format('opentype'),
+      url('../fonts/Cralika.ttf') format('truetype'),
+      url('../fonts/Cralika.woff') format('woff'),
+      url('../fonts/Cralika.woff2') format('woff'),
+}
+@font-face {
   font-family: 'Skeina';
   src: 
-      url('./fonts/Skeina.otf') format('opentype'),
+      url('../fonts/Skeina.otf') format('opentype'),
 }
 
 html {
@@ -10,4 +18,8 @@ html {
 
 body {
   font-family: 'Skeina', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
 }

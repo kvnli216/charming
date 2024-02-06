@@ -5,9 +5,10 @@ export const theme = createTheme({
     MuiTab: {
       styleOverrides: {
         root: {
-          fontFamily: 'Skeina',
+          fontFamily: 'Cralika',
           fontWeight: 'bold',
           color: 'black',
+          fontSize: '1.6rem',
         },
       },
     },

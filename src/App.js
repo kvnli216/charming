@@ -10,6 +10,7 @@ import Illustration from './views/Illustration';
 import Reel from './views/Reel';
 import { ThemeProvider } from '@mui/material';
 import { theme } from './components/ThemeProvider';
+import './styles/fonts.css';
 
 export const routes = {
   reel: {
