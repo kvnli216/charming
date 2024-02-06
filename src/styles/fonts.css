@@ -10,11 +10,16 @@
       url('./fonts/Cralika.woff') format('woff'),
       url('./fonts/Cralika.woff2') format('woff'),
 }
+@font-face {
+  font-family: 'Skeina';
+  src: 
+      url('./fonts/Skeina.otf') format('opentype'),
+}
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: 'Cralika', sans-serif;
+  font-family: 'Skeina', sans-serif;
 }
