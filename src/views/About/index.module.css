@@ -25,7 +25,8 @@
   align-items: center;
   display: flex;
   line-height: 25px;
-  font-family: Skeina;
+  font-family: Cralika;
+  font-size: 1.6rem;
 }
 
 .content {
@@ -37,7 +38,7 @@
   grid-template-areas:
       "education skills"
       "experience .";
-  font-family: Skeina;
+  font-family: Cralika;
 }
 
 .photo {
