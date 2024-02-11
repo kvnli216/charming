@@ -34,7 +34,7 @@ export const routes = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router basename='/charming'>
+      <Router basename='/'>
         <Routes>
           <Route element={<Layout />}>
             <Route path={routes.work.path} element={<Work />} />
