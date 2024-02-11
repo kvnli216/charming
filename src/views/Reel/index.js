@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+// import PropTypes from 'prop-types'
 
 const Reel = props => {
   return (
     <div>Reel</div>
-  )
-}
+  );
+};
 
-Reel.propTypes = {}
+Reel.propTypes = {};
 
-export default Reel
+export default Reel;

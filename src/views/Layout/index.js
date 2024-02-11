@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './index.module.css';
 import { IconButton, Tab, Tabs } from '@mui/material';
 import { Link, Outlet, useLocation } from 'react-router-dom';
@@ -10,11 +10,6 @@ import { routes } from '../../App';
 
 const Layout = () => {
   const { pathname } = useLocation();
-  const [_, setTab] = useState();
-
-  const handleChange = (event, newValue) => {
-    setTab(newValue);
-  };
 
   return (
     <div className={styles.container}>
@@ -33,7 +28,7 @@ const Layout = () => {
             <InstagramIcon className={styles['instagram-button']} />
           </IconButton>
         </div>
-        <Tabs value={routes[pathname.slice(1)].id} onChange={handleChange}>
+        <Tabs value={routes[pathname.slice(1)].id}>
           <Tab value={routes.reel.id} component={Link} to={routes.reel.path} label='Reel' />
           <Tab value={routes.work.id} component={Link} to={routes.work.path} label='Work' />
           <Tab value={routes.illustration.id} component={Link} to={routes.illustration.path} label='Illustration' />
