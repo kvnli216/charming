@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/charming/static/css/main.b4ea40e5.css",
-    "main.js": "/charming/static/js/main.f42ca248.js",
-    "static/js/787.fa634ac6.chunk.js": "/charming/static/js/787.fa634ac6.chunk.js",
-    "static/media/001_test.gif": "/charming/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
-    "static/media/003_test2.gif": "/charming/static/media/003_test2.1c7395bb2f82785f42d1.gif",
-    "static/media/002_test.gif": "/charming/static/media/002_test.b52bbd7caa979753f1e4.gif",
-    "static/media/AboutMePhoto.jpg": "/charming/static/media/AboutMePhoto.532fee26c029f958b242.jpg",
-    "static/media/Cralika.otf": "/charming/static/media/Cralika.26894b8544b7066867c7.otf",
-    "static/media/Cralika.ttf": "/charming/static/media/Cralika.b0b33c80b342377d5c47.ttf",
-    "static/media/Cralika.woff": "/charming/static/media/Cralika.7499e859c0687ad373fb.woff",
-    "static/media/Cralika.woff2": "/charming/static/media/Cralika.876cd775a1870baad405.woff2",
-    "static/media/Skeina.otf": "/charming/static/media/Skeina.74090d09bdb2f170ebe1.otf",
-    "index.html": "/charming/index.html",
-    "main.b4ea40e5.css.map": "/charming/static/css/main.b4ea40e5.css.map",
-    "main.f42ca248.js.map": "/charming/static/js/main.f42ca248.js.map",
-    "787.fa634ac6.chunk.js.map": "/charming/static/js/787.fa634ac6.chunk.js.map"
+    "main.css": "/static/css/main.31fb4cf6.css",
+    "main.js": "/static/js/main.0afc3cc8.js",
+    "static/js/787.fa634ac6.chunk.js": "/static/js/787.fa634ac6.chunk.js",
+    "static/media/001_test.gif": "/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
+    "static/media/003_test2.gif": "/static/media/003_test2.1c7395bb2f82785f42d1.gif",
+    "static/media/002_test.gif": "/static/media/002_test.b52bbd7caa979753f1e4.gif",
+    "static/media/AboutMePhoto.jpg": "/static/media/AboutMePhoto.532fee26c029f958b242.jpg",
+    "static/media/Cralika.otf": "/static/media/Cralika.26894b8544b7066867c7.otf",
+    "static/media/Cralika.ttf": "/static/media/Cralika.b0b33c80b342377d5c47.ttf",
+    "static/media/Cralika.woff": "/static/media/Cralika.7499e859c0687ad373fb.woff",
+    "static/media/Cralika.woff2": "/static/media/Cralika.876cd775a1870baad405.woff2",
+    "static/media/Skeina.otf": "/static/media/Skeina.74090d09bdb2f170ebe1.otf",
+    "index.html": "/index.html",
+    "main.31fb4cf6.css.map": "/static/css/main.31fb4cf6.css.map",
+    "main.0afc3cc8.js.map": "/static/js/main.0afc3cc8.js.map",
+    "787.fa634ac6.chunk.js.map": "/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4ea40e5.css",
-    "static/js/main.f42ca248.js"
+    "static/css/main.31fb4cf6.css",
+    "static/js/main.0afc3cc8.js"
   ]
 }
