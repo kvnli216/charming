@@ -13,6 +13,9 @@ import { theme } from './components/ThemeProvider';
 import './styles/fonts.css';
 
 export const routes = {
+  home: {
+    path: '/',
+  },
   reel: {
     id: 0,
     path: '/reel',
@@ -37,8 +40,9 @@ function App() {
       <Router basename='/'>
         <Routes>
           <Route element={<Layout />}>
-            <Route path={routes.work.path} element={<Work />} />
+            <Route path={routes.home.path} element={<Work />} />
             <Route path={routes.reel.path} element={<Reel />} />
+            <Route path={routes.work.path} element={<Work />} />
             <Route path={routes.illustration.path} element={<Illustration />} />
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
