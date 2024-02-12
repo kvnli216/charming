@@ -22,7 +22,7 @@
   overflow-y: auto;
   display: flex;
   justify-content: center;
-  padding: 0 30px;
+  padding: 30px;
 }
 
 .footer {
@@ -55,11 +55,11 @@
 .footer-text {
   font-size: .9rem;
   color: gray;
-  font-family: Cralika;
+  font-family: Garet-Book;
 }
 
 .header-link {
   text-decoration: none;
   color: orange;
-  font-family: Cralika;
+  font-family: Garet-Book;
 }
