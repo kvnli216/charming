@@ -25,7 +25,7 @@
   align-items: center;
   display: flex;
   line-height: 25px;
-  font-family: Cralika;
+  font-family: Garet-Book;
   font-size: 1.6rem;
 }
 
@@ -38,7 +38,7 @@
   grid-template-areas:
       "education skills"
       "experience .";
-  font-family: Cralika;
+  font-family: Garet-Book;
 }
 
 .photo {

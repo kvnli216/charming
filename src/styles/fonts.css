@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'Garet-Book';
+  src: 
+      url('../fonts/Garet-Book.otf') format('opentype'),
+      url('../fonts/Garet-Book.ttf') format('truetype'),
+      url('../fonts/Garet-Book.woff') format('woff'),
+      url('../fonts/Garet-Book.woff2') format('woff'),
+}
+@font-face {
   font-family: 'cralika';
   src: 
       url('../fonts/Cralika.otf') format('opentype'),
@@ -17,7 +25,7 @@ html {
 }
 
 body {
-  font-family: 'Skeina', sans-serif;
+  font-family: 'Garet-Book', sans-serif;
 }
 
 h1 {
