@@ -10,6 +10,7 @@ import { routes } from '../../App';
 
 const Layout = () => {
   const { pathname } = useLocation();
+  const path = pathname ? pathname.slice(1) : '/';
 
   return (
     <div className={styles.container}>
@@ -28,7 +29,7 @@ const Layout = () => {
             <InstagramIcon className={styles['instagram-button']} />
           </IconButton>
         </div>
-        <Tabs value={routes[pathname.slice(1)].id}>
+        <Tabs value={path}>
           <Tab value={routes.reel.id} component={Link} to={routes.reel.path} label='Reel' />
           <Tab value={routes.work.id} component={Link} to={routes.work.path} label='Work' />
           <Tab value={routes.illustration.id} component={Link} to={routes.illustration.path} label='Illustration' />
