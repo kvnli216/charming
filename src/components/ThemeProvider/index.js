@@ -5,7 +5,7 @@ export const theme = createTheme({
     MuiTab: {
       styleOverrides: {
         root: {
-          fontFamily: 'Cralika',
+          fontFamily: 'Garet-Book',
           fontWeight: 'bold',
           color: 'black',
           fontSize: '1.6rem',
