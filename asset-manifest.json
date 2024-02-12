@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.31fb4cf6.css",
-    "main.js": "/static/js/main.0afc3cc8.js",
+    "main.css": "/static/css/main.4a60ea03.css",
+    "main.js": "/static/js/main.665de75f.js",
     "static/js/787.fa634ac6.chunk.js": "/static/js/787.fa634ac6.chunk.js",
     "static/media/001_test.gif": "/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
     "static/media/003_test2.gif": "/static/media/003_test2.1c7395bb2f82785f42d1.gif",
     "static/media/002_test.gif": "/static/media/002_test.b52bbd7caa979753f1e4.gif",
+    "static/media/perfume_gif.gif": "/static/media/perfume_gif.1ed95b117146e5155259.gif",
     "static/media/AboutMePhoto.jpg": "/static/media/AboutMePhoto.532fee26c029f958b242.jpg",
     "static/media/Cralika.otf": "/static/media/Cralika.26894b8544b7066867c7.otf",
+    "static/media/Garet-Book.ttf": "/static/media/Garet-Book.927f4e0c1c6f398e18ed.ttf",
+    "static/media/Garet-Book.otf": "/static/media/Garet-Book.10cd0ab2fec081ace003.otf",
     "static/media/Cralika.ttf": "/static/media/Cralika.b0b33c80b342377d5c47.ttf",
+    "static/media/Garet-Book.woff": "/static/media/Garet-Book.c69733e9aa6a9fc22bcb.woff",
+    "static/media/Garet-Book.woff2": "/static/media/Garet-Book.5ea6c56500bb26dee122.woff2",
     "static/media/Cralika.woff": "/static/media/Cralika.7499e859c0687ad373fb.woff",
     "static/media/Cralika.woff2": "/static/media/Cralika.876cd775a1870baad405.woff2",
     "static/media/Skeina.otf": "/static/media/Skeina.74090d09bdb2f170ebe1.otf",
     "index.html": "/index.html",
-    "main.31fb4cf6.css.map": "/static/css/main.31fb4cf6.css.map",
-    "main.0afc3cc8.js.map": "/static/js/main.0afc3cc8.js.map",
+    "main.4a60ea03.css.map": "/static/css/main.4a60ea03.css.map",
+    "main.665de75f.js.map": "/static/js/main.665de75f.js.map",
     "787.fa634ac6.chunk.js.map": "/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31fb4cf6.css",
-    "static/js/main.0afc3cc8.js"
+    "static/css/main.4a60ea03.css",
+    "static/js/main.665de75f.js"
   ]
 }
