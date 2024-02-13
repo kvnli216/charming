@@ -10,13 +10,13 @@ import { routes } from '../../App';
 
 const Layout = () => {
   const { pathname } = useLocation();
-  const path = pathname ? pathname.slice(1) : '/';
+  const path = pathname.length > 1 ? pathname.slice(1) : 'home';
 
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <div>
-          <Link className={styles['header-link']} to={routes.home.path}>
+          <Link className={styles['header-link']} to={'/'}>
             <h1>Sabrina Chen</h1>
           </Link>
 
