@@ -16,7 +16,7 @@ const Layout = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <div>
-          <Link className={styles['header-link']} to={routes.work.path}>
+          <Link className={styles['header-link']} to={routes.home.path}>
             <h1>Sabrina Chen</h1>
           </Link>
 
