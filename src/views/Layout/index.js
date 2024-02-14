@@ -30,10 +30,10 @@ const Layout = () => {
           </IconButton>
         </div>
         <Tabs value={routes[path]?.id}>
-          <Tab value={routes.reel.id} component={Link} to={routes.reel.path} label='Reel' />
-          <Tab value={routes.work.id} component={Link} to={routes.work.path} label='Work' />
-          <Tab value={routes.illustration.id} component={Link} to={routes.illustration.path} label='Illustration' />
-          <Tab value={routes.about.id} component={Link} to={routes.about.path} label='About Me' />
+          <Tab disableRipple value={routes.reel.id} component={Link} to={routes.reel.path} label='Reel' />
+          <Tab disableRipple value={routes.work.id} component={Link} to={routes.work.path} label='Work' />
+          <Tab disableRipple value={routes.illustration.id} component={Link} to={routes.illustration.path} label='Illustration' />
+          <Tab disableRipple value={routes.about.id} component={Link} to={routes.about.path} label='About Me' />
         </Tabs>
       </div>
       <div className={styles.content}>

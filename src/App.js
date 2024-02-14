@@ -10,6 +10,8 @@ import Illustration from './views/Illustration';
 import Reel from './views/Reel';
 import { ThemeProvider } from '@mui/material';
 import { theme } from './components/ThemeProvider';
+import HandsOnMePage from './views/Detail/HandsOnMe';
+import perfume_gif from './assets/Works/perfume_gif.gif';
 import './styles/fonts.css';
 
 export const routes = {
@@ -35,6 +37,15 @@ export const routes = {
   },
 };
 
+export const DetailPages = [
+  {
+    label: 'HandsOnMe',
+    preview: perfume_gif,
+    media: perfume_gif,
+    route: '/HandsOnMe',
+  }
+];
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -47,6 +58,12 @@ function App() {
             <Route path={routes.illustration.path} element={<Illustration />} />
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
+            {/* Detail Pages */}
+            {DetailPages.map(({ label, media, route }) => (
+              <Route
+                path={route}
+                element={<HandsOnMePage label={label} media={media} />} />
+            ))}
           </Route>
         </Routes>
       </Router>
