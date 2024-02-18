@@ -8,4 +8,50 @@
 
 .work-card {
   height: 400px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-position: center;
+  object-fit: cover;
+}
+
+.skeleton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: pulse 1.5s infinite;
+}
+
+.skeleton.loaded::before {
+  content: none;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgb(255, 255, 255, 0);
+  }
+  
+  50% {
+    background-color: rgb(255, 255, 255, 0.2);
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255, 0);
+  }
+  
+}
+
+.skeleton {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.skeleton > img {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.skeleton.loaded > img {
+  opacity: 1;
 }
