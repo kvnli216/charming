@@ -1,29 +1,40 @@
 .container {
-  display: grid;
-  max-width: 800px;
-  grid-template-rows: 400px 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  grid-template-areas:
-      "avatar intro"
-      "content content";
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .avatar {
-  grid-area: avatar;
   display: flex;
-  justify-content: end;
-  padding: 30px;
   align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  height: 250px;
 }
 
 .intro {
-  grid-area: intro;
-  max-width: 500px;
-  padding-top: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 30px;
+}
+
+.intro-text {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
   line-height: 25px;
   font-family: Garet-Book;
   font-size: 1.6rem;
@@ -32,15 +43,32 @@
 .content {
   grid-area: content;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
   grid-template-areas:
-      "education skills"
-      "experience .";
+      "education experience skills";
   font-family: Garet-Book;
+  font-size: 1.4rem;
+  background: #f4f4f5;
+  padding: 30px;
 }
 
-.photo {
-  height: 350px;
+@media (max-width: 1023px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "education"
+      "experience" 
+      "skills";
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
