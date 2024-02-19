@@ -13,11 +13,21 @@ const HandsOnMePage = ({
       <div className={styles.header}>
         <h2>{label}</h2>
       </div>
-      {/* Replace with media view */}
-      <WorkCard
-        label={label}
-        gif={media}
-      />
+      <div className={styles.content}>
+        <div className={styles['embed-wrapper']}>
+          <iframe
+            title={label}
+            src="https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0"
+            className={styles['iframe-video']}
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          />
+        </div>
+        <div className={styles['description-wrapper']}>
+          <h2>Intro</h2>
+        </div>
+      </div>
     </div>
   );
 };
