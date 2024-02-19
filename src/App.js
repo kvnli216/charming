@@ -41,7 +41,7 @@ export const DetailPages = [
   {
     label: 'HandsOnMe',
     preview: perfume_gif,
-    media: perfume_gif,
+    mediaUrl: 'https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0',
     route: '/HandsOnMe',
   }
 ];
@@ -59,10 +59,10 @@ function App() {
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
             {/* Detail Pages */}
-            {DetailPages.map(({ label, media, route }) => (
+            {DetailPages.map(({ label, mediaUrl, route }) => (
               <Route
                 path={route}
-                element={<HandsOnMePage label={label} media={media} />} />
+                element={<HandsOnMePage label={label} mediaUrl={mediaUrl} />} />
             ))}
           </Route>
         </Routes>
