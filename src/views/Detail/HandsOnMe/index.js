@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './index.module.css';
-import WorkCard from '../../../components/WorkCard';
-
 
 const HandsOnMePage = ({
   label,
-  media,
+  mediaUrl,
 }) => {
   return (
     <div className={styles.container}>
@@ -17,7 +15,7 @@ const HandsOnMePage = ({
         <div className={styles['embed-wrapper']}>
           <iframe
             title={label}
-            src="https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0"
+            src={mediaUrl}
             className={styles['iframe-video']}
             frameborder="0"
             allow="autoplay; fullscreen"
@@ -34,7 +32,7 @@ const HandsOnMePage = ({
 
 HandsOnMePage.propTypes = {
   label: PropTypes.string,
-  preview: PropTypes.string,
+  mediaUrl: PropTypes.string,
 };
 
 export default HandsOnMePage;;
