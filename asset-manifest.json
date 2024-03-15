@@ -1,12 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.4cab9a6e.css",
-    "main.js": "/static/js/main.f5f02116.js",
+    "main.css": "/static/css/main.6cb5b70e.css",
+    "main.js": "/static/js/main.f1bc7751.js",
     "static/js/787.fa634ac6.chunk.js": "/static/js/787.fa634ac6.chunk.js",
     "static/media/001_test.gif": "/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
+    "static/media/IMG_5860.jpg": "/static/media/IMG_5860.7a4e28098b928007dfb1.jpg",
     "static/media/003_test2.gif": "/static/media/003_test2.1c7395bb2f82785f42d1.gif",
     "static/media/002_test.gif": "/static/media/002_test.b52bbd7caa979753f1e4.gif",
+    "static/media/IMG_6093.jpg": "/static/media/IMG_6093.f5258376cd5fcad5e855.jpg",
+    "static/media/IMG_5867.jpg": "/static/media/IMG_5867.555cdd834366d32b80dc.jpg",
+    "static/media/IMG_5865.jpg": "/static/media/IMG_5865.4f3b5742a4d4c1cbaf22.jpg",
+    "static/media/IMG_5863.jpg": "/static/media/IMG_5863.a1dea69d7e703718e07f.jpg",
+    "static/media/IMG_5864.jpg": "/static/media/IMG_5864.e01c3051e7a63cc081df.jpg",
     "static/media/perfume_gif.gif": "/static/media/perfume_gif.1ed95b117146e5155259.gif",
+    "static/media/IMG_6091.jpg": "/static/media/IMG_6091.25e8d847af45602bf246.jpg",
+    "static/media/IMG_5861.jpg": "/static/media/IMG_5861.5546f89574d863ba3c19.jpg",
+    "static/media/IMG_6090.jpg": "/static/media/IMG_6090.d992612065064e4084fc.jpg",
     "static/media/AboutMePhoto.jpg": "/static/media/AboutMePhoto.532fee26c029f958b242.jpg",
     "static/media/Cralika.otf": "/static/media/Cralika.26894b8544b7066867c7.otf",
     "static/media/Garet-Book.ttf": "/static/media/Garet-Book.927f4e0c1c6f398e18ed.ttf",
@@ -18,12 +27,12 @@
     "static/media/Cralika.woff2": "/static/media/Cralika.876cd775a1870baad405.woff2",
     "static/media/Skeina.otf": "/static/media/Skeina.74090d09bdb2f170ebe1.otf",
     "index.html": "/index.html",
-    "main.4cab9a6e.css.map": "/static/css/main.4cab9a6e.css.map",
-    "main.f5f02116.js.map": "/static/js/main.f5f02116.js.map",
+    "main.6cb5b70e.css.map": "/static/css/main.6cb5b70e.css.map",
+    "main.f1bc7751.js.map": "/static/js/main.f1bc7751.js.map",
     "787.fa634ac6.chunk.js.map": "/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cab9a6e.css",
-    "static/js/main.f5f02116.js"
+    "static/css/main.6cb5b70e.css",
+    "static/js/main.f1bc7751.js"
   ]
 }
