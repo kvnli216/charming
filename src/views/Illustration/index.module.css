@@ -1,5 +1,7 @@
 .container {
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;  
   flex-wrap: wrap;
   justify-content: center;
   gap: 5px;
@@ -8,7 +10,7 @@
 
 .work-card {
   height: 400px;
-  width: 100%;
+  width: 400px;
   aspect-ratio: 1 / 1;
   display: block;
   object-position: center;
