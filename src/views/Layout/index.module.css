@@ -36,16 +36,9 @@
   position: relative;
 }
 
-.icon-button {
-  color: gray;
-}
-
-.header-icon-button {
-  color: hotpink !important;
-  position: fixed !important;
-  top: 0px;
-  right: 0px;
-  margin: 10px !important;
+.icon-link {
+  color: orange !important;
+  font-size: 2.5rem;
 }
 
 .instagram-button {
@@ -53,7 +46,7 @@
 }
 
 .footer-text {
-  font-size: .9rem;
+  font-size: 1rem;
   color: gray;
   font-family: Garet-Book;
 }

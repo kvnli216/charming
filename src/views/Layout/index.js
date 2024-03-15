@@ -19,15 +19,6 @@ const Layout = () => {
           <Link className={styles['header-link']} to={'/'}>
             <h1>Sabrina Chen</h1>
           </Link>
-
-          <IconButton
-            className={styles['header-icon-button']}
-            variant='outlined'
-            href='https://www.instagram.com/sabrina.art21/'
-            target='_blank'
-          >
-            <InstagramIcon className={styles['instagram-button']} />
-          </IconButton>
         </div>
         <Tabs value={routes[path]?.id}>
           <Tab disableRipple value={routes.reel.id} component={Link} to={routes.reel.path} label='Reel' />
@@ -42,27 +33,31 @@ const Layout = () => {
       <div className={styles.footer}>
         <div>
           <IconButton
-            className={styles['icon-button']}
+            variant='outlined'
+            href='https://www.instagram.com/sabrina.art21/'
+            target='_blank'
+          >
+            <InstagramIcon className={styles['icon-link']} />
+          </IconButton>
+          <IconButton
             variant='outlined'
             href='mailto:chen.chiamin16@gmail.com'
           >
-            <EmailIcon />
+            <EmailIcon className={styles['icon-link']} />
           </IconButton>
           <IconButton
-            className={styles['icon-button']}
             variant='outlined'
-            href='https://www.linkedin.com/in/sabrina-chen-05609514b/'
+            href='https://www.linkedin.com/in/sabrina-chiamin-chen-05609514b/'
             target='_blank'
           >
-            <LinkedInIcon />
+            <LinkedInIcon className={styles['icon-link']} />
           </IconButton>
           <IconButton
-            className={styles['icon-button']}
             variant='outlined'
             href='https://vimeo.com/user194145687'
             target='_blank'
           >
-            <VimeoIcon />
+            <VimeoIcon className={styles['icon-link']} />
           </IconButton>
         </div>
         <div className={styles['footer-text']}>Copyright © 2024 Sabrina Chen</div>
