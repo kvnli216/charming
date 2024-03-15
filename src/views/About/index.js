@@ -11,14 +11,13 @@ const About = () => {
         </div>
         <div className={styles.intro}>
           <div className={styles['intro-text']}>
-            Hello, I'm Sabrina Chen!
+            Sabrina is a motion designer who is driven by a passion for storytelling through dynamic visuals.
             <br />
             <br />
-            I’m a Motion Designer based in NYC who loves handling a wide range of creative challenges.
+            With a background in communications, she creates animations that resonate with audiences on an emotional level.
             <br />
-            I am deeply passionate about illustrations and motion arts.
-            With a background in communications, I enjoy understanding different thinking patterns of all groups of people and produce suitable pieces accordingly.
-            I've always been fascinated by how visual arts can be delivered regardless of language and culture; it is a form of art that can strike a chord with audiences worldwide.
+            <br />
+            She approaches motion design from a strategic standpoint, ensuring that every visual element serves a purpose.
           </div>
         </div>
       </div>
@@ -57,19 +56,19 @@ const About = () => {
             <br />
             Office of Administrative Affairs
             <br />
-            <b>Graphic Designer</b> -  Taipei City, Taiwan
+            <b>Project Planner</b> -  Taipei City, Taiwan
             <br />
           </div>
           <div>
             WebTVAsia
             <br />
-            <b>Video Content Creator</b> - Taipei City, Taiwan
+            <b>Integrated Marketing Specialist</b> - Taipei City, Taiwan
             <br />
           </div>
           <div>
             BV Public Relations
             <br />
-            <b>Graphic Design Intern</b> - Taipei City, Taiwan
+            <b>Public Relations Intern</b> - Taipei City, Taiwan
             <br />
           </div>
           <div>
