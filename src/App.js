@@ -16,7 +16,7 @@ import './styles/fonts.css';
 
 export const routes = {
   home: {
-    id: 1,
+    id: 0, // id should match the desired route id (e.g. reel = 0)
     path: '/',
   },
   reel: {
@@ -52,9 +52,9 @@ function App() {
       <Router basename='/'>
         <Routes>
           <Route element={<Layout />}>
-            <Route path={routes.home.path} element={<Work />} />
+            <Route path={routes.home.path} element={<Reel />} />
             <Route path={routes.reel.path} element={<Reel />} />
-            <Route path={routes.work.path} element={<Work />} />
+            {/* <Route path={routes.work.path} element={<Work />} /> */}
             <Route path={routes.illustration.path} element={<Illustration />} />
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
