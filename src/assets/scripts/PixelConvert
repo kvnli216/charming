@@ -1,0 +1,1 @@
+ffmpeg -i IMG_5860.jpg -vf scale=20:-1 IMG_5860-small.jpg
