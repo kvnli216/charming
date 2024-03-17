@@ -13,6 +13,7 @@ import { theme } from './components/ThemeProvider';
 import HandsOnMePage from './views/Detail/HandsOnMe';
 import perfume_gif from './assets/Works/perfume_gif.gif';
 import './styles/fonts.css';
+import { useState } from 'react';
 
 export const routes = {
   home: {
@@ -47,12 +48,16 @@ export const DetailPages = [
 ];
 
 function App() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const mobileBreakpoint = 430;
+  const isMobile = windowWidth < mobileBreakpoint;
+
   return (
     <ThemeProvider theme={theme}>
       <Router basename='/'>
         <Routes>
-          <Route element={<Layout />}>
-            <Route path={routes.home.path} element={<Reel />} />
+          <Route element={<Layout isMobile={isMobile} />}>
+            <Route path={routes.home.path} element={<Reel isMobile={isMobile} />} />
             <Route path={routes.reel.path} element={<Reel />} />
             {/* <Route path={routes.work.path} element={<Work />} /> */}
             <Route path={routes.illustration.path} element={<Illustration />} />

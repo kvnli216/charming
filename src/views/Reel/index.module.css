@@ -17,13 +17,18 @@
   height: 90%;
 }
 
+.iframe-video.mobile {
+  height: 100%;
+}
+
 .description-wrapper {
   flex-grow: 1;
 }
 
-.embed-wrapper {
+.content {
   position: relative;
   overflow: hidden;
-  padding-top: 48.25%
+  padding-top: 56.25%;
 }
+
 
