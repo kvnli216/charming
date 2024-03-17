@@ -4,7 +4,7 @@
     "header"
     "content"
     "footer";
-  grid-template-rows: 80px 1fr auto;
+  grid-template-rows: 80px 1fr 55px;
   height: 100svh;
   box-sizing: border-box;
 }
@@ -31,7 +31,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
   padding: 5px 0 10px 0;
   position: relative;
 }

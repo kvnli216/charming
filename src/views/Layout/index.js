@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './index.module.css';
 import { IconButton, Menu, MenuItem, Tab, Tabs } from '@mui/material';
 import { Link, Outlet, useLocation } from 'react-router-dom';
@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import VimeoIcon from '../../assets/VimeoIcon';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { routes } from '../../App';
+import PropTypes from 'prop-types';
 
 const Header = ({
   isMobile,
@@ -117,18 +118,11 @@ const Header = ({
   );
 };
 
-const Layout = () => {
-
-
-  // TODO: skeleton loader for reel;
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const mobileBreakpoint = 430;
-  console.log('windowWidth: ', windowWidth);
-
+const Layout = ({ isMobile }) => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <Header isMobile={windowWidth < mobileBreakpoint} />
+        <Header isMobile={isMobile} />
       </div>
       <div className={styles.content}>
         <Outlet />
@@ -170,6 +164,7 @@ const Layout = () => {
 };
 
 Layout.propTypes = {
+  isMobile: PropTypes.bool,
 };
 
 export default Layout;
