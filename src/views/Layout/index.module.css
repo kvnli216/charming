@@ -4,17 +4,17 @@
     "header"
     "content"
     "footer";
-  grid-template-rows: 150px 1fr auto;
+  grid-template-rows: 80px 1fr auto;
   height: 100svh;
   box-sizing: border-box;
 }
 
 .header {
   grid-area: header;
-  flex-direction: column;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 10px 30px;
 }
 
 .content {
@@ -51,4 +51,11 @@
   text-decoration: none;
   color: orange;
   font-family: Garet-Book;
+  &:hover {
+    color: #ffa50094;
+  }
+}
+
+.header-logo {
+  margin: 0px;
 }

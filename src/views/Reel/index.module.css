@@ -1,17 +1,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1500px;
   width: 100%;
 }
+
 
 .header {
   display: flex;
   justify-content: center;
-  font-family: Garet-Book;
-}
-
-.content {
 }
 
 .iframe-video {
@@ -19,7 +15,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 75%;
+  height: 90%;
 }
 
 .description-wrapper {

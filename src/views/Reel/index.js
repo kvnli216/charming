@@ -10,9 +10,9 @@ const Reel = props => {
       <div className={styles.content}>
         <div className={styles['embed-wrapper']}>
           <iframe
+            className={styles['iframe-video']}
             title={'Reel'}
             src='https://player.vimeo.com/video/923468017?h=e458dba20c'
-            className={styles['iframe-video']}
             frameborder="0"
             allow="autoplay; fullscreen"
             allowfullscreen
@@ -26,3 +26,4 @@ const Reel = props => {
 Reel.propTypes = {};
 
 export default Reel;
+
