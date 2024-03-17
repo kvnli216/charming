@@ -12,12 +12,14 @@ const Layout = () => {
   const { pathname } = useLocation();
   const path = pathname.length > 1 ? pathname.slice(1) : 'home';
 
+  // TODO: skeleton loader for reel;
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <div>
           <Link className={styles['header-link']} to={'/'}>
-            <h1>Sabrina Chen</h1>
+            <h1 className={styles['header-logo']}>Sabrina Chen</h1>
           </Link>
         </div>
         <Tabs value={routes[path]?.id}>
