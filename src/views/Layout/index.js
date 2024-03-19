@@ -62,6 +62,12 @@ const Header = ({
                   anchor='right'
                   open={open}
                   onClose={toggleDrawer(false)}
+                  PaperProps={{
+                    sx: {
+                      width: 'calc(100svw / 2)',
+                      background: '#f6ad73',
+                    }
+                  }}
                 >
                   <List>
                     {paths.map((route) => (
@@ -75,7 +81,9 @@ const Header = ({
                           >
                             <ListItemIcon>
                             </ListItemIcon>
-                            <ListItemText primary={route} />
+                            <ListItemText classes={{
+                              primary: styles['list-item-text']
+                            }} primary={route} />
                           </ListItemButton>
                         </ListItem>
                       </>

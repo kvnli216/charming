@@ -3,6 +3,7 @@ import AboutMePhoto from '../../assets/AboutMePhoto.jpg';
 import styles from './index.module.css';
 import resume from '../../assets/resume/Resume_0318.pdf';
 import DownloadIcon from '@mui/icons-material/Download';
+import { Button } from '@mui/material';
 
 const About = () => {
   return (
@@ -23,8 +24,9 @@ const About = () => {
             <br />
           </div>
           <div className={styles['resume-link-wrapper']}>
-            <DownloadIcon />
-            <a className={styles['resume-link']} href={resume} download='Sabrina Resume 2024.pdf'>Download Resume</a>
+            <Button className={styles['resume-button']} color='primary' variant='contained'>
+              <a className={styles['resume-link']} href={resume} download='Sabrina Resume 2024.pdf'>Download Resume</a>
+            </Button>
           </div>
         </div>
       </div>

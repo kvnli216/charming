@@ -24,7 +24,6 @@ import IMG_6090_small from '../../assets/Illustrations/IMG_6090-small.jpg';
 import IMG_6091_small from '../../assets/Illustrations/IMG_6091-small.jpg';
 import IMG_6093_small from '../../assets/Illustrations/IMG_6093-small.jpg';
 import PropTypes from 'prop-types';
-
 import styles from './index.module.css';
 
 const illustrations = [

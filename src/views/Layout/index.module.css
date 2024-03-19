@@ -72,9 +72,6 @@
   margin: 0px;
 }
 
-.header-logo.mobile {
-}
-
 .menu-icon {
   font-size: 3rem !important;
 }
@@ -82,3 +79,10 @@
 .list-item {
   height: 60px;
 }
+
+.list-item-text {
+  font-size: 2rem !important;
+  text-transform: capitalize;
+  color: white;
+}
+

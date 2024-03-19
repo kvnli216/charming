@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 15px;
+  gap: 30px;
   padding: 30px;
 }
 
@@ -77,6 +77,10 @@
 
 .resume-link {
   font-size: 1.5rem;
+}
+
+.resume-button {
+  background-color: #f4f4f5 !important;
 }
 
 .resume-link-wrapper {
