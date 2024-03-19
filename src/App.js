@@ -50,7 +50,7 @@ export const DetailPages = [
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const mobileBreakpoint = 430;
-  const isMobile = windowWidth < mobileBreakpoint;
+  const isMobile = windowWidth <= mobileBreakpoint;
 
   return (
     <ThemeProvider theme={theme}>
@@ -58,9 +58,9 @@ function App() {
         <Routes>
           <Route element={<Layout isMobile={isMobile} />}>
             <Route path={routes.home.path} element={<Reel isMobile={isMobile} />} />
-            <Route path={routes.reel.path} element={<Reel />} />
-            <Route path={routes.work.path} element={<Work />} />
-            <Route path={routes.illustration.path} element={<Illustration />} />
+            <Route path={routes.reel.path} element={<Reel isMobile={isMobile} />} />
+            <Route path={routes.work.path} element={<Work isMobile={isMobile} />} />
+            <Route path={routes.illustration.path} element={<Illustration isMobile={isMobile} />} />
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
             {/* Detail Pages */}

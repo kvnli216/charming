@@ -23,6 +23,7 @@ import IMG_5867_small from '../../assets/Illustrations/IMG_5867-small.jpg';
 import IMG_6090_small from '../../assets/Illustrations/IMG_6090-small.jpg';
 import IMG_6091_small from '../../assets/Illustrations/IMG_6091-small.jpg';
 import IMG_6093_small from '../../assets/Illustrations/IMG_6093-small.jpg';
+import PropTypes from 'prop-types';
 
 import styles from './index.module.css';
 
@@ -45,6 +46,7 @@ const Card = ({
   key,
   skeleton,
   src,
+  isMobile,
 }) => {
   const cardRef = useRef(null);
   useEffect(() => {
@@ -65,23 +67,24 @@ const Card = ({
     <div
       ref={cardRef}
       key={key}
-      className={styles['skeleton']}
+      className={`${styles['skeleton']} ${isMobile && styles['mobile']}`}
       style={{ backgroundImage: `url(${skeleton})` }} >
-      <img className={styles['work-card']} src={src} alt='' loading='lazy' />
+      <img className={`${styles['work-card']} ${isMobile && styles['mobile']}`} src={src} alt='' loading='lazy' />
     </div>
   );
 };
 
-const Illustration = props => {
+const Illustration = ({ isMobile }) => {
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles['container']} ${isMobile && styles['mobile']}`}>
       {illustrations.map(({ src, skeleton }, i) => {
         return (
           <Card
             key={`illustration-${src}-${i}`}
             skeleton={skeleton}
             src={src}
+            isMobile={isMobile}
           />
         );
       })}
@@ -89,7 +92,9 @@ const Illustration = props => {
   );
 };
 
-Illustration.propTypes = {};
+Illustration.propTypes = {
+  isMobile: PropTypes.bool,
+};
 
 export default Illustration;;
 

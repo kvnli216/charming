@@ -8,6 +8,10 @@
   max-width: 1500px;
 }
 
+.container.mobile {
+  gap: 0px;
+}
+
 .work-card {
   height: 400px;
   width: 400px;
@@ -15,6 +19,10 @@
   display: block;
   object-position: center;
   object-fit: cover;
+}
+
+.work-card.mobile {
+  width: 100%;
 }
 
 .skeleton::before {
@@ -47,6 +55,10 @@
   position: relative;
   background-size: cover;
   background-position: center;
+}
+
+.skeleton.mobile {
+  width: 100%;
 }
 
 .skeleton > img {
