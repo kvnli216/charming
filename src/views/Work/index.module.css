@@ -5,3 +5,8 @@
   max-width: 1500px;
   gap: 30px;
 }
+
+.container.mobile {
+  gap: 10px;
+  display: block;
+}

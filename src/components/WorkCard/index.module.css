@@ -1,4 +1,3 @@
-
 .card {
   position: relative;
   cursor: pointer;
@@ -10,7 +9,7 @@
 
 .card-hover {
   position: absolute;
-  height: 100%;
+  height: 99%;
   width: 100%;
   opacity: 0%;
   text-align: center;

@@ -10,8 +10,9 @@ import Illustration from './views/Illustration';
 import Reel from './views/Reel';
 import { ThemeProvider } from '@mui/material';
 import { theme } from './components/ThemeProvider';
-import HandsOnMePage from './views/Detail/HandsOnMe';
+import Detail from './views/Detail';
 import perfume_gif from './assets/Works/perfume_gif.gif';
+import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
 import './styles/fonts.css';
 import { useState } from 'react';
 
@@ -44,6 +45,12 @@ export const DetailPages = [
     preview: perfume_gif,
     mediaUrl: 'https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0',
     route: '/HandsOnMe',
+  },
+  {
+    label: 'EmbraceTheChill',
+    preview: EmbraceTheChill,
+    mediaUrl: 'https://player.vimeo.com/video/924889613?h=6185829e8c',
+    route: '/EmbraceTheChill',
   }
 ];
 
@@ -67,7 +74,7 @@ function App() {
             {DetailPages.map(({ label, mediaUrl, route }) => (
               <Route
                 path={route}
-                element={<HandsOnMePage label={label} mediaUrl={mediaUrl} />} />
+                element={<Detail label={label} mediaUrl={mediaUrl} />} />
             ))}
           </Route>
         </Routes>

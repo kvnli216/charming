@@ -12,9 +12,9 @@ const Reel = ({ isMobile }) => {
               <div className={styles.header}>
                 <h3>2024 Reel</h3>
               </div>
-              <div className={`${styles['content']} ${styles['mobile']}`}>
+              <div className={`${styles['content']} ${isMobile && styles['mobile']}`}>
                 <iframe
-                  className={`${styles['iframe-video']} ${styles['mobile']}`}
+                  className={`${styles['iframe-video']} ${isMobile && styles['mobile']}`}
                   title={'Reel'}
                   src='https://player.vimeo.com/video/923468017?h=e458dba20c'
                   frameborder="0"
