@@ -59,7 +59,7 @@ function App() {
           <Route element={<Layout isMobile={isMobile} />}>
             <Route path={routes.home.path} element={<Reel isMobile={isMobile} />} />
             <Route path={routes.reel.path} element={<Reel />} />
-            {/* <Route path={routes.work.path} element={<Work />} /> */}
+            <Route path={routes.work.path} element={<Work />} />
             <Route path={routes.illustration.path} element={<Illustration />} />
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
