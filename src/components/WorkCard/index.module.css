@@ -2,8 +2,6 @@
 .card {
   position: relative;
   cursor: pointer;
-  width: 640px;
-  height: 360px;
 }
 
 .card:hover .card-hover {
@@ -35,4 +33,8 @@
 .work-gif {
   width: 640px;
   height: 360px;
+}
+
+.work-gif.mobile {
+  width: 100%;
 }

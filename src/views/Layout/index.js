@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.css';
-import { IconButton, Menu, MenuItem, Tab, Tabs } from '@mui/material';
+import { Button, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Menu, MenuItem, SwipeableDrawer, Tab, Tabs } from '@mui/material';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -12,22 +12,24 @@ import PropTypes from 'prop-types';
 
 // TODO: skeleton load for reel
 
+const paths = [
+  'reel',
+  'work',
+  'illustration',
+  'about',
+];
+
 const Header = ({
   isMobile,
 }) => {
   const { pathname } = useLocation();
   const path = pathname.length > 1 ? pathname.slice(1) : 'home';
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  const [open, setOpen] = React.useState(false);
 
-  const ITEM_HEIGHT = 40;
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
 
   const handleOnTabChange = () => {
     window.scrollTo(0, 0);
@@ -51,54 +53,35 @@ const Header = ({
                   aria-controls={open ? 'long-menu' : undefined}
                   aria-expanded={open ? 'true' : undefined}
                   aria-haspopup="true"
-                  onClick={handleClick}
+                  onClick={toggleDrawer(true)}
                 >
                   <MenuIcon className={styles['menu-icon']} />
                 </IconButton>
-                <Menu
-                  id="long-menu"
-                  MenuListProps={{
-                    'aria-labelledby': 'long-button',
-                  }}
-                  anchorEl={anchorEl}
-                  open={open}
-                  onClose={handleClose}
-                  PaperProps={{
-                    style: {
-                      maxHeight: ITEM_HEIGHT * 4.5,
-                      width: '20ch',
-                    },
-                  }}
-                >
-                  <MenuItem
-                    dense
-                    component={Link}
-                    to={routes.reel.path}
-                    onClick={handleClose}
-                    selected={routes[path]?.id === routes.reel.id}
-                  >
-                    Reel
-                  </MenuItem>
-                  <MenuItem
-                    dense
-                    component={Link}
-                    to={routes.illustration.path}
-                    onClick={handleClose}
-                    selected={routes[path]?.id === routes.illustration.id}
-                  >
-                    Illustration
-                  </MenuItem>
 
-                  <MenuItem
-                    dense
-                    component={Link}
-                    to={routes.about.path}
-                    onClick={handleClose}
-                    selected={routes[path]?.id === routes.about.id}
-                  >
-                    About Me
-                  </MenuItem>
-                </Menu>
+                <SwipeableDrawer
+                  anchor='right'
+                  open={open}
+                  onClose={toggleDrawer(false)}
+                >
+                  <List>
+                    {paths.map((route) => (
+                      <>
+                        <ListItem key={route} disablePadding divider componentsProps={{ root: { className: styles['list-item'] } }}>
+                          <ListItemButton
+                            component={Link}
+                            to={routes[route].path}
+                            onClick={toggleDrawer(false)}
+                            selected={routes[path]?.id === routes[route].id}
+                          >
+                            <ListItemIcon>
+                            </ListItemIcon>
+                            <ListItemText primary={route} />
+                          </ListItemButton>
+                        </ListItem>
+                      </>
+                    ))}
+                  </List>
+                </SwipeableDrawer>
               </div>
             </>
           )
@@ -115,7 +98,7 @@ const Header = ({
                   <Tab disableRipple value={routes.work.id} component={Link} to={routes.work.path} label='Work' />
                   <Tab disableRipple value={routes.illustration.id} component={Link} to={routes.illustration.path} label='Illustration' />
                   <Tab disableRipple value={routes.about.id} component={Link} to={routes.about.path} label='About Me' />
-                </Tabs>;
+                </Tabs>
               </div>
             </>
           )
@@ -166,7 +149,7 @@ const Layout = ({ isMobile }) => {
         <Header isMobile={isMobile} />
       </div>
       <div className={styles.content}>
-        <div className={styles['content-wrapper']}>
+        <div className={`${styles['content-wrapper']} ${isMobile && styles['mobile']}`}>
           <Outlet />
         </div>
         <div className={styles.footer}>

@@ -34,6 +34,10 @@
   flex-grow: 1;
 }
 
+.content-wrapper.mobile {
+  padding: 0px;
+}
+
 .footer {
   grid-area: footer;
   display: flex;
@@ -68,6 +72,13 @@
   margin: 0px;
 }
 
+.header-logo.mobile {
+}
+
 .menu-icon {
-  font-size: 2.5rem;
+  font-size: 3rem !important;
+}
+
+.list-item {
+  height: 60px;
 }
