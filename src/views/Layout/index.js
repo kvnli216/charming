@@ -11,7 +11,6 @@ import { routes } from '../../App';
 import PropTypes from 'prop-types';
 
 // TODO: skeleton load for reel
-// TODO: scroll reset to top on tab change
 
 const Header = ({
   isMobile,
@@ -29,6 +28,10 @@ const Header = ({
   };
 
   const ITEM_HEIGHT = 40;
+
+  const handleOnTabChange = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -107,7 +110,7 @@ const Header = ({
                 </Link >
               </div >
               <div>
-                <Tabs value={routes[path]?.id}>
+                <Tabs value={routes[path]?.id} onChange={handleOnTabChange}>
                   <Tab disableRipple value={routes.reel.id} component={Link} to={routes.reel.path} label='Reel' />
                   <Tab disableRipple value={routes.work.id} component={Link} to={routes.work.path} label='Work' />
                   <Tab disableRipple value={routes.illustration.id} component={Link} to={routes.illustration.path} label='Illustration' />
