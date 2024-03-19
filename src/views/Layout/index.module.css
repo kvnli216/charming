@@ -2,9 +2,8 @@
   display: grid;
   grid-template-areas:
     "header"
-    "content"
-    "footer";
-  grid-template-rows: 80px 1fr 55px;
+    "content";
+  grid-template-rows: 80px 1fr;
   height: 100svh;
   box-sizing: border-box;
 }
@@ -15,14 +14,24 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  background-color: white;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
   grid-area: content;
   overflow-y: auto;
   display: flex;
   justify-content: center;
   padding: 30px;
+  flex-grow: 1;
 }
 
 .footer {
@@ -32,7 +41,7 @@
   justify-content: center;
   align-items: center;
   padding: 5px 0 10px 0;
-  position: relative;
+  background-color: #e7e7e742;
 }
 
 .icon-link {
@@ -48,10 +57,10 @@
 
 .header-link {
   text-decoration: none;
-  color: orange;
+  color: black;
   font-family: Garet-Book;
   &:hover {
-    color: #ffa50094;
+    color: gray;
   }
 }
 

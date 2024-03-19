@@ -10,6 +10,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { routes } from '../../App';
 import PropTypes from 'prop-types';
 
+// TODO: skeleton load for reel
+// TODO: scroll reset to top on tab change
+
 const Header = ({
   isMobile,
 }) => {
@@ -106,7 +109,7 @@ const Header = ({
               <div>
                 <Tabs value={routes[path]?.id}>
                   <Tab disableRipple value={routes.reel.id} component={Link} to={routes.reel.path} label='Reel' />
-                  {/* <Tab disableRipple value={routes.work.id} component={Link} to={routes.work.path} label='Work' /> */}
+                  <Tab disableRipple value={routes.work.id} component={Link} to={routes.work.path} label='Work' />
                   <Tab disableRipple value={routes.illustration.id} component={Link} to={routes.illustration.path} label='Illustration' />
                   <Tab disableRipple value={routes.about.id} component={Link} to={routes.about.path} label='About Me' />
                 </Tabs>;
@@ -118,6 +121,41 @@ const Header = ({
   );
 };
 
+const Footer = () => (
+  <>
+    <div>
+      <IconButton
+        variant='outlined'
+        href='https://www.instagram.com/sabrina.art21/'
+        target='_blank'
+      >
+        <InstagramIcon className={styles['icon-link']} />
+      </IconButton>
+      <IconButton
+        variant='outlined'
+        href='mailto:chen.chiamin16@gmail.com'
+      >
+        <EmailIcon className={styles['icon-link']} />
+      </IconButton>
+      <IconButton
+        variant='outlined'
+        href='https://www.linkedin.com/in/sabrina-chiamin-chen-05609514b/'
+        target='_blank'
+      >
+        <LinkedInIcon className={styles['icon-link']} />
+      </IconButton>
+      <IconButton
+        variant='outlined'
+        href='https://vimeo.com/user194145687'
+        target='_blank'
+      >
+        <VimeoIcon className={styles['icon-link']} />
+      </IconButton>
+    </div>
+    <div className={styles['footer-text']}>Copyright © 2024 Sabrina Chen</div>
+  </>
+);
+
 const Layout = ({ isMobile }) => {
   return (
     <div className={styles.container}>
@@ -125,39 +163,12 @@ const Layout = ({ isMobile }) => {
         <Header isMobile={isMobile} />
       </div>
       <div className={styles.content}>
-        <Outlet />
-      </div>
-      <div className={styles.footer}>
-        <div>
-          <IconButton
-            variant='outlined'
-            href='https://www.instagram.com/sabrina.art21/'
-            target='_blank'
-          >
-            <InstagramIcon className={styles['icon-link']} />
-          </IconButton>
-          <IconButton
-            variant='outlined'
-            href='mailto:chen.chiamin16@gmail.com'
-          >
-            <EmailIcon className={styles['icon-link']} />
-          </IconButton>
-          <IconButton
-            variant='outlined'
-            href='https://www.linkedin.com/in/sabrina-chiamin-chen-05609514b/'
-            target='_blank'
-          >
-            <LinkedInIcon className={styles['icon-link']} />
-          </IconButton>
-          <IconButton
-            variant='outlined'
-            href='https://vimeo.com/user194145687'
-            target='_blank'
-          >
-            <VimeoIcon className={styles['icon-link']} />
-          </IconButton>
+        <div className={styles['content-wrapper']}>
+          <Outlet />
         </div>
-        <div className={styles['footer-text']}>Copyright © 2024 Sabrina Chen</div>
+        <div className={styles.footer}>
+          <Footer />
+        </div>
       </div>
     </div>
   );
