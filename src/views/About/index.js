@@ -2,7 +2,6 @@ import React from 'react';
 import AboutMePhoto from '../../assets/AboutMePhoto.jpg';
 import styles from './index.module.css';
 import resume from '../../assets/resume/Resume_0318.pdf';
-import DownloadIcon from '@mui/icons-material/Download';
 import { Button } from '@mui/material';
 
 const About = () => {

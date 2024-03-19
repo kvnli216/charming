@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './index.module.css';
 
-const HandsOnMePage = ({
+const Detail = ({
   label,
   mediaUrl,
 }) => {
@@ -23,16 +23,16 @@ const HandsOnMePage = ({
           />
         </div>
         <div className={styles['description-wrapper']}>
-          <h2>Intro</h2>
+          {/* <h2>Intro</h2> */}
         </div>
       </div>
     </div>
   );
 };
 
-HandsOnMePage.propTypes = {
+Detail.propTypes = {
   label: PropTypes.string,
   mediaUrl: PropTypes.string,
 };
 
-export default HandsOnMePage;;
+export default Detail;;

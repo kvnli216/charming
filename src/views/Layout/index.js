@@ -43,7 +43,7 @@ const Header = ({
             <>
               <div>
                 <Link className={styles['header-link']} to={'/'} >
-                  <h2 className={`${styles['header-logo']} ${styles['mobile']}`}>Sabrina Chen</h2>
+                  <h2 className={`${styles['header-logo']} ${isMobile && styles['mobile']}`}>Sabrina Chen</h2>
                 </Link >
               </div >
               <div>
