@@ -1,6 +1,8 @@
 import React from 'react';
 import AboutMePhoto from '../../assets/AboutMePhoto.jpg';
 import styles from './index.module.css';
+import resume from '../../assets/resume/Resume_0318.pdf';
+import DownloadIcon from '@mui/icons-material/Download';
 
 const About = () => {
   return (
@@ -18,6 +20,11 @@ const About = () => {
             <br />
             <br />
             She approaches motion design from a strategic standpoint, ensuring that every visual element serves a purpose.
+            <br />
+          </div>
+          <div className={styles['resume-link-wrapper']}>
+            <DownloadIcon />
+            <a className={styles['resume-link']} href={resume} download='Sabrina Resume 2024.pdf'>Download Resume</a>
           </div>
         </div>
       </div>
