@@ -15,6 +15,7 @@ import perfume_gif from './assets/Works/perfume_gif.gif';
 import ZAS_logo from './assets/Works/ZAS_logo.gif';
 import HorizontalShape from './assets/Works/HorizontalShape.gif';
 import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
+import Sabrinatitle from './assets/Works/Sabrinatitle.gif';
 import './styles/fonts.css';
 import { useState } from 'react';
 
@@ -62,15 +63,15 @@ export const DetailPages = [
   },
   {
     label: '3D Title',
-    preview: ZAS_logo,
+    preview: Sabrinatitle,
     mediaUrl: 'https://player.vimeo.com/video/925192188?h=389edb2b85',
     route: '/3DTitle',
   },
   {
-    label: 'Horizontal Shapes',
+    label: 'Shape Animation',
     preview: HorizontalShape,
     mediaUrl: 'https://player.vimeo.com/video/925197021?h=49d60494ba',
-    route: '/HorizontalShapes',
+    route: '/ShapeAnimation',
   },
 ];
 
