@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.css';
-import { Button, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Menu, MenuItem, SwipeableDrawer, Tab, Tabs } from '@mui/material';
+import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, SwipeableDrawer, Tab, Tabs } from '@mui/material';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -9,6 +9,7 @@ import VimeoIcon from '../../assets/VimeoIcon';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { routes } from '../../App';
 import PropTypes from 'prop-types';
+import Logo from '../../assets/LOGO.jpg';
 
 // TODO: skeleton load for reel
 
@@ -43,10 +44,10 @@ const Header = ({
             <>
               <div>
                 <Link className={styles['header-link']} to={'/'} >
-                  <h2 className={`${styles['header-logo']} ${isMobile && styles['mobile']}`}>Sabrina Chen</h2>
+                  <img className={styles['header-logo']} src={Logo} alt='logo' />
                 </Link >
               </div >
-              <div>
+              <div className={styles['menu-icon-wrapper']}>
                 <IconButton
                   aria-label="menu"
                   id="nav-menu"
@@ -97,7 +98,7 @@ const Header = ({
             <>
               <div>
                 <Link className={styles['header-link']} to={'/'} >
-                  <h1 className={styles['header-logo']}>Sabrina Chen</h1>
+                  <img className={styles['header-logo']} src={Logo} alt='logo' />
                 </Link >
               </div >
               <div>
@@ -153,7 +154,7 @@ const Footer = () => (
 const Layout = ({ isMobile }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
+      <div className={`${styles['header']} ${isMobile && styles['mobile']}`}>
         <Header isMobile={isMobile} />
       </div>
       <div className={styles.content}>
