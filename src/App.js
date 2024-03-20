@@ -16,6 +16,7 @@ import ZAS_logo from './assets/Works/ZAS_logo.gif';
 import HorizontalShape from './assets/Works/HorizontalShape.gif';
 import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
 import Sabrinatitle from './assets/Works/Sabrinatitle.gif';
+import Fall_winter from './assets/Works/Fall_winter.gif';
 import './styles/fonts.css';
 import { useState } from 'react';
 
@@ -60,6 +61,12 @@ export const DetailPages = [
     preview: EmbraceTheChill,
     mediaUrl: 'https://player.vimeo.com/video/924889613?h=6185829e8c',
     route: '/EmbraceTheChill',
+  },
+  {
+    label: 'Fall Winter',
+    preview: Fall_winter,
+    mediaUrl: 'https://player.vimeo.com/video/925279428?h=d3c44bf3d7',
+    route: '/FallWinter',
   },
   {
     label: '3D Title',
