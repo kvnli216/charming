@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1d66ecb0.css",
-    "main.js": "/static/js/main.85784897.js",
+    "main.js": "/static/js/main.7559ce5b.js",
     "static/js/787.fa634ac6.chunk.js": "/static/js/787.fa634ac6.chunk.js",
     "static/media/001_test.gif": "/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
     "static/media/IMG_5860.jpg": "/static/media/IMG_5860.7a4e28098b928007dfb1.jpg",
@@ -23,6 +23,7 @@
     "static/media/EmbraceTheChill.gif": "/static/media/EmbraceTheChill.872fd273e8a10cd6d2ef.gif",
     "static/media/IMG_6090.jpg": "/static/media/IMG_6090.d992612065064e4084fc.jpg",
     "static/media/AboutMePhoto.jpg": "/static/media/AboutMePhoto.532fee26c029f958b242.jpg",
+    "static/media/Logo_web.jpg": "/static/media/Logo_web.afa4f76522ddaf533272.jpg",
     "static/media/LOGO.jpg": "/static/media/LOGO.936edd0711d9355a82f7.jpg",
     "static/media/Cralika.otf": "/static/media/Cralika.26894b8544b7066867c7.otf",
     "static/media/Garet-Book.ttf": "/static/media/Garet-Book.927f4e0c1c6f398e18ed.ttf",
@@ -36,11 +37,11 @@
     "static/media/Skeina.otf": "/static/media/Skeina.74090d09bdb2f170ebe1.otf",
     "index.html": "/index.html",
     "main.1d66ecb0.css.map": "/static/css/main.1d66ecb0.css.map",
-    "main.85784897.js.map": "/static/js/main.85784897.js.map",
+    "main.7559ce5b.js.map": "/static/js/main.7559ce5b.js.map",
     "787.fa634ac6.chunk.js.map": "/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d66ecb0.css",
-    "static/js/main.85784897.js"
+    "static/js/main.7559ce5b.js"
   ]
 }
