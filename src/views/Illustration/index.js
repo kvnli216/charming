@@ -23,6 +23,8 @@ import IMG_5867_small from '../../assets/Illustrations/IMG_5867-small.jpg';
 import IMG_6090_small from '../../assets/Illustrations/IMG_6090-small.jpg';
 import IMG_6091_small from '../../assets/Illustrations/IMG_6091-small.jpg';
 import IMG_6093_small from '../../assets/Illustrations/IMG_6093-small.jpg';
+import 角色設計_頭髮 from '../../assets/Illustrations/角色設計_頭髮.jpg';
+import 角色設計small from '../../assets/Illustrations/角色設計_頭髮.jpg';
 import PropTypes from 'prop-types';
 import styles from './index.module.css';
 
@@ -34,11 +36,12 @@ const illustrations = [
   { src: IMG_5861, skeleton: IMG_5861_small },
   { src: IMG_5863, skeleton: IMG_5863_small },
   { src: IMG_5864, skeleton: IMG_5864_small },
+  { src: 角色設計_頭髮, skeleton: 角色設計small },
   { src: IMG_5865, skeleton: IMG_5865_small },
   { src: IMG_5867, skeleton: IMG_5867_small },
   { src: IMG_6090, skeleton: IMG_6090_small },
   { src: IMG_6091, skeleton: IMG_6091_small },
-  { src: IMG_6093, skeleton: IMG_6093_small }
+  { src: IMG_6093, skeleton: IMG_6093_small },
 ];
 
 const Card = ({
