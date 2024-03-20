@@ -10,6 +10,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import { routes } from '../../App';
 import PropTypes from 'prop-types';
 import Logo from '../../assets/LOGO.jpg';
+import Logo_web from '../../assets/Logo_web.jpg';
 
 // TODO: skeleton load for reel
 
@@ -98,7 +99,7 @@ const Header = ({
             <>
               <div>
                 <Link className={styles['header-link']} to={'/'} >
-                  <img className={styles['header-logo']} src={Logo} alt='logo' />
+                  <img className={styles['header-logo']} src={Logo_web} alt='logo' />
                 </Link >
               </div >
               <div>
