@@ -1,20 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.68ac9975.css",
-    "main.js": "/static/js/main.bedc2fab.js",
+    "main.js": "/static/js/main.c3966f90.js",
     "static/js/787.fa634ac6.chunk.js": "/static/js/787.fa634ac6.chunk.js",
     "static/media/001_test.gif": "/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
     "static/media/IMG_5860.jpg": "/static/media/IMG_5860.7a4e28098b928007dfb1.jpg",
     "static/media/003_test2.gif": "/static/media/003_test2.1c7395bb2f82785f42d1.gif",
+    "static/media/Sabrinatitle.gif": "/static/media/Sabrinatitle.275ca1dc837e47ec784f.gif",
     "static/media/002_test.gif": "/static/media/002_test.b52bbd7caa979753f1e4.gif",
     "static/media/IMG_6093.jpg": "/static/media/IMG_6093.f5258376cd5fcad5e855.jpg",
     "static/media/IMG_5867.jpg": "/static/media/IMG_5867.555cdd834366d32b80dc.jpg",
+    "static/media/HorizontalShape.gif": "/static/media/HorizontalShape.ecf8a72b0fbc50d44c00.gif",
     "static/media/IMG_5865.jpg": "/static/media/IMG_5865.4f3b5742a4d4c1cbaf22.jpg",
     "static/media/IMG_5863.jpg": "/static/media/IMG_5863.a1dea69d7e703718e07f.jpg",
     "static/media/IMG_5864.jpg": "/static/media/IMG_5864.e01c3051e7a63cc081df.jpg",
     "static/media/perfume_gif.gif": "/static/media/perfume_gif.1ed95b117146e5155259.gif",
     "static/media/IMG_6091.jpg": "/static/media/IMG_6091.25e8d847af45602bf246.jpg",
     "static/media/IMG_5861.jpg": "/static/media/IMG_5861.5546f89574d863ba3c19.jpg",
+    "static/media/ZAS_logo.gif": "/static/media/ZAS_logo.c2d0a4a6936a6f79016f.gif",
     "static/media/EmbraceTheChill.gif": "/static/media/EmbraceTheChill.872fd273e8a10cd6d2ef.gif",
     "static/media/IMG_6090.jpg": "/static/media/IMG_6090.d992612065064e4084fc.jpg",
     "static/media/AboutMePhoto.jpg": "/static/media/AboutMePhoto.532fee26c029f958b242.jpg",
@@ -30,11 +33,11 @@
     "static/media/Skeina.otf": "/static/media/Skeina.74090d09bdb2f170ebe1.otf",
     "index.html": "/index.html",
     "main.68ac9975.css.map": "/static/css/main.68ac9975.css.map",
-    "main.bedc2fab.js.map": "/static/js/main.bedc2fab.js.map",
+    "main.c3966f90.js.map": "/static/js/main.c3966f90.js.map",
     "787.fa634ac6.chunk.js.map": "/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68ac9975.css",
-    "static/js/main.bedc2fab.js"
+    "static/js/main.c3966f90.js"
   ]
 }
