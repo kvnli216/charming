@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutMePhoto from '../../assets/AboutMePhoto.jpg';
+import AboutMePhoto from '../../assets/AboutMePhoto2.jpg';
 import styles from './index.module.css';
 import resume from '../../assets/resume/Resume_0318.pdf';
 import { Button } from '@mui/material';

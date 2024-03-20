@@ -21,6 +21,7 @@
 
 .photo {
   height: 250px;
+  border-radius: 100%;
 }
 
 .intro {
