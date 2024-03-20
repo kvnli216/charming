@@ -42,7 +42,7 @@ const Header = ({
         isMobile
           ? (
             <>
-              <div>
+              <div className={styles['header-logo-wrapper']}>
                 <Link className={styles['header-link']} to={'/'} >
                   <img className={styles['header-logo']} src={Logo} alt='logo' />
                 </Link >
