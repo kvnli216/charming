@@ -12,6 +12,8 @@ import { ThemeProvider } from '@mui/material';
 import { theme } from './components/ThemeProvider';
 import Detail from './views/Detail';
 import perfume_gif from './assets/Works/perfume_gif.gif';
+import ZAS_logo from './assets/Works/ZAS_logo.gif';
+import HorizontalShape from './assets/Works/HorizontalShape.gif';
 import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
 import './styles/fonts.css';
 import { useState } from 'react';
@@ -41,6 +43,12 @@ export const routes = {
 
 export const DetailPages = [
   {
+    label: 'ZAS Logo',
+    preview: ZAS_logo,
+    mediaUrl: 'https://player.vimeo.com/video/925201010?h=f1ced0e468',
+    route: '/ZASLogo',
+  },
+  {
     label: 'HandsOnMe',
     preview: perfume_gif,
     mediaUrl: 'https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0',
@@ -51,7 +59,19 @@ export const DetailPages = [
     preview: EmbraceTheChill,
     mediaUrl: 'https://player.vimeo.com/video/924889613?h=6185829e8c',
     route: '/EmbraceTheChill',
-  }
+  },
+  {
+    label: '3D Title',
+    preview: ZAS_logo,
+    mediaUrl: 'https://player.vimeo.com/video/925192188?h=389edb2b85',
+    route: '/3DTitle',
+  },
+  {
+    label: 'Horizontal Shapes',
+    preview: HorizontalShape,
+    mediaUrl: 'https://player.vimeo.com/video/925197021?h=49d60494ba',
+    route: '/HorizontalShapes',
+  },
 ];
 
 function App() {
