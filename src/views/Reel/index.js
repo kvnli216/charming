@@ -3,7 +3,7 @@ import styles from './index.module.css';
 import PropTypes from 'prop-types';
 
 const reelUrl = 'https://player.vimeo.com/video/925988365?h=a427296593';
-const title = 'MOTION REEL 2024';
+const title = 'MOTION REEL';
 
 const Reel = ({ isMobile }) => {
   return (
