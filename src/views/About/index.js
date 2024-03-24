@@ -23,6 +23,13 @@ const About = () => {
             <br />
           </div>
           <div className={styles['resume-link-wrapper']}>
+            <div className={styles['press-text']}>
+              Press:
+              <br />
+              <a className={styles['press-link']} href={'https://voyagela.com/interview/conversations-with-sabrina-chen/'} target='_blank' rel="noreferrer">
+                Voyagela Interview
+              </a>
+            </div>
             <Button className={styles['resume-button']} color='primary' variant='contained'>
               <a className={styles['resume-link']} href={resume} download='Sabrina Resume 2024.pdf'>Download Resume</a>
             </Button>

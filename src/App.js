@@ -63,9 +63,9 @@ export const DetailPages = [
     route: '/EmbraceTheChill',
   },
   {
-    label: 'Fall Winter',
+    label: 'ZAS Stepping through the Seasons (Fall & Winter)',
     preview: Fall_winter,
-    mediaUrl: 'https://player.vimeo.com/video/925279428?h=d3c44bf3d7',
+    mediaUrl: 'https://player.vimeo.com/video/926736240?h=518548b12e',
     route: '/FallWinter',
   },
   {

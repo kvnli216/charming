@@ -86,6 +86,22 @@
 
 .resume-link-wrapper {
   display: flex;
-  gap: 5px;
-  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.press-text {
+  max-width: 500px;
+  line-height: 25px;
+  font-family: Garet-Book;
+  font-size: 1.6rem;
+}
+
+.press-link {
+  font-family: Garet-Book;
+  font-size: 1.6rem;
+  color: orange;
+  text-decoration: underline;
 }
