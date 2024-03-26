@@ -30,6 +30,13 @@ const About = () => {
                 Voyagela Interview
               </a>
             </div>
+            <div className={styles['press-text']}>
+              Contact me!
+              <br />
+              <a className={styles['press-link']} href={'mailto:chen.chiamin16@gmail.com'} target='_blank' rel="noreferrer noopener">
+                chen.chiamin16@gmail.com
+              </a>
+            </div>
             <Button className={styles['resume-button']} color='primary' variant='contained'>
               <a className={styles['resume-link']} href={resume} download='Sabrina Resume 2024.pdf'>Download Resume</a>
             </Button>
