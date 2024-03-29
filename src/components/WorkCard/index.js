@@ -10,17 +10,23 @@ const WorkCard = ({
   isMobile,
 }) => {
   return (
-    <Link to={route}>
-      <div className={styles['card']}>
-        <div className={styles['card-hover']}>
-          <div className={styles['hover-text']}>{label}</div>
-        </div>
-        <img
-          className={`${styles['work-gif']} ${isMobile && styles['mobile']}`}
-          src={gif}
-          alt='label'></img>
-      </div>
-    </Link>
+    <>
+      {
+        route
+          ? (<Link to={route} >
+            <div className={styles['card']}>
+              <div className={styles['card-hover']}>
+                <div className={styles['hover-text']}>{label}</div>
+              </div>
+              <img
+                className={`${styles['work-gif']} ${isMobile && styles['mobile']}`}
+                src={gif}
+                alt='label'></img>
+            </div>
+          </Link >)
+          : <div className={styles['stub-card']} />
+      }
+    </>
   );
 };
 
