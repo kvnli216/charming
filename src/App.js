@@ -13,6 +13,7 @@ import { theme } from './components/ThemeProvider';
 import Detail from './views/Detail';
 import perfume_gif from './assets/Works/perfume_gif.gif';
 import ZAS_logo from './assets/Works/ZAS_logo.gif';
+import vacationtime from './assets/Works/vacationtime.gif';
 import HorizontalShape from './assets/Works/HorizontalShape.gif';
 import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
 import Sabrinatitle from './assets/Works/Sabrinatitle.gif';
@@ -44,6 +45,12 @@ export const routes = {
 };
 
 export const DetailPages = [
+  {
+    label: 'Vacation Time',
+    preview: vacationtime,
+    mediaUrl: 'https://player.vimeo.com/video/928122548?h=943f4ba461',
+    route: '/VacationTime',
+  },
   {
     label: 'ZAS Logo',
     preview: ZAS_logo,
