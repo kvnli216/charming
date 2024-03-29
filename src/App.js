@@ -46,12 +46,6 @@ export const routes = {
 
 export const DetailPages = [
   {
-    label: 'Vacation Time',
-    preview: vacationtime,
-    mediaUrl: 'https://player.vimeo.com/video/928122548?h=943f4ba461',
-    route: '/VacationTime',
-  },
-  {
     label: 'ZAS Logo',
     preview: ZAS_logo,
     mediaUrl: 'https://player.vimeo.com/video/925201010?h=f1ced0e468',
@@ -87,6 +81,15 @@ export const DetailPages = [
     mediaUrl: 'https://player.vimeo.com/video/925197021?h=49d60494ba',
     route: '/ShapeAnimation',
   },
+  {
+    label: 'Vacation Time',
+    preview: vacationtime,
+    mediaUrl: 'https://player.vimeo.com/video/928122548?h=943f4ba461',
+    route: '/VacationTime',
+  },
+  {
+    // Stub to keep grid even
+  }
 ];
 
 function App() {
