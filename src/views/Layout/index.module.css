@@ -48,6 +48,7 @@
 
 .content-wrapper.mobile {
   padding: 0px;
+  width: 100svw;
 }
 
 .footer {
