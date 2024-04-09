@@ -71,16 +71,16 @@ export const DetailPages = [
     route: '/FallWinter',
   },
   {
-    label: 'ZAS Stepping through the Seasons Endshot',
-    preview: Endshot,
-    mediaUrl: 'https://player.vimeo.com/video/932611597?h=e4cfb0a6ac',
-    route: '/Endshot',
-  },
-  {
     label: 'Shape Animation',
     preview: HorizontalShape,
     mediaUrl: 'https://player.vimeo.com/video/925197021?h=49d60494ba',
     route: '/ShapeAnimation',
+  },
+  {
+    label: 'ZAS Stepping through the Seasons Endshot',
+    preview: Endshot,
+    mediaUrl: 'https://player.vimeo.com/video/932611597?h=e4cfb0a6ac',
+    route: '/Endshot',
   },
   {
     label: 'Vacation Time',
