@@ -18,6 +18,7 @@ import HorizontalShape from './assets/Works/HorizontalShape.gif';
 import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
 import Sabrinatitle from './assets/Works/Sabrinatitle.gif';
 import Fall_winter from './assets/Works/Fall_winter.gif';
+import Endshot from './assets/Works/Endshot.gif';
 import './styles/fonts.css';
 import { useState } from 'react';
 
@@ -70,10 +71,10 @@ export const DetailPages = [
     route: '/FallWinter',
   },
   {
-    label: '3D Title',
-    preview: Sabrinatitle,
-    mediaUrl: 'https://player.vimeo.com/video/925192188?h=389edb2b85',
-    route: '/3DTitle',
+    label: 'ZAS Stepping through the Seasons Endshot',
+    preview: Endshot,
+    mediaUrl: 'https://player.vimeo.com/video/932611597?h=e4cfb0a6ac',
+    route: '/Endshot',
   },
   {
     label: 'Shape Animation',
@@ -86,6 +87,12 @@ export const DetailPages = [
     preview: vacationtime,
     mediaUrl: 'https://player.vimeo.com/video/928122548?h=943f4ba461',
     route: '/VacationTime',
+  },
+  {
+    label: '3D Title',
+    preview: Sabrinatitle,
+    mediaUrl: 'https://player.vimeo.com/video/925192188?h=389edb2b85',
+    route: '/3DTitle',
   },
   {
     // Stub to keep grid even
