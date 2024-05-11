@@ -78,10 +78,21 @@
     width: calc(100%);
   }
 
-  .description-wrapper, .media-wrapper {
+  .description-wrapper, .subtitle-wrapper {
+    padding: 0px 10px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .media-wrapper {
     padding: 0px;
   }
-    
+
+  h1 {
+    font-size: 3rem !important;
+    padding: 0px 10px;
+    margin: 0px;
+  }
 }
 
 .link {
