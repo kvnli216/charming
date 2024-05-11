@@ -17,7 +17,22 @@ import vacationtime from './assets/Works/vacationtime.gif';
 import HorizontalShape from './assets/Works/HorizontalShape.gif';
 import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
 import Sabrinatitle from './assets/Works/Sabrinatitle.gif';
-import Fall_winter from './assets/Works/Fall_winter.gif';
+import Fall_winter from './assets/Works/fallwinter/Fall_winter.gif';
+import fallWinterLogo from './assets/Works/fallwinter/logo.png';
+import fallWinterSF1 from './assets/Works/fallwinter/SF1.png';
+import fallWinterSF2 from './assets/Works/fallwinter/SF2.png';
+import fallWinterSF3 from './assets/Works/fallwinter/SF3.png';
+import fallWinterSF35 from './assets/Works/fallwinter/SF3-5.png';
+import fallWinterSF4 from './assets/Works/fallwinter/SF4.png';
+import fallWinterSF5 from './assets/Works/fallwinter/SF5.png';
+import fallWinterSF6 from './assets/Works/fallwinter/SF6.png';
+import fallWinterSF7 from './assets/Works/fallwinter/SF7.JPG';
+import fallWinterSF8 from './assets/Works/fallwinter/SF8.JPG';
+import fallWinterSF9 from './assets/Works/fallwinter/SF9.JPG';
+import fallWinterSF10 from './assets/Works/fallwinter/SF10.JPG';
+import fallWinterSF11 from './assets/Works/fallwinter/SF11.JPG';
+import fallWinterSF12 from './assets/Works/fallwinter/SF12.JPG';
+import fallWinterSF13 from './assets/Works/fallwinter/SF13.png';
 import Endshot from './assets/Works/Endshot.gif';
 import './styles/fonts.css';
 import { useState } from 'react';
@@ -65,10 +80,24 @@ export const DetailPages = [
     route: '/EmbraceTheChill',
   },
   {
-    label: 'ZAS Stepping through the Seasons (Fall & Winter)',
+    label: 'Thesis - Stepping Through the Seasons',
     preview: Fall_winter,
-    mediaUrl: 'https://player.vimeo.com/video/926736240?h=518548b12e',
+    mediaUrl: 'https://player.vimeo.com/video/945037865',
+    enableDetails: true,
     route: '/FallWinter',
+    logo: fallWinterLogo,
+    styleframes: [
+      fallWinterSF1,
+      fallWinterSF3,
+      fallWinterSF5,
+      fallWinterSF6,
+      fallWinterSF7,
+      fallWinterSF9,
+      fallWinterSF10,
+      fallWinterSF11,
+      fallWinterSF12,
+      fallWinterSF13,
+    ],
   },
   {
     label: 'Shape Animation',
@@ -77,10 +106,24 @@ export const DetailPages = [
     route: '/ShapeAnimation',
   },
   {
-    label: 'ZAS Stepping through the Seasons Endshot',
+    label: 'Thesis - Stepping Through the Seasons',
     preview: Endshot,
-    mediaUrl: 'https://player.vimeo.com/video/932611597?h=e4cfb0a6ac',
+    mediaUrl: 'https://player.vimeo.com/video/945037865',
     route: '/Endshot',
+    enableDetails: true,
+    logo: fallWinterLogo,
+    styleframes: [
+      fallWinterSF1,
+      fallWinterSF3,
+      fallWinterSF5,
+      fallWinterSF6,
+      fallWinterSF7,
+      fallWinterSF9,
+      fallWinterSF10,
+      fallWinterSF11,
+      fallWinterSF12,
+      fallWinterSF13,
+    ],
   },
   {
     label: 'Vacation Time',
@@ -116,10 +159,10 @@ function App() {
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
             {/* Detail Pages */}
-            {DetailPages.map(({ label, mediaUrl, route }) => (
+            {DetailPages.map(({ label, mediaUrl, route, logo, styleframes, enableDetails }) => (
               <Route
                 path={route}
-                element={<Detail label={label} mediaUrl={mediaUrl} />} />
+                element={<Detail label={label} mediaUrl={mediaUrl} logo={logo} styleframes={styleframes} enableDetails={enableDetails} />} />
             ))}
           </Route>
         </Routes>

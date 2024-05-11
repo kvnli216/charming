@@ -29,8 +29,15 @@
   height: 100%;
 }
 
+.subtitle-wrapper {
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+
 .description-wrapper {
-  flex-grow: 1;
+  padding: 0px 120px;
+  font-size: 2rem;
+  line-height: 5rem;
 }
 
 .embed-wrapper {
@@ -38,4 +45,33 @@
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%; 
+}
+
+.media-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.styleframe-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+}
+
+.image {
+  object-fit: cover;
+  width: 1260px;
+}
+
+.styleframe {
+  object-fit: cover;
+  width: 620px;
+}
+
+.link {
+  cursor: pointer;
+  color: blue;
 }
