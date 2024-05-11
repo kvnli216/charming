@@ -68,12 +68,10 @@ const Detail = ({
         <div className={styles['description-wrapper']}>
           <h2>Styleframes</h2>
 
-          <div className={styles['media-wrapper']}>
-            <div className={styles['styleframe-wrapper']}>
-              {styleframes.map((src) => (
-                <img className={styles['styleframe']} src={src} alt='' />
-              ))}
-            </div>
+          <div className={styles['styleframe-wrapper']}>
+            {styleframes.map((src) => (
+              <img src={src} alt='' />
+            ))}
           </div>
         </div>
         </>

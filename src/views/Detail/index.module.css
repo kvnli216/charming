@@ -51,24 +51,37 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 0px 120px;
+  max-width: 1500px;
+  box-sizing: border-box;
+}
+
+.image {
+  /* object-fit: cover; */
+  width: 100%;
 }
 
 .styleframe-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
-.image {
-  object-fit: cover;
-  width: 1260px;
+.styleframe-wrapper > img {
+  width: calc(50% - 15px);
 }
 
-.styleframe {
-  object-fit: cover;
-  width: 620px;
+@media only screen and (max-width: 768px) {
+  .styleframe-wrapper > img {
+    width: calc(100%);
+  }
+
+  .description-wrapper, .media-wrapper {
+    padding: 0px;
+  }
+    
 }
 
 .link {
