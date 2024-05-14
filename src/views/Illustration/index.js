@@ -13,7 +13,6 @@ import IMG_5865 from '../../assets/Illustrations/IMG_5865.jpg';
 import IMG_5867 from '../../assets/Illustrations/IMG_5867.jpg';
 import IMG_6090 from '../../assets/Illustrations/IMG_6090.jpg';
 import IMG_6091 from '../../assets/Illustrations/IMG_6091.jpg';
-import IMG_6093 from '../../assets/Illustrations/IMG_6093.jpg';
 import IMG_5860_small from '../../assets/Illustrations/IMG_5860-small.jpg';
 import IMG_5861_small from '../../assets/Illustrations/IMG_5861-small.jpg';
 import IMG_5863_small from '../../assets/Illustrations/IMG_5863-small.jpg';
@@ -22,7 +21,12 @@ import IMG_5865_small from '../../assets/Illustrations/IMG_5865-small.jpg';
 import IMG_5867_small from '../../assets/Illustrations/IMG_5867-small.jpg';
 import IMG_6090_small from '../../assets/Illustrations/IMG_6090-small.jpg';
 import IMG_6091_small from '../../assets/Illustrations/IMG_6091-small.jpg';
+import IMG_6093 from '../../assets/Illustrations/IMG_6093.jpg';
 import IMG_6093_small from '../../assets/Illustrations/IMG_6093-small.jpg';
+import IMG_6305 from '../../assets/Illustrations/IMG_6305.jpg';
+import IMG_6305_small from '../../assets/Illustrations/IMG_6305-small.jpg';
+import IMG_6306 from '../../assets/Illustrations/IMG_6306.jpg';
+import IMG_6306_small from '../../assets/Illustrations/IMG_6306-small.jpg';
 import 角色設計_頭髮 from '../../assets/Illustrations/角色設計_頭髮.jpg';
 import 角色設計small from '../../assets/Illustrations/角色設計_頭髮.jpg';
 import PropTypes from 'prop-types';
@@ -32,6 +36,8 @@ const illustrations = [
   { src: gif1, skeleton: jpg1 },
   { src: gif2, skeleton: jpg2 },
   { src: gif3, skeleton: jpg3 },
+  { src: IMG_6305, skeleton: IMG_6305_small },
+  { src: IMG_6306, skeleton: IMG_6306_small },
   { src: IMG_5860, skeleton: IMG_5860_small },
   { src: IMG_5861, skeleton: IMG_5861_small },
   { src: IMG_5863, skeleton: IMG_5863_small },
