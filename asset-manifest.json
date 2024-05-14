@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.54d6ddce.css",
-    "main.js": "/static/js/main.e1619360.js",
+    "main.js": "/static/js/main.3972f53e.js",
     "static/js/787.fa634ac6.chunk.js": "/static/js/787.fa634ac6.chunk.js",
     "static/media/001_test.gif": "/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
     "static/media/IMG_5860.jpg": "/static/media/IMG_5860.7a4e28098b928007dfb1.jpg",
@@ -25,7 +25,9 @@
     "static/media/SF9.JPG": "/static/media/SF9.f327101ed14e39ea14d2.JPG",
     "static/media/vacationtime.gif": "/static/media/vacationtime.fa2768dc85fbccbdbe02.gif",
     "static/media/IMG_5863.jpg": "/static/media/IMG_5863.a1dea69d7e703718e07f.jpg",
+    "static/media/IMG_6305.jpg": "/static/media/IMG_6305.15f596e97748d4da3231.jpg",
     "static/media/Fall_winter.gif": "/static/media/Fall_winter.3e0264bfd7773401a2fa.gif",
+    "static/media/IMG_6306.jpg": "/static/media/IMG_6306.16d1c673232ca1ded476.jpg",
     "static/media/IMG_5864.jpg": "/static/media/IMG_5864.e01c3051e7a63cc081df.jpg",
     "static/media/SF7.JPG": "/static/media/SF7.a087cea1c1a7fa0d2f12.JPG",
     "static/media/perfume_gif.gif": "/static/media/perfume_gif.1ed95b117146e5155259.gif",
@@ -54,11 +56,11 @@
     "static/media/Skeina.otf": "/static/media/Skeina.74090d09bdb2f170ebe1.otf",
     "index.html": "/index.html",
     "main.54d6ddce.css.map": "/static/css/main.54d6ddce.css.map",
-    "main.e1619360.js.map": "/static/js/main.e1619360.js.map",
+    "main.3972f53e.js.map": "/static/js/main.3972f53e.js.map",
     "787.fa634ac6.chunk.js.map": "/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54d6ddce.css",
-    "static/js/main.e1619360.js"
+    "static/js/main.3972f53e.js"
   ]
 }
