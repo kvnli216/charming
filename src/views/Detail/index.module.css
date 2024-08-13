@@ -99,3 +99,38 @@
   cursor: pointer;
   color: blue;
 }
+
+.desc-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1500px;
+  justify-content: center;    
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 30px;
+  padding: 30px 60px;
+}
+
+.title {
+  display: flex;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.description {
+  display: flex;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  font-family: Garet-Book;
+  font-size: 1.4rem;
+}
+
+.credits {
+  display: flex;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  line-height: 25px;
+  font-family: Garet-Book;
+  font-size: 1.6rem;
+}

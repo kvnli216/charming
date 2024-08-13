@@ -20,14 +20,10 @@ import Sabrinatitle from './assets/Works/Sabrinatitle.gif';
 import Fall_winter from './assets/Works/fallwinter/Fall_winter.gif';
 import fallWinterLogo from './assets/Works/fallwinter/logo.png';
 import fallWinterSF1 from './assets/Works/fallwinter/SF1.png';
-import fallWinterSF2 from './assets/Works/fallwinter/SF2.png';
 import fallWinterSF3 from './assets/Works/fallwinter/SF3.png';
-import fallWinterSF35 from './assets/Works/fallwinter/SF3-5.png';
-import fallWinterSF4 from './assets/Works/fallwinter/SF4.png';
 import fallWinterSF5 from './assets/Works/fallwinter/SF5.png';
 import fallWinterSF6 from './assets/Works/fallwinter/SF6.png';
 import fallWinterSF7 from './assets/Works/fallwinter/SF7.JPG';
-import fallWinterSF8 from './assets/Works/fallwinter/SF8.JPG';
 import fallWinterSF9 from './assets/Works/fallwinter/SF9.JPG';
 import fallWinterSF10 from './assets/Works/fallwinter/SF10.JPG';
 import fallWinterSF11 from './assets/Works/fallwinter/SF11.JPG';
@@ -68,10 +64,33 @@ export const DetailPages = [
     route: '/ZASLogo',
   },
   {
-    label: 'HandsOnMe',
+    label: 'Hearts in Harmony',
     preview: perfume_gif,
     mediaUrl: 'https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0',
-    route: '/HandsOnMe',
+    route: '/HeartsInHarmony',
+    title: (
+      <h2>
+        Hands On Me | 2024
+        <br />
+        Hearts in Harmony
+      </h2>
+    ),
+    description: (
+      <>
+        “Hands On Me” is an imaginary perfume brand I created for my personal project.
+        It is crafted for the enchanting moments of romance. With a heart-shaped glass bottle, each fragrance embodies elegance, allure, and a touch of loveliness. It is perfect for women seeking to captivate and charm on their special dates.
+        <br />
+        <br />
+        In the “Hearts in Harmony" commercial campaign, Red and Blue come together to showcase how "Hands On Me" perfume creates a perfect blend of passion and elegance, making every romantic encounter unforgettable.
+      </>
+    ),
+    credits: (
+      <>
+        Role : Design, Animation
+        <br />
+        Software Used : After Effect, Cinema 4D
+      </>
+    )
   },
   {
     label: 'EmbraceTheChill',
@@ -159,10 +178,19 @@ function App() {
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
             {/* Detail Pages */}
-            {DetailPages.map(({ label, mediaUrl, route, logo, styleframes, enableDetails }) => (
+            {DetailPages.map(({ label, mediaUrl, route, logo, styleframes, enableDetails, title, description, credits }) => (
               <Route
                 path={route}
-                element={<Detail label={label} mediaUrl={mediaUrl} logo={logo} styleframes={styleframes} enableDetails={enableDetails} />} />
+                element={<Detail
+                  label={label}
+                  mediaUrl={mediaUrl}
+                  logo={logo}
+                  styleframes={styleframes}
+                  enableDetails={enableDetails}
+                  title={title}
+                  description={description}
+                  credits={credits}
+                />} />
             ))}
           </Route>
         </Routes>
