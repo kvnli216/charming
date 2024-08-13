@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.54d6ddce.css",
-    "main.js": "/static/js/main.3972f53e.js",
+    "main.css": "/static/css/main.98fe18bc.css",
+    "main.js": "/static/js/main.31c20c60.js",
     "static/js/787.fa634ac6.chunk.js": "/static/js/787.fa634ac6.chunk.js",
     "static/media/001_test.gif": "/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
     "static/media/IMG_5860.jpg": "/static/media/IMG_5860.7a4e28098b928007dfb1.jpg",
@@ -9,8 +9,6 @@
     "static/media/SF1.png": "/static/media/SF1.968867ca73d199f6d2bb.png",
     "static/media/SF3.png": "/static/media/SF3.37769fbac9a62a5e1758.png",
     "static/media/SF6.png": "/static/media/SF6.a4865552c3ac137789dd.png",
-    "static/media/SF2.png": "/static/media/SF2.6a3b5ea55e1fa1547781.png",
-    "static/media/SF4.png": "/static/media/SF4.2a5f93c92e40480b1a09.png",
     "static/media/SF5.png": "/static/media/SF5.d9c036f33900345a2ff4.png",
     "static/media/Sabrinatitle.gif": "/static/media/Sabrinatitle.275ca1dc837e47ec784f.gif",
     "static/media/SF13.png": "/static/media/SF13.4ee80cfae39465b5766a.png",
@@ -19,7 +17,6 @@
     "static/media/角色設計_頭髮.jpg": "/static/media/角色設計_頭髮.1c539fcc675caa871a6f.jpg",
     "static/media/IMG_5867.jpg": "/static/media/IMG_5867.555cdd834366d32b80dc.jpg",
     "static/media/SF10.JPG": "/static/media/SF10.e8583abfbb3084ea0bc1.JPG",
-    "static/media/SF3-5.png": "/static/media/SF3-5.e0e92ff3ca4dd3c1f41d.png",
     "static/media/HorizontalShape.gif": "/static/media/HorizontalShape.ecf8a72b0fbc50d44c00.gif",
     "static/media/IMG_5865.jpg": "/static/media/IMG_5865.4f3b5742a4d4c1cbaf22.jpg",
     "static/media/SF9.JPG": "/static/media/SF9.f327101ed14e39ea14d2.JPG",
@@ -35,7 +32,6 @@
     "static/media/SF11.JPG": "/static/media/SF11.87884597a0a49e76b7c4.JPG",
     "static/media/IMG_5861.jpg": "/static/media/IMG_5861.5546f89574d863ba3c19.jpg",
     "static/media/SF12.JPG": "/static/media/SF12.a97e140d580bee764ffc.JPG",
-    "static/media/SF8.JPG": "/static/media/SF8.df1a71df8a9345aac228.JPG",
     "static/media/ZAS_logo.gif": "/static/media/ZAS_logo.c2d0a4a6936a6f79016f.gif",
     "static/media/Endshot.gif": "/static/media/Endshot.61b507e9504f1e69f39a.gif",
     "static/media/EmbraceTheChill.gif": "/static/media/EmbraceTheChill.872fd273e8a10cd6d2ef.gif",
@@ -55,12 +51,12 @@
     "static/media/Cralika.woff2": "/static/media/Cralika.876cd775a1870baad405.woff2",
     "static/media/Skeina.otf": "/static/media/Skeina.74090d09bdb2f170ebe1.otf",
     "index.html": "/index.html",
-    "main.54d6ddce.css.map": "/static/css/main.54d6ddce.css.map",
-    "main.3972f53e.js.map": "/static/js/main.3972f53e.js.map",
+    "main.98fe18bc.css.map": "/static/css/main.98fe18bc.css.map",
+    "main.31c20c60.js.map": "/static/js/main.31c20c60.js.map",
     "787.fa634ac6.chunk.js.map": "/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54d6ddce.css",
-    "static/js/main.3972f53e.js"
+    "static/css/main.98fe18bc.css",
+    "static/js/main.31c20c60.js"
   ]
 }
