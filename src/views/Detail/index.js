@@ -9,6 +9,9 @@ const Detail = ({
   logo,
   styleframes = [],
   enableDetails = false,
+  title,
+  description,
+  credits,
 }) => {
   const handleTimeStamp = async (time) => {
     const player = new Player(document.getElementById("media-iframe"));
@@ -22,6 +25,20 @@ const Detail = ({
         <h1>{label}</h1>
       </div>
       <div className={styles.content}>
+
+        <div className={styles["desc-wrapper"]}>
+          <div class={styles["title"]}>
+            {title}
+          </div>
+          <div class={styles["description"]}>
+            {description}
+          </div>
+          <div class={styles["credits"]}>
+            {credits}
+          </div>
+        </div>
+
+
         <div className={styles["embed-wrapper"]}>
           <iframe
             id="media-iframe"
