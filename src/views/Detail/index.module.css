@@ -32,10 +32,10 @@
 .subtitle-wrapper {
   font-size: 1.7rem;
   line-height: 3rem;
+  margin-bottom: 50px;
 }
 
 .description-wrapper {
-  padding: 0px 120px;
   font-size: 2rem;
   line-height: 5rem;
 }
@@ -54,6 +54,7 @@
   padding: 0px 120px;
   max-width: 1500px;
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 .image {
@@ -62,9 +63,10 @@
 }
 
 .styleframe-wrapper {
+  padding-top: 45px;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 30px;
   justify-content: space-between;
   width: 100%;
 }
