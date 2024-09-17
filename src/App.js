@@ -99,7 +99,7 @@ export const DetailPages = [
     route: '/EmbraceTheChill',
   },
   {
-    label: 'Thesis - Stepping Through the Seasons',
+    label: 'Stepping Through the Seasons',
     preview: Fall_winter,
     mediaUrl: 'https://player.vimeo.com/video/945037865',
     enableDetails: true,
@@ -125,7 +125,7 @@ export const DetailPages = [
     route: '/ShapeAnimation',
   },
   {
-    label: 'Thesis - Stepping Through the Seasons',
+    label: 'Stepping Through the Seasons',
     preview: Endshot,
     mediaUrl: 'https://player.vimeo.com/video/945037865',
     route: '/Endshot',
