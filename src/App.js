@@ -71,8 +71,6 @@ export const DetailPages = [
     title: (
       <h2>
         Hands On Me | 2024
-        <br />
-        Hearts in Harmony
       </h2>
     ),
     description: (
