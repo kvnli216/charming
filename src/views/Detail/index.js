@@ -27,7 +27,6 @@ const Detail = ({
         <h1>{label}</h1>
       </div>
       <div className={styles.content}>
-
         {(title && description) ?
           <div className={styles["desc-wrapper"]}>
             <div class={styles["title"]}>
