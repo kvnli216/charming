@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import styles from "./index.module.css";
 import Player from "@vimeo/player";
 
+const pressBookUrl = "https://docs.google.com/presentation/d/1MLBfRmZjtOZ2vScuFCLieEWk0mbVGDE2sEv-_9101FE/edit#slide=id.p";
+
 const Detail = ({
   label,
   mediaUrl,
@@ -96,6 +98,7 @@ const Detail = ({
                 settings and sports events. The season segments end with a
                 close-up of the product and a dynamic color and texture change
                 to highlight differences in each shoe’s design.
+                Check out our <a className={styles["link"]} href={pressBookUrl} target='_blank' rel="noreferrer">Process Book</a>!
               </p>
             </div>
             <div className={styles["description-wrapper"]}>
