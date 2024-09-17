@@ -88,17 +88,11 @@ const About = () => {
             <br />
           </div>
           <div>
-            BV Public Relations
-            <br />
-            <b>Public Relations Intern</b> - Taipei City, Taiwan
-            <br />
-          </div>
-          <div>
             National Taiwan Normal University,
             <br />
             Graphic Arts and Communications, ATA Lab
             <br />
-            <b>Motion Design Teaching Assistant</b> - Taipei City, Taiwan
+            <b>Motion Design Assistant</b> - Taipei City, Taiwan
             <br />
           </div>
         </div>
