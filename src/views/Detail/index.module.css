@@ -30,6 +30,7 @@
 }
 
 .subtitle-wrapper {
+  font-style: italic;
   font-size: 1.7rem;
   line-height: 3rem;
   margin-bottom: 50px;
@@ -81,9 +82,15 @@
   }
 
   .description-wrapper, .subtitle-wrapper {
-    padding: 0px 10px;
-    font-size: 1.5rem;
+    padding: 0px 20px;
+    font-size: 1.2rem;
     line-height: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .styleframe-wrapper {
+    padding-top: 20px;
   }
   
   .media-wrapper {
@@ -91,9 +98,18 @@
   }
 
   h1 {
-    font-size: 3rem !important;
+    font-size: 1.5rem !important;
     padding: 0px 10px;
     margin: 0px;
+  }
+
+  h2 {
+    font-size: 1.3rem !important;
+    text-align: center;
+  }
+
+  .header {
+    padding: 20px 0px;
   }
 }
 

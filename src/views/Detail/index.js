@@ -28,18 +28,20 @@ const Detail = ({
       </div>
       <div className={styles.content}>
 
-        <div className={styles["desc-wrapper"]}>
-          <div class={styles["title"]}>
-            {title}
+        {(title && description) ?
+          <div className={styles["desc-wrapper"]}>
+            <div class={styles["title"]}>
+              {title}
+            </div>
+            <div class={styles["description"]}>
+              {description}
+            </div>
+            <div class={styles["credits"]}>
+              {credits}
+            </div>
           </div>
-          <div class={styles["description"]}>
-            {description}
-          </div>
-          <div class={styles["credits"]}>
-            {credits}
-          </div>
-        </div>
-
+          : <></>
+        }
 
         <div className={styles["embed-wrapper"]}>
           <iframe
@@ -114,10 +116,11 @@ const Detail = ({
             <div className={styles["media-wrapper"]}>
               <img className={styles["image"]} src={logo} alt="zas-logos" />
             </div>
-            <div className={styles["description-wrapper"]}>
+
+
+            <div className={styles['description-wrapper']}>
               <h2>Styleframes</h2>
             </div>
-
             <div className={styles["styleframe-wrapper"]}>
               {styleframes.map((src) => (
                 <img src={src} alt="" />
