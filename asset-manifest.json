@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c9bb6b7c.css",
-    "main.js": "/static/js/main.2c1d3cd7.js",
+    "main.css": "/static/css/main.61b3702a.css",
+    "main.js": "/static/js/main.dfde81d8.js",
     "static/js/787.fa634ac6.chunk.js": "/static/js/787.fa634ac6.chunk.js",
     "static/media/001_test.gif": "/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
     "static/media/IMG_5860.jpg": "/static/media/IMG_5860.7a4e28098b928007dfb1.jpg",
@@ -9,11 +9,17 @@
     "static/media/SF1.png": "/static/media/SF1.968867ca73d199f6d2bb.png",
     "static/media/SF3.png": "/static/media/SF3.37769fbac9a62a5e1758.png",
     "static/media/SF6.png": "/static/media/SF6.a4865552c3ac137789dd.png",
+    "static/media/1.png": "/static/media/1.3c12d41bcf48af8ff114.png",
     "static/media/SF5.png": "/static/media/SF5.d9c036f33900345a2ff4.png",
     "static/media/Sabrinatitle.gif": "/static/media/Sabrinatitle.275ca1dc837e47ec784f.gif",
+    "static/media/5.png": "/static/media/5.68bce3b72801ff347c8a.png",
+    "static/media/4.png": "/static/media/4.62788c3b6c56e4cb438d.png",
+    "static/media/6.png": "/static/media/6.48c40497a2975176db13.png",
+    "static/media/2.png": "/static/media/2.1819ffe6cfdff45f64e7.png",
     "static/media/SF13.png": "/static/media/SF13.4ee80cfae39465b5766a.png",
     "static/media/002_test.gif": "/static/media/002_test.b52bbd7caa979753f1e4.gif",
     "static/media/IMG_6093.jpg": "/static/media/IMG_6093.f5258376cd5fcad5e855.jpg",
+    "static/media/3.png": "/static/media/3.383476bc8a21947e2a5b.png",
     "static/media/角色設計_頭髮.jpg": "/static/media/角色設計_頭髮.1c539fcc675caa871a6f.jpg",
     "static/media/IMG_5867.jpg": "/static/media/IMG_5867.555cdd834366d32b80dc.jpg",
     "static/media/SF10.JPG": "/static/media/SF10.e8583abfbb3084ea0bc1.JPG",
@@ -35,10 +41,10 @@
     "static/media/ZAS_logo.gif": "/static/media/ZAS_logo.c2d0a4a6936a6f79016f.gif",
     "static/media/Endshot.gif": "/static/media/Endshot.61b507e9504f1e69f39a.gif",
     "static/media/EmbraceTheChill.gif": "/static/media/EmbraceTheChill.872fd273e8a10cd6d2ef.gif",
+    "static/media/Logo_white_web.png": "/static/media/Logo_white_web.b9ba0500fc36b4f52cb2.png",
+    "static/media/Logo_white_mobile.png": "/static/media/Logo_white_mobile.c01610e6905d7dae73a2.png",
     "static/media/AboutMePhoto2.jpg": "/static/media/AboutMePhoto2.303f2547fd39ade11c00.jpg",
     "static/media/IMG_6090.jpg": "/static/media/IMG_6090.d992612065064e4084fc.jpg",
-    "static/media/Logo_web.jpg": "/static/media/Logo_web.afa4f76522ddaf533272.jpg",
-    "static/media/LOGO.jpg": "/static/media/LOGO.936edd0711d9355a82f7.jpg",
     "static/media/Cralika.otf": "/static/media/Cralika.26894b8544b7066867c7.otf",
     "static/media/Garet-Book.ttf": "/static/media/Garet-Book.927f4e0c1c6f398e18ed.ttf",
     "static/media/Resume_0318.pdf": "/static/media/Resume_0318.6f8c898c63a29e581685.pdf",
@@ -51,12 +57,12 @@
     "static/media/Cralika.woff2": "/static/media/Cralika.876cd775a1870baad405.woff2",
     "static/media/Skeina.otf": "/static/media/Skeina.74090d09bdb2f170ebe1.otf",
     "index.html": "/index.html",
-    "main.c9bb6b7c.css.map": "/static/css/main.c9bb6b7c.css.map",
-    "main.2c1d3cd7.js.map": "/static/js/main.2c1d3cd7.js.map",
+    "main.61b3702a.css.map": "/static/css/main.61b3702a.css.map",
+    "main.dfde81d8.js.map": "/static/js/main.dfde81d8.js.map",
     "787.fa634ac6.chunk.js.map": "/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9bb6b7c.css",
-    "static/js/main.2c1d3cd7.js"
+    "static/css/main.61b3702a.css",
+    "static/js/main.dfde81d8.js"
   ]
 }
