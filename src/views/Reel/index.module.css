@@ -43,11 +43,11 @@
 }
 
 .blue-text {
-  color: blue;
+  color: #f2ad8a;
 }
 
 .orange-text {
-  color: orange;
+  color: #f6d249;
 }
 
 @media only screen and (max-width: 768px) {

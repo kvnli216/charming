@@ -1,3 +1,7 @@
+body {
+  color: white;
+}
+
 .container {
   display: grid;
   grid-template-areas:
@@ -6,6 +10,7 @@
   grid-template-rows: 80px 1fr;
   height: 100svh;
   box-sizing: border-box;
+  background: black;
 }
 
 .header {
@@ -17,7 +22,8 @@
   position: sticky;
   top: 0px;
   z-index: 1000;
-  background-color: white;
+  background: black;
+
 }
 
 .header.mobile {
@@ -35,6 +41,8 @@
 .content {
   display: flex;
   flex-direction: column;
+  background: black;
+
 }
 
 .content-wrapper {
@@ -58,7 +66,8 @@
   justify-content: center;
   align-items: center;
   padding: 5px 0 10px 0;
-  background-color: #e7e7e742;
+  background: black;
+
 }
 
 .icon-link {

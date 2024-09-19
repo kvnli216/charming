@@ -7,7 +7,7 @@ export const theme = createTheme({
         root: {
           fontFamily: 'Garet-Book',
           fontWeight: 'bold',
-          color: 'black',
+          color: 'white',
           fontSize: '1.6rem',
         },
       },

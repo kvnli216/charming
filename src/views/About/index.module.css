@@ -53,8 +53,9 @@
       "education experience skills";
   font-family: Garet-Book;
   font-size: 1.4rem;
-  background: #f4f4f5;
+  background: #2c2c2c;
   padding: 30px;
+  border-radius: 20px;
 }
 
 @media (max-width: 1023px) {
