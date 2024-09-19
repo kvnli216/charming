@@ -9,8 +9,8 @@ import VimeoIcon from '../../assets/VimeoIcon';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { routes } from '../../App';
 import PropTypes from 'prop-types';
-import Logo from '../../assets/LOGO.jpg';
-import Logo_web from '../../assets/Logo_web.jpg';
+import Logo from '../../assets/Logo_white_mobile.png';
+import Logo_web from '../../assets/Logo_white_web.png';
 
 // TODO: skeleton load for reel
 
