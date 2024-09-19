@@ -118,7 +118,7 @@ const Detail = ({
           </>
         )}
 
-        {styleframes && (
+        {styleframes.length !== 0 && (
           <div>
             <div className={styles['description-wrapper']}>
               <h2>Styleframes</h2>
