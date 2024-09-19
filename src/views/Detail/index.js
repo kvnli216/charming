@@ -115,8 +115,11 @@ const Detail = ({
             <div className={styles["media-wrapper"]}>
               <img className={styles["image"]} src={logo} alt="zas-logos" />
             </div>
+          </>
+        )}
 
-
+        {styleframes && (
+          <div>
             <div className={styles['description-wrapper']}>
               <h2>Styleframes</h2>
             </div>
@@ -125,10 +128,10 @@ const Detail = ({
                 <img src={src} alt="" />
               ))}
             </div>
-          </>
+          </div>
         )}
       </div>
-    </div>
+    </div >
   );
 };
 
