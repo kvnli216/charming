@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 30px;
 }
 
 .header {
@@ -31,4 +32,28 @@
   padding-top: 56.25%;
 }
 
+.description {
+  padding: 200px 0px;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  font-family: Garet-Book;
+  font-size: 4rem;
+  font-weight: 600;
+}
 
+.blue-text {
+  color: blue;
+}
+
+.orange-text {
+  color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+  .description {
+    padding: 100px 0px;
+    width: 300px;
+    font-size: 2rem;
+  }
+}

@@ -13,14 +13,17 @@ const About = () => {
         </div>
         <div className={styles.intro}>
           <div className={styles['intro-text']}>
-            Sabrina is a motion designer who is driven by a passion for storytelling through dynamic visuals.
+            Textures, Lines, and Motion:
+            <br />
+            Welcome to My Illustrated Universe!
             <br />
             <br />
-            With a background in communications, she creates animations that resonate with audiences on an emotional level.
+            I'm Sabrina Chen.
+            I'm a motion designer who is passionate about bringing brand to life using motion and storytelling.
+            With three years background of social media marking, I enjoy creating animations that drives engagement across digital platforms.
             <br />
             <br />
-            She approaches motion design from a strategic standpoint, ensuring that every visual element serves a purpose.
-            <br />
+            I'm currently exploring new creative opportunities as a passionate Junior Motion Designer.
           </div>
           <div className={styles['resume-link-wrapper']}>
             <div className={styles['press-text']}>
@@ -109,6 +112,8 @@ const About = () => {
           Procreate
           <br />
           Procreate Dreams
+          <br />
+          Figma
           <br />
           Adobe Premiere Pro
           <br />
