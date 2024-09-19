@@ -11,7 +11,7 @@ import Reel from './views/Reel';
 import { ThemeProvider } from '@mui/material';
 import { theme } from './components/ThemeProvider';
 import Detail from './views/Detail';
-import perfume_gif from './assets/Works/perfume_gif.gif';
+import perfume_gif from './assets/Works/handsonme/perfume_gif.gif';
 import ZAS_logo from './assets/Works/ZAS_logo.gif';
 import vacationtime from './assets/Works/vacationtime.gif';
 import HorizontalShape from './assets/Works/HorizontalShape.gif';
@@ -29,6 +29,12 @@ import fallWinterSF10 from './assets/Works/fallwinter/SF10.JPG';
 import fallWinterSF11 from './assets/Works/fallwinter/SF11.JPG';
 import fallWinterSF12 from './assets/Works/fallwinter/SF12.JPG';
 import fallWinterSF13 from './assets/Works/fallwinter/SF13.png';
+import handsStyleFrame1 from './assets/Works/handsonme/1.png';
+import handsStyleFrame2 from './assets/Works/handsonme/2.png';
+import handsStyleFrame3 from './assets/Works/handsonme/3.png';
+import handsStyleFrame4 from './assets/Works/handsonme/4.png';
+import handsStyleFrame5 from './assets/Works/handsonme/5.png';
+import handsStyleFrame6 from './assets/Works/handsonme/6.png';
 import Endshot from './assets/Works/Endshot.gif';
 import './styles/fonts.css';
 import { useState } from 'react';
@@ -70,7 +76,7 @@ export const DetailPages = [
     route: '/HeartsInHarmony',
     title: (
       <h2>
-        Hands On Me | 2024
+        Hands On Me | 2023
       </h2>
     ),
     description: (
@@ -88,7 +94,15 @@ export const DetailPages = [
         <br />
         Software Used : After Effect, Cinema 4D
       </>
-    )
+    ),
+    styleframes: [
+      handsStyleFrame1,
+      handsStyleFrame2,
+      handsStyleFrame3,
+      handsStyleFrame4,
+      handsStyleFrame5,
+      handsStyleFrame6,
+    ]
   },
   {
     label: 'EmbraceTheChill',
@@ -160,7 +174,7 @@ export const DetailPages = [
 ];
 
 function App() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth,] = useState(window.innerWidth);
   const mobileBreakpoint = 430;
   const isMobile = windowWidth <= mobileBreakpoint;
 
