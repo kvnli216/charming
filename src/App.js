@@ -109,6 +109,28 @@ export const DetailPages = [
     preview: EmbraceTheChill,
     mediaUrl: 'https://player.vimeo.com/video/924889613?h=6185829e8c',
     route: '/EmbraceTheChill',
+    title: (
+      <h2>
+        Embrace the Chill | 2024
+      </h2>
+    ),
+    description: (
+      <>
+        "Embrace the Chill" is a personal motion project that follows the journey of three characters
+        who are worn out from their hectic work lives. Seeking relief and balance, they decide to go on a vacation.
+        <br />
+        <br />
+        In this project, I learned to design in both collage and vector styles,
+        using gradients along with paper and brush textures to make the colors more vibrant and dynamic.
+      </>
+    ),
+    credits: (
+      <>
+        Role : Design, Animation
+        <br />
+        Software Used : After Effect, Cinema 4D
+      </>
+    ),
   },
   {
     label: 'Stepping Through the Seasons',
