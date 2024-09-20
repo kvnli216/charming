@@ -15,7 +15,7 @@ const Reel = ({ isMobile }) => {
               <div className={styles.description}>
                 Hi, I'm Sabrina Chen.
                 <br />
-                A <span className={styles['blue-text']}>motion designer</span> and <span className={styles['orange-text']}>illustrator</span> based in NYC.
+                A <span className={styles['orange-text']}>motion designer</span> and <span className={styles['yellow-text']}>illustrator</span> based in NYC.
                 Check out my reel!
                 <br />
                 I love illustrations and dynamic visuals.

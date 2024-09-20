@@ -71,7 +71,7 @@ body {
 }
 
 .icon-link {
-  color: orange !important;
+  color: #f2ad8a !important;
   font-size: 2.5rem !important;
 }
 
@@ -108,3 +108,6 @@ body {
   color: white;
 }
 
+.menu-button-toggle {
+  color: white !important;
+}
