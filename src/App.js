@@ -52,9 +52,9 @@ export const routes = {
     id: 1,
     path: '/work',
   },
-  illustration: {
+  play: {
     id: 2,
-    path: '/illustration',
+    path: '/play',
   },
   about: {
     id: 3,
@@ -208,7 +208,7 @@ function App() {
             <Route path={routes.home.path} element={<Reel isMobile={isMobile} />} />
             <Route path={routes.reel.path} element={<Reel isMobile={isMobile} />} />
             <Route path={routes.work.path} element={<Work isMobile={isMobile} />} />
-            <Route path={routes.illustration.path} element={<Illustration isMobile={isMobile} />} />
+            <Route path={routes.play.path} element={<Illustration isMobile={isMobile} />} />
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
             {/* Detail Pages */}
