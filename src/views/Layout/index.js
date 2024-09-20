@@ -50,6 +50,7 @@ const Header = ({
               </div >
               <div className={styles['menu-icon-wrapper']}>
                 <IconButton
+                  className={styles['menu-button-toggle']}
                   aria-label="menu"
                   id="nav-menu"
                   aria-controls={open ? 'long-menu' : undefined}
@@ -67,7 +68,7 @@ const Header = ({
                   PaperProps={{
                     sx: {
                       width: 'calc(100svw / 2)',
-                      background: '#f6ad73',
+                      background: '#f2ad8a',
                     }
                   }}
                 >

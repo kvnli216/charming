@@ -7,6 +7,7 @@
 }
 
 .header {
+  font-family: griffiths;
   display: flex;
   justify-content: center;
 }
@@ -30,6 +31,11 @@
   height: 100%;
 }
 
+.description-wrapper, .media-wrapper {
+  width: 800px;
+  margin: auto;
+}
+
 .subtitle-wrapper {
   font-style: italic;
   font-size: 1.7rem;
@@ -40,6 +46,12 @@
 .description-wrapper {
   font-size: 2rem;
   line-height: 5rem;
+}
+
+.styleframe-header {
+  font-size: 2rem;
+  line-height: 5rem;
+  text-align: center;
 }
 
 .embed-wrapper {
