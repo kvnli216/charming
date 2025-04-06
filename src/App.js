@@ -16,6 +16,7 @@ import ZAS_logo from './assets/Works/ZAS_logo.gif';
 import vacationtime from './assets/Works/vacationtime.gif';
 import HorizontalShape from './assets/Works/HorizontalShape.gif';
 import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
+import TheBeautifulWay from './assets/Works/TheBeautifulWay.gif';
 import Sabrinatitle from './assets/Works/Sabrinatitle.gif';
 import Fall_winter from './assets/Works/fallwinter/Fall_winter.gif';
 import fallWinterLogo from './assets/Works/fallwinter/logo.png';
@@ -29,6 +30,10 @@ import fallWinterSF10 from './assets/Works/fallwinter/SF10.JPG';
 import fallWinterSF11 from './assets/Works/fallwinter/SF11.JPG';
 import fallWinterSF12 from './assets/Works/fallwinter/SF12.JPG';
 import fallWinterSF13 from './assets/Works/fallwinter/SF13.png';
+import TBWStyleFrame1 from './assets/Works/tbw/TBW_gif1.gif';
+import TBWStyleFrame2 from './assets/Works/tbw/TBW_gif2.gif';
+import TBWStyleFrame3 from './assets/Works/tbw/TBW_gif3.gif';
+import TBWStyleFrame4 from './assets/Works/tbw/TBW_gif4.gif';
 import handsStyleFrame1 from './assets/Works/handsonme/1.png';
 import handsStyleFrame2 from './assets/Works/handsonme/2.png';
 import handsStyleFrame3 from './assets/Works/handsonme/3.png';
@@ -107,34 +112,6 @@ export const DetailPages = [
     ]
   },
   {
-    label: 'EmbraceTheChill',
-    preview: EmbraceTheChill,
-    mediaUrl: 'https://player.vimeo.com/video/924889613?h=6185829e8c',
-    route: '/EmbraceTheChill',
-    title: (
-      <h2>
-        Embrace the Chill | 2024
-      </h2>
-    ),
-    description: (
-      <>
-        "Embrace the Chill" is a personal motion project that follows the journey of three characters
-        who are worn out from their hectic work lives. Seeking relief and balance, they decide to go on a vacation.
-        <br />
-        <br />
-        In this project, I learned to design in both collage and vector styles,
-        using gradients along with paper and brush textures to make the colors more vibrant and dynamic.
-      </>
-    ),
-    credits: (
-      <>
-        Role : Design, Animation
-        <br />
-        Software Used : After Effect, Cinema 4D
-      </>
-    ),
-  },
-  {
     label: 'Stepping Through the Seasons',
     preview: Fall_winter,
     title: (
@@ -178,6 +155,71 @@ export const DetailPages = [
       fallWinterSF12,
       fallWinterSF13,
     ],
+  },
+  {
+    label: 'The Beautiful Way ',
+    preview: TheBeautifulWay,
+    mediaUrl: 'https://player.vimeo.com/video/1073021266',
+    route: '/TheBeautifulWay',
+    title: (
+      <h2>
+        TBW Explainer Video | 2024
+      </h2>
+    ),
+    description: (
+      <>
+        This is a project collaborating with New View Media.
+        The Beautiful Way Foundation values inclusivity, collaboration, and innovation to ensure
+        equitable healthcare for all people,
+        promoting a holistic approach to well-being and medical progress.
+      </>
+    ),
+    credits: (
+      <>
+        Production Studio: New View Media
+        <br />
+        Client: The Beautiful Way
+        <br />
+        Role: Design, Animation
+        <br />
+        Software Used: After Effect
+        <br />
+      </>
+    ),
+    styleframes: [
+      TBWStyleFrame1,
+      TBWStyleFrame2,
+      TBWStyleFrame3,
+      TBWStyleFrame4,
+    ]
+  },
+  {
+    label: 'EmbraceTheChill',
+    preview: EmbraceTheChill,
+    mediaUrl: 'https://player.vimeo.com/video/924889613?h=6185829e8c',
+    route: '/EmbraceTheChill',
+    title: (
+      <h2>
+        Embrace the Chill | 2024
+      </h2>
+    ),
+    description: (
+      <>
+        "Embrace the Chill" is a personal motion project that follows the journey of three characters
+        who are worn out from their hectic work lives. Seeking relief and balance, they decide to go on a vacation.
+        <br />
+        <br />
+        In this project, I learned to design in both collage and vector styles,
+        using gradients along with paper and brush textures to make the colors more vibrant and dynamic.
+      </>
+    ),
+    credits: (
+      <>
+        Role : Design, Animation
+        <br />
+        Software Used : After Effect, Cinema 4D
+      </>
+    ),
   },
   {
     label: 'Shape Animation',
