@@ -13,7 +13,6 @@ import { theme } from './components/ThemeProvider';
 import Detail from './views/Detail';
 import perfume_gif from './assets/Works/handsonme/perfume_gif.gif';
 import ZAS_logo from './assets/Works/ZAS_logo.gif';
-import vacationtime from './assets/Works/vacationtime.gif';
 import HorizontalShape from './assets/Works/HorizontalShape.gif';
 import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
 import TheBeautifulWay from './assets/Works/TheBeautifulWay.gif';
@@ -112,6 +111,43 @@ export const DetailPages = [
     ]
   },
   {
+    label: 'The Beautiful Way ',
+    preview: TheBeautifulWay,
+    mediaUrl: 'https://player.vimeo.com/video/1073021266',
+    route: '/TheBeautifulWay',
+    title: (
+      <h2>
+        TBW Explainer Video | 2024
+      </h2>
+    ),
+    description: (
+      <>
+        This is a project collaborating with New View Media.
+        The Beautiful Way Foundation values inclusivity, collaboration, and innovation to ensure
+        equitable healthcare for all people,
+        promoting a holistic approach to well-being and medical progress.
+      </>
+    ),
+    credits: (
+      <>
+        Production Studio: New View Media
+        <br />
+        Client: The Beautiful Way
+        <br />
+        Role: Design, Animation
+        <br />
+        Software Used: After Effect
+        <br />
+      </>
+    ),
+    styleframes: [
+      TBWStyleFrame1,
+      TBWStyleFrame2,
+      TBWStyleFrame3,
+      TBWStyleFrame4,
+    ]
+  },
+  {
     label: 'Stepping Through the Seasons',
     preview: Fall_winter,
     title: (
@@ -157,46 +193,10 @@ export const DetailPages = [
     ],
   },
   {
-    label: 'The Beautiful Way ',
-    preview: TheBeautifulWay,
-    mediaUrl: 'https://player.vimeo.com/video/1073021266',
-    route: '/TheBeautifulWay',
-    title: (
-      <h2>
-        TBW Explainer Video | 2024
-      </h2>
-    ),
-    description: (
-      <>
-        This is a project collaborating with New View Media.
-        The Beautiful Way Foundation values inclusivity, collaboration, and innovation to ensure
-        equitable healthcare for all people,
-        promoting a holistic approach to well-being and medical progress.
-      </>
-    ),
-    credits: (
-      <>
-        Production Studio: New View Media
-        <br />
-        Client: The Beautiful Way
-        <br />
-        Role: Design, Animation
-        <br />
-        Software Used: After Effect
-        <br />
-      </>
-    ),
-    styleframes: [
-      TBWStyleFrame1,
-      TBWStyleFrame2,
-      TBWStyleFrame3,
-      TBWStyleFrame4,
-    ]
-  },
-  {
     label: 'EmbraceTheChill',
     preview: EmbraceTheChill,
     mediaUrl: 'https://player.vimeo.com/video/924889613?h=6185829e8c',
+    mediaUrl2: 'https://player.vimeo.com/video/928122548?h=943f4ba461',
     route: '/EmbraceTheChill',
     title: (
       <h2>
@@ -267,12 +267,6 @@ export const DetailPages = [
     ],
   },
   {
-    label: 'Vacation Time',
-    preview: vacationtime,
-    mediaUrl: 'https://player.vimeo.com/video/928122548?h=943f4ba461',
-    route: '/VacationTime',
-  },
-  {
     label: '3D Title',
     preview: Sabrinatitle,
     mediaUrl: 'https://player.vimeo.com/video/925192188?h=389edb2b85',
@@ -300,12 +294,13 @@ function App() {
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
             {/* Detail Pages */}
-            {DetailPages.map(({ label, mediaUrl, route, logo, styleframes, enableDetails, title, description, credits }) => (
+            {DetailPages.map(({ label, mediaUrl, mediaUrl2, route, logo, styleframes, enableDetails, title, description, credits }) => (
               <Route
                 path={route}
                 element={<Detail
                   label={label}
                   mediaUrl={mediaUrl}
+                  mediaUrl2={mediaUrl2}
                   logo={logo}
                   styleframes={styleframes}
                   enableDetails={enableDetails}
