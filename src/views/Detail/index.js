@@ -6,6 +6,7 @@ import Player from "@vimeo/player";
 const Detail = ({
   label,
   mediaUrl,
+  mediaUrl2,
   logo,
   styleframes = [],
   enableDetails = false,
@@ -52,6 +53,20 @@ const Detail = ({
           />
         </div>
 
+        {mediaUrl2 &&
+          <div className={styles["embed-wrapper"]}>
+            <iframe
+              id="media-iframe"
+              title={label}
+              src={mediaUrl2}
+              className={styles["iframe-video"]}
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            />
+          </div>
+        }
+
         {enableDetails && (
           <>
             <div className={styles["subtitle-wrapper"]}>
@@ -86,12 +101,6 @@ const Detail = ({
                 Sabrina Chen in all aspects
               </p>
             </div>
-            {/* <div className={styles["description-wrapper"]}>
-              <h2>Description</h2>
-              <p>
-               
-              </p>
-            </div> */}
             <div className={styles["description-wrapper"]}>
               <h2>Why ZAS?</h2>
               <p>
