@@ -62,6 +62,8 @@ export const routes = {
   },
 };
 
+const pressBookUrl = "https://docs.google.com/presentation/d/1MLBfRmZjtOZ2vScuFCLieEWk0mbVGDE2sEv-_9101FE/edit#slide=id.p";
+
 export const DetailPages = [
   {
     label: 'ZAS Logo',
@@ -135,6 +137,31 @@ export const DetailPages = [
   {
     label: 'Stepping Through the Seasons',
     preview: Fall_winter,
+    title: (
+      <h2>
+        Stepping Through the Seasons | 2024
+      </h2>
+    ),
+    credits: (
+      <>
+        Role : Design, Animation
+        <br />
+        Software Used : After Effect, Procreate, Cinema 4D
+      </>
+    ),
+    description: (
+      <>
+        "Stepping through the Seasons" is my thesis project at SVA
+        Computer Arts. It is a two person team project that combines 2D
+        and 3D motion design. We created a shoe apparel line called ZAS.
+        This film promotes ZAS sports apparel through a commercial. It
+        showcases four season-specific shoes, each featured in distinct
+        settings and sports events. The season segments end with a
+        close-up of the product and a dynamic color and texture change
+        to highlight differences in each shoe’s design.
+        Check out our <a href={pressBookUrl} target='_blank' rel="noreferrer">Process Book</a>!
+      </>
+    ),
     mediaUrl: 'https://player.vimeo.com/video/945037865',
     enableDetails: true,
     route: '/FallWinter',
