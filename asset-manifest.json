@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.25f92506.css",
-    "main.js": "/static/js/main.7ffc9293.js",
+    "main.css": "/static/css/main.21d78150.css",
+    "main.js": "/static/js/main.12bc3ab7.js",
     "static/js/787.fa634ac6.chunk.js": "/static/js/787.fa634ac6.chunk.js",
     "static/media/001_test.gif": "/static/media/001_test.8c6e534ff1e1d0fb86d9.gif",
     "static/media/IMG_5860.jpg": "/static/media/IMG_5860.7a4e28098b928007dfb1.jpg",
@@ -13,9 +13,14 @@
     "static/media/SF5.png": "/static/media/SF5.d9c036f33900345a2ff4.png",
     "static/media/Sabrinatitle.gif": "/static/media/Sabrinatitle.275ca1dc837e47ec784f.gif",
     "static/media/5.png": "/static/media/5.68bce3b72801ff347c8a.png",
+    "static/media/TBW_gif1.gif": "/static/media/TBW_gif1.87403414767b24f7e35e.gif",
     "static/media/4.png": "/static/media/4.62788c3b6c56e4cb438d.png",
+    "static/media/TBW_gif4.gif": "/static/media/TBW_gif4.01480f00418b59952e39.gif",
+    "static/media/TheBeautifulWay.gif": "/static/media/TheBeautifulWay.01480f00418b59952e39.gif",
     "static/media/6.png": "/static/media/6.48c40497a2975176db13.png",
+    "static/media/TBW_gif3.gif": "/static/media/TBW_gif3.de974928432e26d57f7b.gif",
     "static/media/2.png": "/static/media/2.1819ffe6cfdff45f64e7.png",
+    "static/media/TBW_gif2.gif": "/static/media/TBW_gif2.c00a18aecae0e1962c0b.gif",
     "static/media/SF13.png": "/static/media/SF13.4ee80cfae39465b5766a.png",
     "static/media/002_test.gif": "/static/media/002_test.b52bbd7caa979753f1e4.gif",
     "static/media/IMG_6093.jpg": "/static/media/IMG_6093.f5258376cd5fcad5e855.jpg",
@@ -26,7 +31,6 @@
     "static/media/HorizontalShape.gif": "/static/media/HorizontalShape.ecf8a72b0fbc50d44c00.gif",
     "static/media/IMG_5865.jpg": "/static/media/IMG_5865.4f3b5742a4d4c1cbaf22.jpg",
     "static/media/SF9.JPG": "/static/media/SF9.f327101ed14e39ea14d2.JPG",
-    "static/media/vacationtime.gif": "/static/media/vacationtime.fa2768dc85fbccbdbe02.gif",
     "static/media/IMG_5863.jpg": "/static/media/IMG_5863.a1dea69d7e703718e07f.jpg",
     "static/media/IMG_6305.jpg": "/static/media/IMG_6305.15f596e97748d4da3231.jpg",
     "static/media/Fall_winter.gif": "/static/media/Fall_winter.3e0264bfd7773401a2fa.gif",
@@ -55,15 +59,16 @@
     "static/media/Garet-Book.woff2": "/static/media/Garet-Book.5ea6c56500bb26dee122.woff2",
     "static/media/Cralika.woff": "/static/media/Cralika.7499e859c0687ad373fb.woff",
     "static/media/Cralika.woff2": "/static/media/Cralika.876cd775a1870baad405.woff2",
+    "static/media/LEMONMILK-Bold.otf": "/static/media/LEMONMILK-Bold.ac2b6389ba01ca1f431e.otf",
     "static/media/Skeina.otf": "/static/media/Skeina.74090d09bdb2f170ebe1.otf",
     "static/media/Griffiths_title.otf": "/static/media/Griffiths_title.d37c5b1f518db9b96ee4.otf",
     "index.html": "/index.html",
-    "main.25f92506.css.map": "/static/css/main.25f92506.css.map",
-    "main.7ffc9293.js.map": "/static/js/main.7ffc9293.js.map",
+    "main.21d78150.css.map": "/static/css/main.21d78150.css.map",
+    "main.12bc3ab7.js.map": "/static/js/main.12bc3ab7.js.map",
     "787.fa634ac6.chunk.js.map": "/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25f92506.css",
-    "static/js/main.7ffc9293.js"
+    "static/css/main.21d78150.css",
+    "static/js/main.12bc3ab7.js"
   ]
 }
