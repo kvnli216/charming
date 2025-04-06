@@ -89,12 +89,6 @@
   width: calc(50% - 15px);
 }
 
-a {
-  cursor: pointer;
-  color: orange;
-  text-decoration: underline;
-}
-
 .desc-wrapper {
   box-sizing: border-box;
   width: 100%;
