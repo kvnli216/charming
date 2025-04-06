@@ -24,6 +24,11 @@
   src: 
       url('../fonts/Griffiths_title.otf') format('opentype'),
 }
+@font-face {
+  font-family: 'lemonmilk-bold';
+  src: 
+      url('../fonts/LEMONMILK-Bold.otf') format('opentype'),
+}
 
 html {
   font-size: 62.5%;
