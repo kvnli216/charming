@@ -159,7 +159,7 @@ export const DetailPages = [
         settings and sports events. The season segments end with a
         close-up of the product and a dynamic color and texture change
         to highlight differences in each shoe’s design.
-        Check out our <a href={pressBookUrl} target='_blank' rel="noreferrer">Process Book</a>!
+        Check out our <a style={{ cursor: 'pointer', color: 'orange', textDecoration: 'underline ' }} href={pressBookUrl} target='_blank' rel="noreferrer">Process Book</a>!
       </>
     ),
     mediaUrl: 'https://player.vimeo.com/video/945037865',
@@ -182,6 +182,25 @@ export const DetailPages = [
   {
     label: 'Shape Animation',
     preview: HorizontalShape,
+    title: (
+      <h2>
+        Shape Animation | 2023
+      </h2>
+    ),
+    credits: (
+      <>
+        Role : Design, Animation
+        <br />
+        Software Used : After Effects
+      </>
+    ),
+    description: (
+      <>
+        This is a personal project. I used shape layers to explore designs and animations.
+        The project dives into various techniques such
+        as keyframing, path animations, stroke and fill to craft smooth visuals.
+      </>
+    ),
     mediaUrl: 'https://player.vimeo.com/video/925197021?h=49d60494ba',
     route: '/ShapeAnimation',
   },
