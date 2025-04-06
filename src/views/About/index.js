@@ -77,11 +77,9 @@ const About = () => {
         <div className={styles.section}>
           <h3>Work Experience</h3>
           <div>
-            National Taiwan Normal University,
+            Skycar Creative
             <br />
-            Office of Administrative Affairs
-            <br />
-            <b>Project Planner</b> -  Taipei City, Taiwan
+            <b>Motion Design Intern</b> - San Francisco
             <br />
           </div>
           <div>
