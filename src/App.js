@@ -98,7 +98,7 @@ export const DetailPages = [
       <>
         Role : Design, Animation
         <br />
-        Software Used : After Effect, Cinema 4D
+        Software Used : After Effects, Cinema 4D
       </>
     ),
     styleframes: [
@@ -136,7 +136,7 @@ export const DetailPages = [
         <br />
         Role: Design, Animation
         <br />
-        Software Used: After Effect
+        Software Used: After Effects
         <br />
       </>
     ),
@@ -159,7 +159,7 @@ export const DetailPages = [
       <>
         Role : Design, Animation
         <br />
-        Software Used : After Effect, Procreate, Cinema 4D
+        Software Used : After Effects, Procreate, Cinema 4D
       </>
     ),
     description: (
@@ -217,7 +217,7 @@ export const DetailPages = [
       <>
         Role : Design, Animation
         <br />
-        Software Used : After Effect, Cinema 4D
+        Software Used : After Effects, Cinema 4D
       </>
     ),
   },
