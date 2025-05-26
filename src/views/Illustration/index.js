@@ -36,7 +36,6 @@ const illustrations = [
   { src: gif1, skeleton: jpg1 },
   { src: gif2, skeleton: jpg2 },
   { src: gif3, skeleton: jpg3 },
-  { src: IMG_6305, skeleton: IMG_6305_small },
   { src: IMG_6306, skeleton: IMG_6306_small },
   { src: IMG_5860, skeleton: IMG_5860_small },
   { src: IMG_5861, skeleton: IMG_5861_small },
