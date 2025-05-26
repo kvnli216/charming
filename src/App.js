@@ -266,12 +266,12 @@ export const DetailPages = [
       fallWinterSF13,
     ],
   },
-  {
-    label: '3D Title',
-    preview: Sabrinatitle,
-    mediaUrl: 'https://player.vimeo.com/video/925192188?h=389edb2b85',
-    route: '/3DTitle',
-  },
+  // {
+  //   label: '3D Title',
+  //   preview: Sabrinatitle,
+  //   mediaUrl: 'https://player.vimeo.com/video/925192188?h=389edb2b85',
+  //   route: '/3DTitle',
+  // },
   {
     // Stub to keep grid even
   }
