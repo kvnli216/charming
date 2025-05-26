@@ -16,7 +16,6 @@ import ZAS_logo from './assets/Works/ZAS_logo.gif';
 import HorizontalShape from './assets/Works/HorizontalShape.gif';
 import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
 import TheBeautifulWay from './assets/Works/TheBeautifulWay.gif';
-import Sabrinatitle from './assets/Works/Sabrinatitle.gif';
 import Fall_winter from './assets/Works/fallwinter/Fall_winter.gif';
 import fallWinterLogo from './assets/Works/fallwinter/logo.png';
 import fallWinterSF1 from './assets/Works/fallwinter/SF1.png';
@@ -39,6 +38,10 @@ import handsStyleFrame3 from './assets/Works/handsonme/3.png';
 import handsStyleFrame4 from './assets/Works/handsonme/4.png';
 import handsStyleFrame5 from './assets/Works/handsonme/5.png';
 import handsStyleFrame6 from './assets/Works/handsonme/6.png';
+import kinetic1 from './assets/Works/kinetictypography/1_gif.gif';
+import kinetic2 from './assets/Works/kinetictypography/2_gif.gif';
+import kinetic3 from './assets/Works/kinetictypography/3_gif.gif';
+import kinetic4 from './assets/Works/kinetictypography/4_gif.gif';
 import Endshot from './assets/Works/Endshot.gif';
 import './styles/fonts.css';
 import { useState } from 'react';
@@ -69,84 +72,6 @@ export const routes = {
 const pressBookUrl = "https://docs.google.com/presentation/d/1MLBfRmZjtOZ2vScuFCLieEWk0mbVGDE2sEv-_9101FE/edit#slide=id.p";
 
 export const DetailPages = [
-  {
-    label: 'ZAS Logo',
-    preview: ZAS_logo,
-    mediaUrl: 'https://player.vimeo.com/video/925201010?h=f1ced0e468',
-    route: '/ZASLogo',
-  },
-  {
-    label: 'Hearts in Harmony',
-    preview: perfume_gif,
-    mediaUrl: 'https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0',
-    route: '/HeartsInHarmony',
-    title: (
-      <h2>
-        Hands On Me | 2023
-      </h2>
-    ),
-    description: (
-      <>
-        “Hands On Me” is an imaginary perfume brand I created for my personal project.
-        It is crafted for the enchanting moments of romance. With a heart-shaped glass bottle, each fragrance embodies elegance, allure, and a touch of loveliness. It is perfect for women seeking to captivate and charm on their special dates.
-        <br />
-        <br />
-        In the “Hearts in Harmony" commercial campaign, Red and Blue come together to showcase how "Hands On Me" perfume creates a perfect blend of passion and elegance, making every romantic encounter unforgettable.
-      </>
-    ),
-    credits: (
-      <>
-        Role : Design, Animation
-        <br />
-        Software Used : After Effects, Cinema 4D
-      </>
-    ),
-    styleframes: [
-      handsStyleFrame1,
-      handsStyleFrame2,
-      handsStyleFrame3,
-      handsStyleFrame4,
-      handsStyleFrame5,
-      handsStyleFrame6,
-    ]
-  },
-  {
-    label: 'The Beautiful Way ',
-    preview: TheBeautifulWay,
-    mediaUrl: 'https://player.vimeo.com/video/1073021266',
-    route: '/TheBeautifulWay',
-    title: (
-      <h2>
-        TBW Explainer Video | 2024
-      </h2>
-    ),
-    description: (
-      <>
-        This is a project collaborating with New View Media.
-        The Beautiful Way Foundation values inclusivity, collaboration, and innovation to ensure
-        equitable healthcare for all people,
-        promoting a holistic approach to well-being and medical progress.
-      </>
-    ),
-    credits: (
-      <>
-        Production Studio: New View Media
-        <br />
-        Client: The Beautiful Way
-        <br />
-        Role: Design, Animation
-        <br />
-        Software Used: After Effects
-        <br />
-      </>
-    ),
-    styleframes: [
-      TBWStyleFrame1,
-      TBWStyleFrame2,
-      TBWStyleFrame3,
-      TBWStyleFrame4,
-    ]
-  },
   {
     label: 'Stepping Through the Seasons',
     preview: Fall_winter,
@@ -191,6 +116,117 @@ export const DetailPages = [
       fallWinterSF12,
       fallWinterSF13,
     ],
+  },
+  {
+    label: 'Hearts in Harmony',
+    preview: perfume_gif,
+    mediaUrl: 'https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0',
+    route: '/HeartsInHarmony',
+    title: (
+      <h2>
+        Hands On Me | 2023
+      </h2>
+    ),
+    description: (
+      <>
+        “Hands On Me” is an imaginary perfume brand I created for my personal project.
+        It is crafted for the enchanting moments of romance. With a heart-shaped glass bottle, each fragrance embodies elegance, allure, and a touch of loveliness. It is perfect for women seeking to captivate and charm on their special dates.
+        <br />
+        <br />
+        In the “Hearts in Harmony" commercial campaign, Red and Blue come together to showcase how "Hands On Me" perfume creates a perfect blend of passion and elegance, making every romantic encounter unforgettable.
+      </>
+    ),
+    credits: (
+      <>
+        Role : Design, Animation
+        <br />
+        Software Used : After Effects, Cinema 4D
+      </>
+    ),
+    styleframes: [
+      handsStyleFrame1,
+      handsStyleFrame2,
+      handsStyleFrame3,
+      handsStyleFrame4,
+      handsStyleFrame5,
+      handsStyleFrame6,
+    ]
+  },
+  {
+    label: 'Kinetic Typography',
+    preview: kinetic2,
+    mediaUrl: 'https://player.vimeo.com/video/1087828815',
+    route: '/KineticTypography',
+    title: (
+      <h2>
+        Kinetic Typography | 2025
+      </h2>
+    ),
+    description: (
+      <>
+        This is a personal project, a kinetic typography piece based on the lyrics of Lady Gaga’s "How Bad Do You Want Me."
+        <br />
+        <br />
+        I used shape layers to experiment with type layout and visual rhythm.
+        The project explores keyframing, animated masks, path movement, and color transitions to match the energy of the music.
+      </>
+    ),
+    credits: (
+      <>
+        Role : Design, Animation
+        <br />
+        Software Used : After Effects
+      </>
+    ),
+    styleframes: [
+      kinetic1,
+      kinetic2,
+      kinetic3,
+      kinetic4,
+    ]
+  },
+  {
+    label: 'The Beautiful Way ',
+    preview: TheBeautifulWay,
+    mediaUrl: 'https://player.vimeo.com/video/1073021266',
+    route: '/TheBeautifulWay',
+    title: (
+      <h2>
+        TBW Explainer Video | 2024
+      </h2>
+    ),
+    description: (
+      <>
+        This is a project collaborating with New View Media.
+        The Beautiful Way Foundation values inclusivity, collaboration, and innovation to ensure
+        equitable healthcare for all people,
+        promoting a holistic approach to well-being and medical progress.
+      </>
+    ),
+    credits: (
+      <>
+        Production Studio: New View Media
+        <br />
+        Client: The Beautiful Way
+        <br />
+        Role: Design, Animation
+        <br />
+        Software Used: After Effects
+        <br />
+      </>
+    ),
+    styleframes: [
+      TBWStyleFrame1,
+      TBWStyleFrame2,
+      TBWStyleFrame3,
+      TBWStyleFrame4,
+    ]
+  },
+  {
+    label: 'ZAS Logo',
+    preview: ZAS_logo,
+    mediaUrl: 'https://player.vimeo.com/video/925201010?h=f1ced0e468',
+    route: '/ZASLogo',
   },
   {
     label: 'EmbraceTheChill',
