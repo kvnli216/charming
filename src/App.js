@@ -154,7 +154,7 @@ export const DetailPages = [
   },
   {
     label: 'Kinetic Typography',
-    preview: kinetic2,
+    preview: kinetic1,
     mediaUrl: 'https://player.vimeo.com/video/1087828815',
     route: '/KineticTypography',
     title: (
@@ -173,6 +173,8 @@ export const DetailPages = [
     ),
     credits: (
       <>
+        Directed by : Sabrina Chen
+        <br />
         Role : Design, Animation
         <br />
         Software Used : After Effects
