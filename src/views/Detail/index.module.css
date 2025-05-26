@@ -122,6 +122,12 @@
   font-size: 2rem;
 }
 
+.link {
+  color: paleturquoise;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   .styleframe-wrapper > img {
     width: calc(100%);
