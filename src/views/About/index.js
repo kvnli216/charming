@@ -25,8 +25,11 @@ const About = () => {
               </a>
             </div>
             <div className={styles['press-text']}>
-              Contact me!
-              <br />
+              <div>
+                <p>
+                  Feel free to reach out — I’m always excited to connect!
+                </p>
+              </div>
               <a className={styles['press-link']} href={'mailto:chen.chiamin16@gmail.com'} target='_blank' rel="noreferrer noopener">
                 chen.chiamin16@gmail.com
               </a>
