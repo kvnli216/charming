@@ -1,33 +1,17 @@
 @font-face {
-  font-family: 'Garet-Book';
-  src: 
-      url('../fonts/Garet-Book.otf') format('opentype'),
-      url('../fonts/Garet-Book.ttf') format('truetype'),
-      url('../fonts/Garet-Book.woff') format('woff'),
-      url('../fonts/Garet-Book.woff2') format('woff'),
+  font-family: "SF Light";
+  src: url("../fonts/SF-Pro-Display-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: 'cralika';
-  src: 
-      url('../fonts/Cralika.otf') format('opentype'),
-      url('../fonts/Cralika.ttf') format('truetype'),
-      url('../fonts/Cralika.woff') format('woff'),
-      url('../fonts/Cralika.woff2') format('woff'),
-}
-@font-face {
-  font-family: 'Skeina';
-  src: 
-      url('../fonts/Skeina.otf') format('opentype'),
-}
-@font-face {
-  font-family: 'griffiths';
-  src: 
-      url('../fonts/Griffiths_title.otf') format('opentype'),
-}
-@font-face {
-  font-family: 'lemonmilk-bold';
-  src: 
-      url('../fonts/LEMONMILK-Bold.otf') format('opentype'),
+  font-family: "SF Regular";
+  src: url("../fonts/SF-Pro-Display-Light.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -35,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Garet-Book', sans-serif;
+  font-family: "SF Light", sans-serif;
 }
 
 h1 {
@@ -47,7 +31,7 @@ h2 {
 }
 
 a {
-  font-family: 'Garet-Book', sans-serif;
+  font-family: "SF Light", sans-serif;
   text-decoration: none;
   color: black;
   cursor: pointer;

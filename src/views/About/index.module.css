@@ -1,8 +1,10 @@
 .container {
   display: flex;
+  height: 80svh;
   max-width: 1200px;
   flex-wrap: wrap;
   gap: 15px;
+  align-items: flex-start;
 }
 
 .header {
@@ -39,7 +41,7 @@
   align-items: center;
   max-width: 500px;
   line-height: 25px;
-  font-family: Garet-Book;
+  font-family: SF Light;
   font-size: 1.6rem;
 }
 
@@ -50,7 +52,7 @@
   grid-template-columns: auto auto auto;
   gap: 20px;
   grid-template-areas: "education experience skills";
-  font-family: Garet-Book;
+  font-family: SF Light;
   font-size: 1.4rem;
   background: #2c2c2c;
   padding: 30px;
@@ -96,12 +98,12 @@
 .press-text {
   max-width: 500px;
   line-height: 25px;
-  font-family: Garet-Book;
+  font-family: SF Light;
   font-size: 1.6rem;
 }
 
 .press-link {
-  font-family: Garet-Book;
+  font-family: SF Light;
   font-size: 1.6rem;
   color: orange;
   text-decoration: underline;

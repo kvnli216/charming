@@ -1,5 +1,5 @@
 .stub-card {
-  content: '';
+  content: "";
   width: 640px;
 }
 
@@ -22,7 +22,6 @@
   transition: all 0.35s ease-in-out;
 }
 
-
 .hover-text {
   position: absolute;
   top: 50%;
@@ -30,7 +29,7 @@
   transform: translate(-50%, -50%);
   font-size: 2rem;
   color: white;
-  font-family: Garet-Book;
+  font-family: SF Light;
   z-index: 100;
 }
 

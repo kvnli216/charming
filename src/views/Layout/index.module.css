@@ -1,4 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  overflow-y: auto;
   color: white;
 }
 
@@ -8,22 +15,23 @@ body {
     "header"
     "content";
   grid-template-rows: 80px 1fr;
-  height: 100svh;
   box-sizing: border-box;
   background: black;
 }
 
 .header {
   grid-area: header;
+  height: 60px;
+  padding: 0 30px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
   position: sticky;
   top: 0px;
   z-index: 1000;
-  background: black;
-
+  background-color: rgba(25, 25, 25, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .header.mobile {
@@ -38,11 +46,16 @@ body {
   padding: 10px;
 }
 
+.tabs-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 .content {
   display: flex;
   flex-direction: column;
   background: black;
-
 }
 
 .content-wrapper {
@@ -67,7 +80,6 @@ body {
   align-items: center;
   padding: 5px 0 10px 0;
   background: black;
-
 }
 
 .icon-link {
@@ -78,20 +90,16 @@ body {
 .footer-text {
   font-size: 1rem;
   color: gray;
-  font-family: Garet-Book;
+  font-family: SF Light;
 }
 
 .header-link {
   text-decoration: none;
-  color: black;
-  font-family: Garet-Book;
-  &:hover {
-    color: gray;
-  }
 }
 
-.header-logo {
-  height: 60px;
+.header-name {
+  font-family: SF Regular;
+  color: white;
 }
 
 .menu-icon {

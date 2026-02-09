@@ -7,7 +7,7 @@
 }
 
 .header {
-  font-family: lemonmilk-bold;
+  font-family: SF Regular;
   display: flex;
   justify-content: center;
 }
@@ -31,7 +31,8 @@
   height: 100%;
 }
 
-.description-wrapper, .media-wrapper {
+.description-wrapper,
+.media-wrapper {
   width: 800px;
   margin: auto;
 }
@@ -58,7 +59,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; 
+  padding-top: 56.25%;
 }
 
 .media-wrapper {
@@ -93,7 +94,7 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 1500px;
-  justify-content: center;    
+  justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
@@ -110,7 +111,7 @@
 .description {
   grid-column: 2 / 3;
   grid-row: 1 / 3;
-  font-family: Garet-Book;
+  font-family: SF Light;
   font-size: 2rem;
 }
 
@@ -118,7 +119,7 @@
   display: flex;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  font-family: Garet-Book;
+  font-family: SF Light;
   font-size: 2rem;
 }
 
@@ -133,7 +134,8 @@
     width: calc(100%);
   }
 
-  .description-wrapper, .subtitle-wrapper {
+  .description-wrapper,
+  .subtitle-wrapper {
     padding: 0px 20px;
     font-size: 1.2rem;
     line-height: 2rem;
@@ -144,7 +146,7 @@
   .styleframe-wrapper {
     padding-top: 20px;
   }
-  
+
   .media-wrapper {
     padding: 0px;
   }
@@ -171,7 +173,8 @@
     padding: 0px 20px 20px 20px;
   }
 
-  .description, .credits {
+  .description,
+  .credits {
     font-size: 1.2rem;
   }
 }

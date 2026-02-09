@@ -37,17 +37,14 @@
   width: 800px;
   margin: auto;
   text-align: center;
-  font-family: Garet-Book;
-  font-size: 4rem;
-  font-weight: 600;
+  font-family: SF Light;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #beb5b5;
 }
 
-.orange-text {
-  color: #f2ad8a;
-}
-
-.yellow-text {
-  color: #f6d249;
+.white-text {
+  color: white !important;
 }
 
 @media only screen and (max-width: 768px) {
