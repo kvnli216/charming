@@ -36,7 +36,7 @@ const About = () => {
             </div>
           </div>
           <Button className={styles['resume-button']} color='primary' variant='contained'>
-            <a className={styles['resume-link']} href={resume} download='Sabrina Resume 2024.pdf'>Download Resume</a>
+            <a className={styles['resume-link']} href={resume} download='Sabrina Resume 2026.pdf'>Download Resume</a>
           </Button>
         </div>
       </div>
