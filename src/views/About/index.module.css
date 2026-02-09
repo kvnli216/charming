@@ -49,8 +49,7 @@
   width: 100%;
   grid-template-columns: auto auto auto;
   gap: 20px;
-  grid-template-areas:
-      "education experience skills";
+  grid-template-areas: "education experience skills";
   font-family: Garet-Book;
   font-size: 1.4rem;
   background: #2c2c2c;
@@ -64,7 +63,7 @@
     grid-template-rows: auto auto auto;
     grid-template-areas:
       "education"
-      "experience" 
+      "experience"
       "skills";
     max-width: 500px;
     margin: auto;
@@ -82,7 +81,8 @@
 }
 
 .resume-button {
-  background-color: #f4f4f5 !important;
+  padding-top: 30px;
+  background-color: lightgray !important;
 }
 
 .resume-link-wrapper {
