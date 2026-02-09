@@ -9,8 +9,8 @@ import VimeoIcon from '../../assets/VimeoIcon';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { routes } from '../../App';
 import PropTypes from 'prop-types';
-import Logo from '../../assets/Logo_white_mobile.png';
-import Logo_web from '../../assets/Logo_white_web.png';
+// import Logo from '../../assets/Logo_white_mobile.png';
+// import Logo_web from '../../assets/Logo_white_web.png';
 
 // TODO: skeleton load for reel
 
@@ -43,9 +43,11 @@ const Header = ({
         isMobile
           ? (
             <>
-              <div className={styles['header-logo-wrapper']}>
+              <div className={styles['header-wrapper']}>
                 <Link className={styles['header-link']} to={'/'} >
-                  <img className={styles['header-logo']} src={Logo} alt='logo' />
+                  <h2 className={styles['header-name']}>
+                    Sabrina Chen
+                  </h2>
                 </Link >
               </div >
               <div className={styles['menu-icon-wrapper']}>
@@ -98,12 +100,14 @@ const Header = ({
           )
           : (
             <>
-              <div>
+              <div className={styles['header-wrapper']}>
                 <Link className={styles['header-link']} to={'/'} >
-                  <img className={styles['header-logo']} src={Logo_web} alt='logo' />
+                  <h2 className={styles['header-name']}>
+                    Sabrina Chen
+                  </h2>
                 </Link >
               </div >
-              <div>
+              <div className={styles['tabs-wrapper']}>
                 <Tabs value={routes[path]?.id} onChange={handleOnTabChange}>
                   <Tab disableRipple value={routes.reel.id} component={Link} to={routes.reel.path} label='Reel' />
                   <Tab disableRipple value={routes.work.id} component={Link} to={routes.work.path} label='Work' />

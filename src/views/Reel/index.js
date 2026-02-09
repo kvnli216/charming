@@ -13,9 +13,9 @@ const Reel = ({ isMobile }) => {
           ? (
             <div className={styles.container} >
               <div className={styles.description}>
-                Hi, I'm Sabrina Chen.
+                Hi, I'm <span className={styles['white-text']}>Sabrina Chen</span>.
                 <br />
-                A <span className={styles['orange-text']}>motion designer</span> and <span className={styles['yellow-text']}>illustrator</span> based in NYC.
+                A motion designer and illustratorbased in NYC.
                 Check out my reel!
                 <br />
                 I love illustrations and dynamic visuals.
@@ -35,12 +35,10 @@ const Reel = ({ isMobile }) => {
           : (
             <div className={styles.container} >
               <div className={styles.description}>
-                Hi, I'm Sabrina Chen.
+                Hi, I'm <span className={styles['white-text']}>Sabrina Chen</span>.
                 <br />
-                A <span className={styles['orange-text']}>motion designer</span> and <span className={styles['yellow-text']}>illustrator</span> based in NYC.
+                A motion designer and illustrator based in NYC.
                 Check out my reel!
-                <br />
-                I love illustrations and dynamic visuals.
               </div>
               <div className={styles.content}>
                 <iframe
