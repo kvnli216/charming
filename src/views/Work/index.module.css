@@ -1,7 +1,7 @@
 .container {
   display: flex;
   display: -webkit-box;
-  display: -webkit-flex;  
+  display: -webkit-flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1500px;

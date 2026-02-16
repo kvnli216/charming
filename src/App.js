@@ -43,8 +43,28 @@ import kinetic2 from './assets/Works/kinetictypography/2_gif.gif';
 import kinetic3 from './assets/Works/kinetictypography/3_gif.gif';
 import kinetic4 from './assets/Works/kinetictypography/4_gif.gif';
 import Endshot from './assets/Works/Endshot.gif';
-import './styles/fonts.css';
+import work_all from './assets/project-works/all.webp';
+import work_end from './assets/project-works/end.webp';
+import work_fall from './assets/project-works/fall.webp';
+import work_winter from './assets/project-works/winter.webp';
+import process_aefile from './assets/project-process/process_aefile.jpg';
+import process_c4d from './assets/project-process/process_c4d.png';
+import process_c4dmodel from './assets/project-process/process_c4dmodel.png';
+import process_storyboard from './assets/project-process/process_storyboard.jpg';
+import collegeboard_webp1_cafeorder from './assets/project-works/collegeboard/webp1_cafeorder.webp';
+import collegeboard_webp2_cafeorder from './assets/project-works/collegeboard/webp2_cafeorder.webp';
+import collegeboard_webp3_latin from './assets/project-works/collegeboard/webp3_latin.webp';
+import collegeboard_webp4_latin from './assets/project-works/collegeboard/webp4_latin.webp';
+import collegeboard_webp5_AFAM from './assets/project-works/collegeboard/webp5_AFAM.webp';
+import collegeboard_webp6_AFAM from './assets/project-works/collegeboard/webp6_AFAM.webp';
+import collegeboard_process1 from './assets/project-process/collegeboard/process1.png';
+import collegeboard_process2 from './assets/project-process/collegeboard/process2.png';
+import collegeboard_process3 from './assets/project-process/collegeboard/process3_webp.webp';
+
+
+
 import { useState } from 'react';
+import './styles/fonts.css';
 
 export const routes = {
   home: {
@@ -73,60 +93,112 @@ const pressBookUrl = "https://docs.google.com/presentation/d/1MLBfRmZjtOZ2vScuFC
 
 export const DetailPages = [
   {
-    label: 'Stepping Through the Seasons',
     preview: Fall_winter,
-    title: (
-      <h2>
-        Stepping Through the Seasons | 2024
-      </h2>
-    ),
-    credits: (
-      <>
-        Role : Design, Animation
-        <br />
-        Software Used : After Effects, Procreate, Cinema 4D
-      </>
-    ),
+    label: 'Stepping Through the Seasons',
+    title: 'Stepping Through the Seasons',
+    subtitle: '2D & 3D Motion Design',
     description: (
       <>
-        "Stepping through the Seasons" is my thesis project at SVA
-        Computer Arts. It is a two person team project that combines 2D
-        and 3D motion design. We created a shoe apparel line called ZAS.
-        This film promotes ZAS sports apparel through a commercial. It
-        showcases four season-specific shoes, each featured in distinct
-        settings and sports events. The season segments end with a
-        close-up of the product and a dynamic color and texture change
-        to highlight differences in each shoe’s design.
-        Check out our <a style={{ cursor: 'pointer', color: 'orange', textDecoration: 'underline ' }} href={pressBookUrl} target='_blank' rel="noreferrer">Process Book</a>!
+        We created a shoe apparel line, ZAS.
+        <br />
+        The campaign highlights how ZAS effortlessly adapts to changing seasons while remaining versatile and stylish.
       </>
     ),
-    mediaUrl: 'https://player.vimeo.com/video/945037865',
-    enableDetails: true,
     route: '/FallWinter',
     logo: fallWinterLogo,
-    styleframes: [
-      fallWinterSF1,
-      fallWinterSF3,
-      fallWinterSF5,
-      fallWinterSF6,
-      fallWinterSF7,
-      fallWinterSF9,
-      fallWinterSF10,
-      fallWinterSF11,
-      fallWinterSF12,
-      fallWinterSF13,
+    keyMoments: [
+      work_fall,
+      work_winter,
+      work_all,
+      work_end,
     ],
+    process: [
+      {
+        img: process_storyboard,
+        desc: 'Initial sketching for storyboarding',
+      },
+      {
+        img: process_c4d,
+        desc: 'Exploring footwear animation via Cinema 4D',
+      },
+      {
+        img: process_aefile,
+        desc: 'Using After Effects to composite and animate graphics',
+      },
+      {
+        img: process_c4dmodel,
+        desc: 'Using Cinema 4D to model the character and add the textures',
+      },
+    ],
+    credits: (
+      <>
+        Motion Designers: Sabrina Chen, Harper Chung
+        <br />
+        Shoe Designer: Shunchun Hsieh (Check out his refine sketchbook: <a href="https://reurl.cc/QELRpp" target="_blank" rel="noopener noreferrer">https://reurl.cc/QELRpp</a>)
+      </>
+    )
+  },
+  {
+    preview: Fall_winter,
+    label: 'College Board AP Daily',
+    title: 'College Board AP Daily',
+    subtitle: 'educational courses',
+    description: (
+      <>
+        <br />
+        Visual production for a 17-month comprehensive project aimed at high school students across the U.S.
+        <br />
+        We produced 97 instructional videos (5-15 minutes each) spanning diverse subjects including
+        <br />
+        African American Studies, Latin, Biology, and Computer Science A (CSA).
+        <br />
+        My role focused on transforming complex academic frameworks into engaging motion graphics to enhance student learning.
+        <br />
+        Check out one of our full course here: <a href="https://reurl.cc/qKQ2Kq" target="_blank" rel="noopener noreferrer">https://reurl.cc/qKQ2Kq</a>
+      </>
+    ),
+    route: '/CollegeBoardAPDaily',
+    logo: fallWinterLogo,
+    keyMoments: [
+      collegeboard_webp1_cafeorder,
+      collegeboard_webp2_cafeorder,
+      collegeboard_webp3_latin,
+      collegeboard_webp4_latin,
+      collegeboard_webp5_AFAM,
+      collegeboard_webp6_AFAM,
+    ],
+    process: [
+      {
+        img: collegeboard_process1,
+        desc: 'Brainstorming in Figma: Simplified Boolean Expressions by using a "Cafe Order" analogy to make abstract logic intuitive.',
+      },
+      {
+        img: collegeboard_process2,
+        desc: 'Employing a distraction-free visual style and clear diagrams to maximize learner focus on core concepts.',
+      },
+      {
+        img: collegeboard_process3,
+        desc: 'Developing custom AE templates to ensure visual consistency and a cohesive animation style across the project.',
+      },
+    ],
+    credits: (
+      <>
+        Director: Molly Shebeneck
+        <br />
+        Producers: Joey Ponce, Brigette Lopez, Mila Matveeva
+        <br />
+        Design Lead: Xiuqi Wang
+        <br />
+        Motion Designers: Sabrina Chen, Zichun Wang, Justin Dormitzer, Allen Cousett, Kai Yang
+      </>
+    )
   },
   {
     label: 'Hearts in Harmony',
     preview: perfume_gif,
-    mediaUrl: 'https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0',
     route: '/HeartsInHarmony',
-    title: (
-      <h2>
-        Hands On Me | 2023
-      </h2>
-    ),
+    title: 'Hands On Me',
+    subtitle: '2023',
     description: (
       <>
         “Hands On Me” is an imaginary perfume brand I created for my personal project.
@@ -143,14 +215,15 @@ export const DetailPages = [
         Software Used : After Effects, Cinema 4D
       </>
     ),
-    styleframes: [
+    keyMoments: [
       handsStyleFrame1,
       handsStyleFrame2,
       handsStyleFrame3,
       handsStyleFrame4,
       handsStyleFrame5,
       handsStyleFrame6,
-    ]
+    ],
+    process: [],
   },
   {
     label: 'Kinetic Typography',
@@ -180,23 +253,31 @@ export const DetailPages = [
         Software Used : After Effects
       </>
     ),
-    styleframes: [
-      kinetic1,
-      kinetic2,
-      kinetic3,
-      kinetic4,
+    process: [
+      {
+        img: kinetic1,
+        desc: 'Initial sketching for storyboarding',
+      },
+      {
+        img: kinetic2,
+        desc: 'Exploring footwear animation via Cinema 4D',
+      },
+      {
+        img: kinetic3,
+        desc: 'Using After Effects to composite and animate graphics',
+      },
+      {
+        img: kinetic4,
+        desc: 'Using Cinema 4D to model the character and add the textures',
+      },
     ]
   },
   {
     label: 'The Beautiful Way ',
     preview: TheBeautifulWay,
-    mediaUrl: 'https://player.vimeo.com/video/1073021266',
     route: '/TheBeautifulWay',
-    title: (
-      <h2>
-        TBW Explainer Video | 2024
-      </h2>
-    ),
+    title: 'TBW Explainer Video',
+    subtitle: '2024',
     description: (
       <>
         This is a project collaborating with New View Media.
@@ -217,30 +298,39 @@ export const DetailPages = [
         <br />
       </>
     ),
-    styleframes: [
+    keyMoments: [
       TBWStyleFrame1,
       TBWStyleFrame2,
       TBWStyleFrame3,
       TBWStyleFrame4,
-    ]
+    ],
+    process: [],
   },
   {
     label: 'ZAS Logo',
     preview: ZAS_logo,
-    mediaUrl: 'https://player.vimeo.com/video/925201010?h=f1ced0e468',
     route: '/ZASLogo',
+    title: 'ZAS Logo',
+    subtitle: 'Motion Design',
+    description: (
+      <>
+        Logo animation for ZAS shoe apparel line.
+      </>
+    ),
+    credits: (
+      <>
+        Role: Design, Animation
+      </>
+    ),
+    keyMoments: [],
+    process: [],
   },
   {
     label: 'EmbraceTheChill',
     preview: EmbraceTheChill,
-    mediaUrl: 'https://player.vimeo.com/video/924889613?h=6185829e8c',
-    mediaUrl2: 'https://player.vimeo.com/video/928122548?h=943f4ba461',
     route: '/EmbraceTheChill',
-    title: (
-      <h2>
-        Embrace the Chill | 2024
-      </h2>
-    ),
+    title: 'Embrace the Chill',
+    subtitle: '2024',
     description: (
       <>
         "Embrace the Chill" is a personal motion project that follows the journey of three characters
@@ -258,14 +348,21 @@ export const DetailPages = [
         Software Used : After Effects, Cinema 4D
       </>
     ),
+    keyMoments: [],
+    process: [],
   },
   {
     label: 'Shape Animation',
     preview: HorizontalShape,
-    title: (
-      <h2>
-        Shape Animation | 2023
-      </h2>
+    route: '/ShapeAnimation',
+    title: 'Shape Animation',
+    subtitle: '2023',
+    description: (
+      <>
+        This is a personal project. I used shape layers to explore designs and animations.
+        The project dives into various techniques such
+        as keyframing, path animations, stroke and fill to craft smooth visuals.
+      </>
     ),
     credits: (
       <>
@@ -274,24 +371,32 @@ export const DetailPages = [
         Software Used : After Effects
       </>
     ),
-    description: (
-      <>
-        This is a personal project. I used shape layers to explore designs and animations.
-        The project dives into various techniques such
-        as keyframing, path animations, stroke and fill to craft smooth visuals.
-      </>
-    ),
-    mediaUrl: 'https://player.vimeo.com/video/925197021?h=49d60494ba',
-    route: '/ShapeAnimation',
+    keyMoments: [],
+    process: [],
   },
   {
     label: 'Stepping Through the Seasons',
     preview: Endshot,
-    mediaUrl: 'https://player.vimeo.com/video/945037865',
     route: '/Endshot',
     enableDetails: true,
     logo: fallWinterLogo,
-    styleframes: [
+    title: 'Stepping Through the Seasons',
+    subtitle: '2D & 3D Motion Design',
+    description: (
+      <>
+        We created a shoe apparel line, ZAS.
+        <br />
+        The campaign highlights how ZAS effortlessly adapts to changing seasons while remaining versatile and stylish.
+      </>
+    ),
+    credits: (
+      <>
+        Motion Designers: Sabrina Chen, Harper Chung
+        <br />
+        Shoe Designer: Shunchun Hsieh (Check out his refine sketchbook: <a href="https://reurl.cc/QELRpp" target="_blank" rel="noopener noreferrer">https://reurl.cc/QELRpp</a>)
+      </>
+    ),
+    keyMoments: [
       fallWinterSF1,
       fallWinterSF3,
       fallWinterSF5,
@@ -303,6 +408,7 @@ export const DetailPages = [
       fallWinterSF12,
       fallWinterSF13,
     ],
+    process: [],
   },
   // {
   //   label: '3D Title',
@@ -332,19 +438,11 @@ function App() {
             <Route path={routes.about.path} element={<About />} />
             <Route path="*" element={'404 Page not found'} />
             {/* Detail Pages */}
-            {DetailPages.map(({ label, mediaUrl, mediaUrl2, route, logo, styleframes, enableDetails, title, description, credits }) => (
+            {DetailPages.map((props) => (
               <Route
-                path={route}
+                path={props.route}
                 element={<Detail
-                  label={label}
-                  mediaUrl={mediaUrl}
-                  mediaUrl2={mediaUrl2}
-                  logo={logo}
-                  styleframes={styleframes}
-                  enableDetails={enableDetails}
-                  title={title}
-                  description={description}
-                  credits={credits}
+                  {...props}
                 />} />
             ))}
           </Route>

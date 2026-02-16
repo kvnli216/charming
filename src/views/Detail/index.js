@@ -1,134 +1,129 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./index.module.css";
-import Player from "@vimeo/player";
+import { Dialog, DialogContent, IconButton } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Detail = ({
-  label,
-  mediaUrl,
-  mediaUrl2,
-  logo,
-  styleframes = [],
-  enableDetails = false,
   title,
+  subtitle,
   description,
   credits,
+  isMobile,
+  keyMoments = [],
+  process = [],
 }) => {
-  const handleTimeStamp = async (time) => {
-    const player = new Player(document.getElementById("media-iframe"));
-    await player.setCurrentTime(time);
-    await player.play();
-  };
+  const [processDialogOpen, setProcessDialogOpen] = React.useState(null);
+
+  const handleProcessClick = (img) => () => setProcessDialogOpen(img);
+  const handleProcessDialogClose = () => setProcessDialogOpen(null);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <h1>{label}</h1>
-      </div>
-      <div className={styles.content}>
-        {(title && description) ?
-          <div className={styles["desc-wrapper"]}>
-            <div class={styles["title"]}>
-              {title}
-            </div>
-            <div class={styles["description"]}>
-              {description}
-            </div>
-            <div class={styles["credits"]}>
-              {credits}
-            </div>
-          </div>
-          : <></>
-        }
-
-        <div className={styles["embed-wrapper"]}>
-          <iframe
-            id="media-iframe"
-            title={label}
-            src={mediaUrl}
-            className={styles["iframe-video"]}
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
-          />
+    <div className={`${styles['container']} ${isMobile && styles['mobile']}`}>
+      <div className={styles['header']}>
+        <div className={styles['title']}>
+          <h2>{title}</h2>
+          <h3 className={styles['sub-title']}>{subtitle}</h3>
         </div>
-
-        {mediaUrl2 &&
-          <div className={styles["embed-wrapper"]}>
-            <iframe
-              id="media-iframe"
-              title={label}
-              src={mediaUrl2}
-              className={styles["iframe-video"]}
-              frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen
+        <div className={styles['description']}>
+          {description}
+        </div>
+      </div>
+      <div className={styles['section-wrapper']}>
+        <h3 className={styles['section-title']}>Key Moments</h3>
+        <div className={styles['separator']} />
+        <div className={styles['cards-wrapper']}>
+          {keyMoments.map((url) => (
+            <div key={`key-moment-${url}`}>
+              <img className={styles['key-moment']} src={url} alt='key moment' />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className={styles['section-wrapper']}>
+        <h3 className={styles['section-title']}>Process</h3>
+        <div className={styles['separator']} />
+        <div className={styles['cards-wrapper']}>
+          {process.map(({ img, desc }) => (
+            <div className={styles['process-wrapper']} key={`process-${img}`}>
+              <button
+                type="button"
+                className={styles['process-button']}
+                onClick={handleProcessClick(img)}
+                aria-label="View process image full size"
+              >
+                <img className={styles['process']} src={img} alt="process" />
+              </button>
+              <small className={styles['process-desc']}>{desc}</small>
+            </div>
+          ))}
+        </div>
+      </div>
+      <Dialog
+        open={Boolean(processDialogOpen)}
+        onClose={handleProcessDialogClose}
+        maxWidth={false}
+        PaperProps={{
+          sx: {
+            backgroundColor: 'transparent',
+            boxShadow: 'none',
+            maxWidth: 'none',
+            margin: 0,
+          },
+        }}
+        BackdropProps={{
+          sx: {
+            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+            backdropFilter: 'blur(8px)',
+          },
+        }}
+        onClick={handleProcessDialogClose}
+      >
+        <DialogContent
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: 2,
+            overflow: 'hidden',
+            '&:focus': { outline: 'none' },
+          }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <IconButton
+            aria-label="Close"
+            onClick={handleProcessDialogClose}
+            sx={{
+              position: 'absolute',
+              right: 8,
+              top: 8,
+              color: 'rgba(255, 255, 255, 0.87)',
+              zIndex: 1,
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+          {processDialogOpen && (
+            <img
+              src={processDialogOpen}
+              alt="Process (full size)"
+              style={{
+                maxWidth: '95vw',
+                maxHeight: '95vh',
+                width: 'auto',
+                height: 'auto',
+                objectFit: 'contain',
+              }}
+              onClick={(e) => e.stopPropagation()}
+              draggable={false}
             />
-          </div>
-        }
-
-        {enableDetails && (
-          <>
-            <div className={styles["subtitle-wrapper"]}>
-              <p>
-                <span
-                  className={styles["link"]}
-                  onClick={() => handleTimeStamp(0)}
-                >
-                  00:00 - 00:04
-                </span>{" "}
-                Harper Chung in all aspects <br />
-                <span
-                  className={styles["link"]}
-                  onClick={() => handleTimeStamp(4)}
-                >
-                  00:04 - 00:26
-                </span>{" "}
-                Sabrina Chen in all aspects <br />
-                <span
-                  className={styles["link"]}
-                  onClick={() => handleTimeStamp(26)}
-                >
-                  00:26 - 00:51
-                </span>{" "}
-                Harper Chung in all aspects <br />
-                <span
-                  className={styles["link"]}
-                  onClick={() => handleTimeStamp(52)}
-                >
-                  00:52 - 01:04
-                </span>{" "}
-                Sabrina Chen in all aspects
-              </p>
-            </div>
-            <div className={styles["description-wrapper"]}>
-              <h2>Why ZAS?</h2>
-              <p>
-                The voice of ZAS is dynamic, playful, and energetic. It is easy
-                to remember and catchy. It represents the speed and smoothness
-                that athletes feel when they do sports. We designed the bold,
-                symmetric logo to make it good at showing the agility and
-                fluidity that are important for sports.
-              </p>
-            </div>
-            <div className={styles["media-wrapper"]}>
-              <img className={styles["image"]} src={logo} alt="zas-logos" />
-            </div>
-          </>
-        )}
-
-        {styleframes.length !== 0 && (
-          <div>
-            <div className={styles['styleframe-header']}>
-              <h2>Styleframes</h2>
-            </div>
-            <div className={styles["styleframe-wrapper"]}>
-              {styleframes.map((src) => (
-                <img src={src} alt="" />
-              ))}
-            </div>
-          </div>
-        )}
+          )}
+        </DialogContent>
+      </Dialog>
+      <div className={styles['section-wrapper']}>
+        <h3 className={styles['section-title']}>Credits</h3>
+        <div className={styles['separator']} />
+        {credits}
       </div>
     </div >
   );

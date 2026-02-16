@@ -1,7 +1,7 @@
 @font-face {
   font-family: "SF Light";
   src: url("../fonts/SF-Pro-Display-Light.otf") format("opentype");
-  font-weight: 300;
+  font-weight: 250;
   font-style: normal;
   font-display: swap;
 }
@@ -19,15 +19,26 @@ html {
 }
 
 body {
+  font-size: 1.8rem;
+  letter-spacing: 0.05rem;
   font-family: "SF Light", sans-serif;
 }
 
 h1 {
   font-size: 3rem;
+  font-family: "SF Regular", sans-serif;
 }
 
 h2 {
   font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-family: "SF Regular", sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-family: "SF Light", sans-serif;
 }
 
 a {
@@ -35,4 +46,9 @@ a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+}
+
+small {
+  font-family: "SF Light", sans-serif;
+  font-size: 1.2rem;
 }
