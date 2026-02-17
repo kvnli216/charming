@@ -2,6 +2,24 @@ import { createTheme } from "@mui/material";
 
 export const theme = createTheme({
   components: {
+    MuiButton: {
+      styleOverrides: {
+        containedPrimary: {
+          backgroundColor: '#CDCDCD',
+          color: '#2d2d2d',
+          '&:hover': {
+            backgroundColor: '#b0b0b0',
+          },
+          '&:focus-visible': {
+            outline: '2px solid #2d2d2d',
+            outlineOffset: '2px',
+          },
+          '&:active': {
+            backgroundColor: '#9a9a9a',
+          },
+        },
+      },
+    },
     MuiTab: {
       styleOverrides: {
         root: {
