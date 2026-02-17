@@ -51,6 +51,7 @@ import process_aefile from './assets/project-process/process_aefile.jpg';
 import process_c4d from './assets/project-process/process_c4d.png';
 import process_c4dmodel from './assets/project-process/process_c4dmodel.png';
 import process_storyboard from './assets/project-process/process_storyboard.jpg';
+import collegeboard_APDaily_cover from './assets/project-works/collegeboard/APDaily_cover.gif';
 import collegeboard_webp1_cafeorder from './assets/project-works/collegeboard/webp1_cafeorder.webp';
 import collegeboard_webp2_cafeorder from './assets/project-works/collegeboard/webp2_cafeorder.webp';
 import collegeboard_webp3_latin from './assets/project-works/collegeboard/webp3_latin.webp';
@@ -92,6 +93,61 @@ export const routes = {
 const pressBookUrl = "https://docs.google.com/presentation/d/1MLBfRmZjtOZ2vScuFCLieEWk0mbVGDE2sEv-_9101FE/edit#slide=id.p";
 
 export const DetailPages = [
+  {
+    isLocked: true,
+    preview: collegeboard_APDaily_cover,
+    label: 'College Board AP Daily',
+    title: 'College Board AP Daily',
+    subtitle: 'Educational Courses',
+    description: (
+      <>
+        <br />
+        Visual production for a 17-month comprehensive project aimed at high school students across the U.S.
+        <br />
+        We produced 97 instructional videos (5-15 minutes each) spanning diverse subjects including
+        <br />
+        African American Studies, Latin, Biology, and Computer Science A (CSA).
+        <br />
+        My role focused on transforming complex academic frameworks into engaging motion graphics to enhance student learning.
+        <br />
+        Check out one of our full course here: <a href="https://reurl.cc/qKQ2Kq" target="_blank" rel="noopener noreferrer">https://reurl.cc/qKQ2Kq</a>
+      </>
+    ),
+    route: '/CollegeBoardAPDaily',
+    keyMoments: [
+      collegeboard_webp1_cafeorder,
+      collegeboard_webp2_cafeorder,
+      collegeboard_webp3_latin,
+      collegeboard_webp4_latin,
+      collegeboard_webp5_AFAM,
+      collegeboard_webp6_AFAM,
+    ],
+    process: [
+      {
+        img: collegeboard_process1,
+        desc: 'Brainstorming in Figma: Simplified Boolean Expressions by using a "Cafe Order" analogy to make abstract logic intuitive.',
+      },
+      {
+        img: collegeboard_process2,
+        desc: 'Employing a distraction-free visual style and clear diagrams to maximize learner focus on core concepts.',
+      },
+      {
+        img: collegeboard_process3,
+        desc: 'Developing custom AE templates to ensure visual consistency and a cohesive animation style across the project.',
+      },
+    ],
+    credits: (
+      <>
+        Director: Molly Shebeneck
+        <br />
+        Producers: Joey Ponce, Brigette Lopez, Mila Matveeva
+        <br />
+        Design Lead: Xiuqi Wang
+        <br />
+        Motion Designers: Sabrina Chen, Zichun Wang, Justin Dormitzer, Allen Cousett, Kai Yang
+      </>
+    )
+  },
   {
     preview: Fall_winter,
     label: 'Stepping Through the Seasons',
@@ -139,83 +195,24 @@ export const DetailPages = [
     )
   },
   {
-    preview: Fall_winter,
-    label: 'College Board AP Daily',
-    title: 'College Board AP Daily',
-    subtitle: 'educational courses',
-    description: (
-      <>
-        <br />
-        Visual production for a 17-month comprehensive project aimed at high school students across the U.S.
-        <br />
-        We produced 97 instructional videos (5-15 minutes each) spanning diverse subjects including
-        <br />
-        African American Studies, Latin, Biology, and Computer Science A (CSA).
-        <br />
-        My role focused on transforming complex academic frameworks into engaging motion graphics to enhance student learning.
-        <br />
-        Check out one of our full course here: <a href="https://reurl.cc/qKQ2Kq" target="_blank" rel="noopener noreferrer">https://reurl.cc/qKQ2Kq</a>
-      </>
-    ),
-    route: '/CollegeBoardAPDaily',
-    logo: fallWinterLogo,
-    keyMoments: [
-      collegeboard_webp1_cafeorder,
-      collegeboard_webp2_cafeorder,
-      collegeboard_webp3_latin,
-      collegeboard_webp4_latin,
-      collegeboard_webp5_AFAM,
-      collegeboard_webp6_AFAM,
-    ],
-    process: [
-      {
-        img: collegeboard_process1,
-        desc: 'Brainstorming in Figma: Simplified Boolean Expressions by using a "Cafe Order" analogy to make abstract logic intuitive.',
-      },
-      {
-        img: collegeboard_process2,
-        desc: 'Employing a distraction-free visual style and clear diagrams to maximize learner focus on core concepts.',
-      },
-      {
-        img: collegeboard_process3,
-        desc: 'Developing custom AE templates to ensure visual consistency and a cohesive animation style across the project.',
-      },
-    ],
-    credits: (
-      <>
-        Director: Molly Shebeneck
-        <br />
-        Producers: Joey Ponce, Brigette Lopez, Mila Matveeva
-        <br />
-        Design Lead: Xiuqi Wang
-        <br />
-        Motion Designers: Sabrina Chen, Zichun Wang, Justin Dormitzer, Allen Cousett, Kai Yang
-      </>
-    )
-  },
-  {
     label: 'Hearts in Harmony',
     preview: perfume_gif,
     route: '/HeartsInHarmony',
     title: 'Hands On Me',
-    subtitle: '2023',
+    mediaUrl: 'https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0',
+    subtitle: 'Motion Design',
     description: (
       <>
-        “Hands On Me” is an imaginary perfume brand I created for my personal project.
+        This is an imaginary perfume brand I created for my personal project.
         It is crafted for the enchanting moments of romance. With a heart-shaped glass bottle, each fragrance embodies elegance, allure, and a touch of loveliness. It is perfect for women seeking to captivate and charm on their special dates.
-        <br />
-        <br />
-        In the “Hearts in Harmony" commercial campaign, Red and Blue come together to showcase how "Hands On Me" perfume creates a perfect blend of passion and elegance, making every romantic encounter unforgettable.
       </>
     ),
     credits: (
       <>
-        Role : Design, Animation
-        <br />
-        Software Used : After Effects, Cinema 4D
+        Credits: Personal work
       </>
     ),
-    keyMoments: [
+    animationTests: [
       handsStyleFrame1,
       handsStyleFrame2,
       handsStyleFrame3,
@@ -231,74 +228,56 @@ export const DetailPages = [
     mediaUrl: 'https://player.vimeo.com/video/1087828815',
     route: '/KineticTypography',
     title: (
-      <h2>
-        Kinetic Typography | 2025
-      </h2>
+      <>
+        Kinetic Typography:
+        <br />
+        How Bad Do You Want Me (Lady Gaga)
+      </>
     ),
+    subtitle: '2D Motion Design',
     description: (
       <>
-        This is a personal project, a kinetic typography piece based on the lyrics of Lady Gaga’s "How Bad Do You Want Me."
+        I utilized bold, high-energy motion to translate psychological "breakdown" in the lyrics.
         <br />
+        Technically, I leveraged shape layers to explore innovative type layouts,
         <br />
-        I used shape layers to experiment with type layout and visual rhythm.
-        The project explores keyframing, animated masks, path movement, and color transitions to match the energy of the music.
+        and engineered a dynamic visual rhythm that perfectly mirrors the high-intensity energy of the song.
       </>
     ),
     credits: (
       <>
-        Directed by : Sabrina Chen
-        <br />
-        Role : Design, Animation
-        <br />
-        Software Used : After Effects
+        Credits: Personal work
       </>
     ),
-    process: [
-      {
-        img: kinetic1,
-        desc: 'Initial sketching for storyboarding',
-      },
-      {
-        img: kinetic2,
-        desc: 'Exploring footwear animation via Cinema 4D',
-      },
-      {
-        img: kinetic3,
-        desc: 'Using After Effects to composite and animate graphics',
-      },
-      {
-        img: kinetic4,
-        desc: 'Using Cinema 4D to model the character and add the textures',
-      },
-    ]
+    animationTests: [
+      kinetic1,
+      kinetic2,
+      kinetic3,
+      kinetic4,
+    ],
   },
   {
     label: 'The Beautiful Way ',
     preview: TheBeautifulWay,
     route: '/TheBeautifulWay',
-    title: 'TBW Explainer Video',
-    subtitle: '2024',
+    title: 'The Beautiful Way',
+    subtitle: 'Explainer Video',
+    mediaUrl: 'https://player.vimeo.com/video/1073021266',
     description: (
       <>
-        This is a project collaborating with New View Media.
-        The Beautiful Way Foundation values inclusivity, collaboration, and innovation to ensure
-        equitable healthcare for all people,
-        promoting a holistic approach to well-being and medical progress.
+        This video is for The Beautiful Way Foundation. It translates the foundation’s commitment to inclusive, collaborative, and innovative healthcare into a clear, human-centered visual narrative.
+        <br />
+        Through cohesive motion and design, we helped them communicates their vision of equitable and holistic well-being with clarity and impact.
       </>
     ),
     credits: (
       <>
-        Production Studio: New View Media
+        Collaboration with New View Media
         <br />
-        Client: The Beautiful Way
-        <br />
-        Role: Design, Animation
-        <br />
-        Software Used: After Effects
-        <br />
+        Designer and Animator: Sabrina Chen
       </>
     ),
-    keyMoments: [
+    animationTests: [
       TBWStyleFrame1,
       TBWStyleFrame2,
       TBWStyleFrame3,
@@ -311,41 +290,16 @@ export const DetailPages = [
     preview: ZAS_logo,
     route: '/ZASLogo',
     title: 'ZAS Logo',
+    mediaUrl: 'https://player.vimeo.com/video/925201010?h=f1ced0e468',
     subtitle: 'Motion Design',
-    description: (
-      <>
-        Logo animation for ZAS shoe apparel line.
-      </>
-    ),
+    // description: (
+    //   <>
+    //     Logo animation for ZAS shoe apparel line.
+    //   </>
+    // ),
     credits: (
       <>
-        Role: Design, Animation
-      </>
-    ),
-    keyMoments: [],
-    process: [],
-  },
-  {
-    label: 'EmbraceTheChill',
-    preview: EmbraceTheChill,
-    route: '/EmbraceTheChill',
-    title: 'Embrace the Chill',
-    subtitle: '2024',
-    description: (
-      <>
-        "Embrace the Chill" is a personal motion project that follows the journey of three characters
-        who are worn out from their hectic work lives. Seeking relief and balance, they decide to go on a vacation.
-        <br />
-        <br />
-        In this project, I learned to design in both collage and vector styles,
-        using gradients along with paper and brush textures to make the colors more vibrant and dynamic.
-      </>
-    ),
-    credits: (
-      <>
-        Role : Design, Animation
-        <br />
-        Software Used : After Effects, Cinema 4D
+        Credits: Personal work
       </>
     ),
     keyMoments: [],
@@ -356,19 +310,18 @@ export const DetailPages = [
     preview: HorizontalShape,
     route: '/ShapeAnimation',
     title: 'Shape Animation',
-    subtitle: '2023',
+    mediaUrl: 'https://player.vimeo.com/video/925197021?h=49d60494ba',
+    subtitle: 'Motion Design',
     description: (
       <>
-        This is a personal project. I used shape layers to explore designs and animations.
+        I used shape layers to explore designs and animations.
         The project dives into various techniques such
         as keyframing, path animations, stroke and fill to craft smooth visuals.
       </>
     ),
     credits: (
       <>
-        Role : Design, Animation
-        <br />
-        Software Used : After Effects
+        Credits: Personal work
       </>
     ),
     keyMoments: [],
@@ -378,8 +331,6 @@ export const DetailPages = [
     label: 'Stepping Through the Seasons',
     preview: Endshot,
     route: '/Endshot',
-    enableDetails: true,
-    logo: fallWinterLogo,
     title: 'Stepping Through the Seasons',
     subtitle: '2D & 3D Motion Design',
     description: (
@@ -389,26 +340,37 @@ export const DetailPages = [
         The campaign highlights how ZAS effortlessly adapts to changing seasons while remaining versatile and stylish.
       </>
     ),
+    keyMoments: [
+      work_fall,
+      work_winter,
+      work_all,
+      work_end,
+    ],
+    process: [
+      {
+        img: process_storyboard,
+        desc: 'Initial sketching for storyboarding',
+      },
+      {
+        img: process_c4d,
+        desc: 'Exploring footwear animation via Cinema 4D',
+      },
+      {
+        img: process_aefile,
+        desc: 'Using After Effects to composite and animate graphics',
+      },
+      {
+        img: process_c4dmodel,
+        desc: 'Using Cinema 4D to model the character and add the textures',
+      },
+    ],
     credits: (
       <>
         Motion Designers: Sabrina Chen, Harper Chung
         <br />
         Shoe Designer: Shunchun Hsieh (Check out his refine sketchbook: <a href="https://reurl.cc/QELRpp" target="_blank" rel="noopener noreferrer">https://reurl.cc/QELRpp</a>)
       </>
-    ),
-    keyMoments: [
-      fallWinterSF1,
-      fallWinterSF3,
-      fallWinterSF5,
-      fallWinterSF6,
-      fallWinterSF7,
-      fallWinterSF9,
-      fallWinterSF10,
-      fallWinterSF11,
-      fallWinterSF12,
-      fallWinterSF13,
-    ],
-    process: [],
+    )
   },
   // {
   //   label: '3D Title',

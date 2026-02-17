@@ -1,58 +1,57 @@
-import React from 'react';
-import styles from './index.module.css';
-import PropTypes from 'prop-types';
+import React from "react";
+import styles from "./index.module.css";
+import PropTypes from "prop-types";
 
-const reelUrl = 'https://player.vimeo.com/video/937077444?h=f09dc0488b';
-const title = 'MOTION REEL';
+const reelUrl = "https://player.vimeo.com/video/937077444?h=f09dc0488b";
+const title = "MOTION REEL";
 
 const Reel = ({ isMobile }) => {
   return (
     <>
-      {
-        isMobile
-          ? (
-            <div className={styles.container} >
-              <div className={styles.description}>
-                Hi, I'm <span className={styles['white-text']}>Sabrina Chen</span>.
-                <br />
-                A motion designer and illustratorbased in NYC.
-                Check out my reel!
-                <br />
-                I love illustrations and dynamic visuals.
-              </div>
-              <div className={`${styles['content']} ${isMobile && styles['mobile']}`}>
-                <iframe
-                  className={`${styles['iframe-video']} ${isMobile && styles['mobile']}`}
-                  title={title}
-                  src={reelUrl}
-                  frameborder="0"
-                  allow="autoplay; fullscreen"
-                  allowfullscreen
-                />
-              </div>
-            </div >
-          )
-          : (
-            <div className={styles.container} >
-              <div className={styles.description}>
-                Hi, I'm <span className={styles['white-text']}>Sabrina Chen</span>.
-                <br />
-                A motion designer and illustrator based in NYC.
-                Check out my reel!
-              </div>
-              <div className={styles.content}>
-                <iframe
-                  className={styles['iframe-video']}
-                  title={title}
-                  src={reelUrl}
-                  frameborder="0"
-                  allow="autoplay; fullscreen"
-                  allowfullscreen
-                />
-              </div>
-            </div >
-          )
-      }
+      {isMobile ? (
+        <div className={styles.container}>
+          <div className={styles.description}>
+            Hi, I'm <span className={styles["white-text"]}>Sabrina Chen</span>.
+            <br />
+            A motion designer and illustratorbased in NYC.
+            <br />
+            Check out my reel!
+            <br />I love illustrations and dynamic visuals.
+          </div>
+          <div
+            className={`${styles["content"]} ${isMobile && styles["mobile"]}`}
+          >
+            <iframe
+              className={`${styles["iframe-video"]} ${isMobile && styles["mobile"]}`}
+              title={title}
+              src={reelUrl}
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            />
+          </div>
+        </div>
+      ) : (
+        <div className={styles.container}>
+          <div className={styles.description}>
+            Hi, I'm <span className={styles["white-text"]}>Sabrina Chen</span>.
+            <br />
+            A motion designer and illustrator based in NYC.
+            <br />
+            Check out my reel!
+          </div>
+          <div className={styles.content}>
+            <iframe
+              className={styles["iframe-video"]}
+              title={title}
+              src={reelUrl}
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 };
@@ -62,4 +61,3 @@ Reel.propTypes = {
 };
 
 export default Reel;
-

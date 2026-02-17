@@ -22,8 +22,8 @@
 }
 
 .photo {
-  height: 250px;
-  border-radius: 100%;
+  height: 500px;
+  border-radius: 10px;
 }
 
 .intro {
@@ -80,11 +80,11 @@
 
 .resume-link {
   font-size: 1.5rem;
+  color: black !important;
 }
 
 .resume-button {
   padding-top: 30px;
-  background-color: lightgray !important;
 }
 
 .resume-link-wrapper {

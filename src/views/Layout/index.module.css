@@ -17,6 +17,7 @@ body {
   grid-template-rows: 80px 1fr;
   box-sizing: border-box;
   background: black;
+  height: 100svh;
 }
 
 .header {
