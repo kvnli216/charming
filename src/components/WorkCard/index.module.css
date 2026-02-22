@@ -33,8 +33,20 @@
   z-index: 100;
 }
 
+.hover-subtitle {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 62%;
+  left: 50%;
+  padding: 4px 32px;
+  border: 1px solid white;
+  border-radius: 32px;
+  z-index: 100;
+}
+
 .work-gif {
   width: 640px;
+  border-radius: 12px;
 }
 
 .work-gif.mobile {

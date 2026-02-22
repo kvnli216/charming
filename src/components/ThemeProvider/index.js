@@ -4,6 +4,10 @@ export const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
+        root: {
+          fontSize: '1.5rem',
+          textTransform: 'capitalize',
+        },
         containedPrimary: {
           backgroundColor: '#CDCDCD',
           color: '#2d2d2d',
@@ -42,7 +46,7 @@ export const theme = createTheme({
           display: 'flex',
         },
         indicator: {
-          backgroundColor: 'white',
+          backgroundColor: 'gray',
         }
       },
     }

@@ -12,12 +12,14 @@ const Work = ({ isMobile }) => {
           label,
           route,
           preview,
+          subtitle,
         }) => (
           <WorkCard
             label={label}
             gif={preview}
             route={route}
             isMobile={isMobile}
+            subtitle={subtitle}
           />
         ))}
     </div>
