@@ -17,6 +17,7 @@ const Detail = ({
   keyMoments = [],
   process = [],
   animationTests = [],
+  styleFrames = [],
   mediaUrl,
   isLocked: isLockedProps = false,
 }) => {
@@ -69,7 +70,23 @@ const Detail = ({
             </div>
           }
 
-
+          {styleFrames.length > 0 && (
+            <div className={styles["section-wrapper"]}>
+              <h3 className={styles["section-title"]}>Styleframes</h3>
+              <div className={styles["separator"]} />
+              <div className={styles["cards-wrapper"]}>
+                {styleFrames.map((url) => (
+                  <div key={`animation-test-${url}`}>
+                    <img
+                      className={styles["animation-test"]}
+                      src={url}
+                      alt="animation test"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {animationTests.length > 0 && (
             <div className={styles["section-wrapper"]}>

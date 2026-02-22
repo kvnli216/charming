@@ -8,7 +8,9 @@ const WorkCard = ({
   label,
   route,
   isMobile,
+  subtitle,
 }) => {
+  console.log('subtitle: ', subtitle);
   return (
     <>
       {
@@ -17,6 +19,7 @@ const WorkCard = ({
             <div className={styles['card']}>
               <div className={styles['card-hover']}>
                 <div className={styles['hover-text']}>{label}</div>
+                <div className={styles['hover-subtitle']}>{subtitle}</div>
               </div>
               <img
                 className={`${styles['work-gif']} ${isMobile && styles['mobile']}`}

@@ -13,21 +13,9 @@ import { theme } from './components/ThemeProvider';
 import Detail from './views/Detail';
 import perfume_gif from './assets/Works/handsonme/perfume_gif.gif';
 import ZAS_logo from './assets/Works/ZAS_logo.gif';
-import HorizontalShape from './assets/Works/HorizontalShape.gif';
-import EmbraceTheChill from './assets/Works/EmbraceTheChill.gif';
 import TheBeautifulWay from './assets/Works/TheBeautifulWay.gif';
 import Fall_winter from './assets/Works/fallwinter/Fall_winter.gif';
 import fallWinterLogo from './assets/Works/fallwinter/logo.png';
-import fallWinterSF1 from './assets/Works/fallwinter/SF1.png';
-import fallWinterSF3 from './assets/Works/fallwinter/SF3.png';
-import fallWinterSF5 from './assets/Works/fallwinter/SF5.png';
-import fallWinterSF6 from './assets/Works/fallwinter/SF6.png';
-import fallWinterSF7 from './assets/Works/fallwinter/SF7.JPG';
-import fallWinterSF9 from './assets/Works/fallwinter/SF9.JPG';
-import fallWinterSF10 from './assets/Works/fallwinter/SF10.JPG';
-import fallWinterSF11 from './assets/Works/fallwinter/SF11.JPG';
-import fallWinterSF12 from './assets/Works/fallwinter/SF12.JPG';
-import fallWinterSF13 from './assets/Works/fallwinter/SF13.png';
 import TBWStyleFrame1 from './assets/Works/tbw/TBW_gif1.gif';
 import TBWStyleFrame2 from './assets/Works/tbw/TBW_gif2.gif';
 import TBWStyleFrame3 from './assets/Works/tbw/TBW_gif3.gif';
@@ -89,8 +77,6 @@ export const routes = {
     path: '/about',
   },
 };
-
-const pressBookUrl = "https://docs.google.com/presentation/d/1MLBfRmZjtOZ2vScuFCLieEWk0mbVGDE2sEv-_9101FE/edit#slide=id.p";
 
 export const DetailPages = [
   {
@@ -203,8 +189,11 @@ export const DetailPages = [
     subtitle: 'Motion Design',
     description: (
       <>
-        This is an imaginary perfume brand I created for my personal project.
-        It is crafted for the enchanting moments of romance. With a heart-shaped glass bottle, each fragrance embodies elegance, allure, and a touch of loveliness. It is perfect for women seeking to captivate and charm on their special dates.
+        This project is a personal motion design study for a conceptual perfume brand.
+        <br />
+        The goal was to translate the essence of romance and elegance into a captivating visual narrative.
+        <br />
+        By focusing on the interplay of the heart-shaped glass textures and fluid motion, I aimed to evoke a sense of allure and sophistication.
       </>
     ),
     credits: (
@@ -212,7 +201,7 @@ export const DetailPages = [
         Credits: Personal work
       </>
     ),
-    animationTests: [
+    styleFrames: [
       handsStyleFrame1,
       handsStyleFrame2,
       handsStyleFrame3,
@@ -237,16 +226,16 @@ export const DetailPages = [
     subtitle: '2D Motion Design',
     description: (
       <>
-        I utilized bold, high-energy motion to translate psychological "breakdown" in the lyrics.
+        To mirror the lyrics's defiant energy, I pushed the boundaries of experimental typography,
         <br />
-        Technically, I leveraged shape layers to explore innovative type layouts,
+        moving away from the 'good girl' aesthetic into a chaotic, high-octane visual identity.
         <br />
-        and engineered a dynamic visual rhythm that perfectly mirrors the high-intensity energy of the song.
+        The animation uses sharp shape-layer transitions to echo the unapologetic and obsessive nature of the lyrics.
       </>
     ),
     credits: (
       <>
-        Credits: Personal work
+        Personal work
       </>
     ),
     animationTests: [
@@ -265,9 +254,11 @@ export const DetailPages = [
     mediaUrl: 'https://player.vimeo.com/video/1073021266',
     description: (
       <>
-        This video is for The Beautiful Way Foundation. It translates the foundation’s commitment to inclusive, collaborative, and innovative healthcare into a clear, human-centered visual narrative.
+        This video translates the foundation’s commitment to inclusive, collaborative, and innovative healthcare into a clear, human-centered visual narrative.
         <br />
-        Through cohesive motion and design, we helped them communicates their vision of equitable and holistic well-being with clarity and impact.
+        Through cohesive motion and design,
+        <br />
+        we helped them communicates their vision of equitable and holistic well-being with clarity and impact.
       </>
     ),
     credits: (
@@ -297,28 +288,6 @@ export const DetailPages = [
     //     Logo animation for ZAS shoe apparel line.
     //   </>
     // ),
-    credits: (
-      <>
-        Credits: Personal work
-      </>
-    ),
-    keyMoments: [],
-    process: [],
-  },
-  {
-    label: 'Shape Animation',
-    preview: HorizontalShape,
-    route: '/ShapeAnimation',
-    title: 'Shape Animation',
-    mediaUrl: 'https://player.vimeo.com/video/925197021?h=49d60494ba',
-    subtitle: 'Motion Design',
-    description: (
-      <>
-        I used shape layers to explore designs and animations.
-        The project dives into various techniques such
-        as keyframing, path animations, stroke and fill to craft smooth visuals.
-      </>
-    ),
     credits: (
       <>
         Credits: Personal work
@@ -372,15 +341,9 @@ export const DetailPages = [
       </>
     )
   },
-  // {
-  //   label: '3D Title',
-  //   preview: Sabrinatitle,
-  //   mediaUrl: 'https://player.vimeo.com/video/925192188?h=389edb2b85',
-  //   route: '/3DTitle',
-  // },
   {
     // Stub to keep grid even
-  }
+  },
 ];
 
 function App() {

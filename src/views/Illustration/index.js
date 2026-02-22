@@ -1,26 +1,44 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import Scene24 from '../../assets/Illustrations/Scene24-square.gif';
-import Scene4 from '../../assets/Illustrations/Scene4-square.gif';
-import Scene28 from '../../assets/Illustrations/Scene28-square.gif';
-import Scene7 from '../../assets/Illustrations/Scene7-square.gif';
-import Scene10 from '../../assets/Illustrations/Scene10-square.gif';
-import Scene13 from '../../assets/Illustrations/Scene13-square.gif';
-import Scene21 from '../../assets/Illustrations/Scene21-square.gif';
-import Scene1 from '../../assets/Illustrations/Scene1-square.gif';
-import Scene9 from '../../assets/Illustrations/Scene9-square.gif';
+import Scene1 from '../../assets/Illustrations/Scene01_square.gif';
+import Scene1Skeleton from '../../assets/Illustrations/Scene01_square_small.jpg';
+import Scene2 from '../../assets/Illustrations/Scene02_square.gif';
+import Scene2Skeleton from '../../assets/Illustrations/Scene02_square_small.jpg';
+import Scene3 from '../../assets/Illustrations/Scene03_square.gif';
+import Scene3Skeleton from '../../assets/Illustrations/Scene03_square_small.jpg';
+import Scene4 from '../../assets/Illustrations/Scene04_square.gif';
+import Scene4Skeleton from '../../assets/Illustrations/Scene04_square_small.jpg';
+import Scene5 from '../../assets/Illustrations/Scene05_square.gif';
+import Scene5Skeleton from '../../assets/Illustrations/Scene05_square_small.jpg';
+import Scene6 from '../../assets/Illustrations/Scene06_square.gif';
+import Scene6Skeleton from '../../assets/Illustrations/Scene06_square_small.jpg';
+import Scene7 from '../../assets/Illustrations/Scene07_square.gif';
+import Scene7Skeleton from '../../assets/Illustrations/Scene07_square_small.jpg';
+import Scene8 from '../../assets/Illustrations/Scene08_square.gif';
+import Scene8Skeleton from '../../assets/Illustrations/Scene08_square_small.jpg';
+import Scene9 from '../../assets/Illustrations/Scene09_square.gif';
+import Scene9Skeleton from '../../assets/Illustrations/Scene09_square_small.jpg';
+import Scene10 from '../../assets/Illustrations/Scene10_square.gif';
+import Scene10Skeleton from '../../assets/Illustrations/Scene10_square_small.jpg';
+import Scene11 from '../../assets/Illustrations/Scene11_square.gif';
+import Scene11Skeleton from '../../assets/Illustrations/Scene11_square_small.jpg';
+import Scene12 from '../../assets/Illustrations/Scene12_square.gif';
+import Scene12Skeleton from '../../assets/Illustrations/Scene12_square_small.jpg';
 import styles from './index.module.css';
 
 const illustrations = [
-  { src: Scene24, skeleton: '' },
-  { src: Scene4, skeleton: '' },
-  { src: Scene28, skeleton: '' },
-  { src: Scene7, skeleton: '' },
-  { src: Scene10, skeleton: '' },
-  { src: Scene13, skeleton: '' },
-  { src: Scene21, skeleton: '' },
-  { src: Scene1, skeleton: '' },
-  { src: Scene9, skeleton: '' },
+  { src: Scene1, skeleton: Scene1Skeleton },
+  { src: Scene2, skeleton: Scene2Skeleton },
+  { src: Scene3, skeleton: Scene3Skeleton },
+  { src: Scene4, skeleton: Scene4Skeleton },
+  { src: Scene5, skeleton: Scene5Skeleton },
+  { src: Scene6, skeleton: Scene6Skeleton },
+  { src: Scene7, skeleton: Scene7Skeleton },
+  { src: Scene8, skeleton: Scene8Skeleton },
+  { src: Scene9, skeleton: Scene9Skeleton },
+  { src: Scene10, skeleton: Scene10Skeleton },
+  { src: Scene11, skeleton: Scene11Skeleton },
+  { src: Scene12, skeleton: Scene12Skeleton },
 ];
 
 const Card = ({
