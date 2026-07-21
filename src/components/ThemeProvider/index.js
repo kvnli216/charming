@@ -9,17 +9,20 @@ export const theme = createTheme({
           textTransform: 'capitalize',
         },
         containedPrimary: {
-          backgroundColor: '#CDCDCD',
+          backgroundColor: '#f2ad8a',
           color: '#2d2d2d',
+          transition: 'background-color 150ms ease-in-out, box-shadow 150ms ease-in-out',
           '&:hover': {
-            backgroundColor: '#b0b0b0',
+            backgroundColor: '#c96d4a',
+            boxShadow: '0 2px 10px rgba(0, 0, 0, 0.25)',
           },
           '&:focus-visible': {
             outline: '2px solid #2d2d2d',
             outlineOffset: '2px',
           },
           '&:active': {
-            backgroundColor: '#9a9a9a',
+            backgroundColor: '#a85a3a',
+            boxShadow: 'none',
           },
         },
       },
