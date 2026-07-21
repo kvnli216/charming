@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8fa5c2f.css",
-    "main.js": "/static/js/main.ab6cc481.js",
+    "main.css": "/static/css/main.ffd1dcf6.css",
+    "main.js": "/static/js/main.a9e3eb75.js",
     "static/js/787.fa634ac6.chunk.js": "/static/js/787.fa634ac6.chunk.js",
     "static/media/Scene11_square.gif": "/static/media/Scene11_square.f604c5ae192cd0d788fa.gif",
     "static/media/webp3_latin.webp": "/static/media/webp3_latin.32507f017012d8ed0b10.webp",
@@ -45,7 +45,6 @@
     "static/media/Fall_winter.gif": "/static/media/Fall_winter.3e0264bfd7773401a2fa.gif",
     "static/media/Scene04_square.gif": "/static/media/Scene04_square.99b7fb1321a7bca189c5.gif",
     "static/media/perfume_gif.gif": "/static/media/perfume_gif.1ed95b117146e5155259.gif",
-    "static/media/scresume_2026.pdf": "/static/media/scresume_2026.38f6b3ef62916a20b1d7.pdf",
     "static/media/process1.png": "/static/media/process1.6dfb1497daab9da3061a.png",
     "static/media/ZAS_logo.gif": "/static/media/ZAS_logo.c2d0a4a6936a6f79016f.gif",
     "static/media/Endshot.gif": "/static/media/Endshot.61b507e9504f1e69f39a.gif",
@@ -57,12 +56,12 @@
     "static/media/Scene09_square.gif": "/static/media/Scene09_square.0b3a22f16ee9fc801a75.gif",
     "static/media/process_storyboard.jpg": "/static/media/process_storyboard.eda35378be10860d2e7a.jpg",
     "index.html": "/index.html",
-    "main.b8fa5c2f.css.map": "/static/css/main.b8fa5c2f.css.map",
-    "main.ab6cc481.js.map": "/static/js/main.ab6cc481.js.map",
+    "main.ffd1dcf6.css.map": "/static/css/main.ffd1dcf6.css.map",
+    "main.a9e3eb75.js.map": "/static/js/main.a9e3eb75.js.map",
     "787.fa634ac6.chunk.js.map": "/static/js/787.fa634ac6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8fa5c2f.css",
-    "static/js/main.ab6cc481.js"
+    "static/css/main.ffd1dcf6.css",
+    "static/js/main.a9e3eb75.js"
   ]
 }
