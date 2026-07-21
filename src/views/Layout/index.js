@@ -151,7 +151,7 @@ const Footer = () => (
         <VimeoIcon className={styles['icon-link']} />
       </IconButton>
     </div>
-    <div className={styles['footer-text']}>Copyright © 2024 Sabrina Chen</div>
+    <div className={styles['footer-text']}>Copyright © 2026 Sabrina Chen</div>
   </>
 );
 
