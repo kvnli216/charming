@@ -78,13 +78,13 @@
   gap: 20px;
 }
 
-.resume-link {
-  font-size: 1.5rem;
-  color: black !important;
+.resume-button {
+  text-decoration: none;
+  background-color: #f2ad8a;
 }
 
-.resume-button {
-  padding-top: 30px;
+.resume-button:hover {
+  background-color: #e89a72 !important;
 }
 
 .resume-link-wrapper {

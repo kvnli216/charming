@@ -1,8 +1,10 @@
 import React from 'react';
 import AboutMePhoto from '../../assets/AboutMePhoto.jpg';
 import styles from './index.module.css';
-import resume from '../../assets/resume/scresume_2026.pdf';
 import { Button } from '@mui/material';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+
+const RESUME_URL = 'https://drive.google.com/file/d/1A9WbnL1r5rb-qPFIXscR546g-McTT3Be/view?usp=sharing';
 
 const About = () => {
   return (
@@ -17,13 +19,6 @@ const About = () => {
             I enjoy creating animations that drives engagement across digital platforms.
           </div>
           <div className={styles['resume-link-wrapper']}>
-            {/* <div className={styles['press-text']}>
-              Press:
-              <br />
-              <a className={styles['press-link']} href={'https://voyagela.com/interview/conversations-with-sabrina-chen/'} target='_blank' rel="noreferrer">
-                Voyagela Interview
-              </a>
-            </div> */}
             <div className={styles['press-text']}>
               <div>
                 <p>
@@ -35,8 +30,17 @@ const About = () => {
               </a>
             </div>
           </div>
-          <Button className={styles['resume-button']} variant="contained" color="primary" type="button">
-            <a className={styles['resume-link']} href={resume} download='Sabrina Resume 2026.pdf'>Download Resume</a>
+          <Button
+            className={styles['resume-button']}
+            variant="contained"
+            color="primary"
+            component="a"
+            href={RESUME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            endIcon={<OpenInNewIcon />}
+          >
+            Resume
           </Button>
         </div>
       </div>
