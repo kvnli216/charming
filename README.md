@@ -5,82 +5,71 @@ This project is both a playground for front end techniques and a professional Mo
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-- [Features](#features)
+- [Adding a Project](#adding-a-project)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Portfolio Sections](#portfolio-sections)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
-To get started with the app, follow the instructions below.
-
 ### Prerequisites
 
-Make sure you have the following installed:
-
 - Node.js
-- npm (Node Package Manager)
+- [pnpm](https://pnpm.io/) (`corepack enable && corepack prepare pnpm@latest --activate` if you don't have it)
 
 ### Installation
 
-1. Clone the repository:
-
 ```bash
 git clone https://github.com/kvnli216/charming.git
-```
-
-2. Navigate to the project directory:
-
-```bash
 cd charming
+pnpm install
 ```
 
-3. Install dependencies:
+### Usage
 
 ```bash
-npm install
+pnpm dev       # start the dev server
+pnpm build     # type-check and build for production (outputs to dist/)
+pnpm preview   # preview the production build locally
+pnpm test      # run the test suite
+pnpm deploy    # build and publish dist/ to GitHub Pages
 ```
 
-## Features
+Visit the printed local URL (typically [http://localhost:5173](http://localhost:5173)) to view the portfolio.
 
-- **Responsive Design:** The portfolio is designed to be responsive and accessible across various devices and screen sizes.
-- **Performant Interfaces with Fast Feedback Loops:** Handling media with progressive/lazy loading.
+## Adding a Project
+
+Project/case-study content lives under `src/content/projects/`, one folder per project:
+
+```
+src/content/projects/<slug>/
+  index.tsx     # the Project object (copy, credits, media references)
+  assets/       # images/gifs/videos referenced by index.tsx
+```
+
+To add a new project, create a new `<slug>/` folder with an `index.tsx` (see `src/content/types.ts` for the `Project` shape, and any existing project folder for an example) and an `assets/` folder. It's picked up automatically — no routing or App code needs to change.
 
 ## Technologies Used
 
-- React
-- CSS
-- JavaScript
+- React + TypeScript
+- Vite
 - Material UI
-- React Router
-
-## Usage
-
-To run the project locally, use the following command:
-
-```bash
-npm start
-```
-
-Visit [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
+- React Router (HashRouter)
+- Vitest
 
 ## Portfolio Sections
 
 ### 1. Reel
 
-[Description and examples of motion graphics work.]
+Motion reel and quick intro.
 
 ### 2. Work
 
-[Description and examples of UI/UX animations.]
+Grid of case studies, each backed by a `src/content/projects/<slug>` entry.
 
-### 3. Illustrations
+### 3. Fun
 
-[Description and examples of 3D animation work.]
+Illustration gallery.
 
-### 4. About Me
+### 4. About
 
-[Description and examples of any experimental or personal projects.]
+Bio, contact info, and resume link.

@@ -1,1 +1,0 @@
-ffmpeg -i Scene24-square.jpg -vf scale=20:-1 Scene24-square-small.jpg
