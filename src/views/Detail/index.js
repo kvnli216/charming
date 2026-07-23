@@ -18,8 +18,9 @@ const Detail = ({
   process = [],
   animationTests = [],
   styleFrames = [],
-  mediaUrl,
+  mediaUrls = [],
   isLocked: isLockedProps = false,
+  bioLines = [],
 }) => {
   const navigate = useNavigate();
   const [processDialogOpen, setProcessDialogOpen] = React.useState(null);
@@ -36,6 +37,16 @@ const Detail = ({
     setIsLocked(false);
   };
 
+  const Bio = () => {
+    return (
+      <div>
+        {bioLines.map((line, i) => (
+          <p key={i}>{line}</p>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <>
       {isLocked ? (
@@ -49,24 +60,26 @@ const Detail = ({
               <h2>{title}</h2>
               <h3 className={styles["sub-title"]}>{subtitle}</h3>
             </div>
-            <div className={styles["description"]}>{description}</div>
+            <div className={styles["description"]}>{bioLines.length > 0 ? <Bio /> : description}</div>
           </div>
 
-          {mediaUrl &&
+          {mediaUrls.length > 0 &&
             <div className={styles["section-wrapper"]}>
               <h3 className={styles["section-title"]}>Full Video</h3>
               <div className={styles["separator"]} />
-              <div className={styles["embed-wrapper"]}>
-                <iframe
-                  id="media-iframe"
-                  title={label}
-                  src={mediaUrl}
-                  className={styles["iframe-video"]}
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowfullscreen
-                />
-              </div>
+              {mediaUrls.map((url) => (
+                <div className={styles["embed-wrapper"]} key={`embed-wrapper-${url}`}>
+                  <iframe
+                    id="media-iframe"
+                    title={label}
+                    src={url}
+                    className={styles["iframe-video"]}
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                  />
+                </div>
+              ))}
             </div>
           }
 

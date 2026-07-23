@@ -10,7 +10,6 @@ const WorkCard = ({
   isMobile,
   subtitle,
 }) => {
-  console.log('subtitle: ', subtitle);
   return (
     <>
       {
