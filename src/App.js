@@ -140,7 +140,7 @@ export const DetailPages = [
     ),
   },
   {
-    isLocked: false,
+    isLocked: true,
     preview: AdobeB2B_cover,
     label: "Adobe for Business Series Overview",
     title: "Adobe for Business Series Overview | 2024",
