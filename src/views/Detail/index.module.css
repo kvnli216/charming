@@ -6,18 +6,18 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1500px;
-  gap: 80px;
+  gap: var(--chakra-spacing-9);
   width: 100%;
 }
 
 .container.mobile {
-  gap: 10px;
+  gap: var(--chakra-spacing-3);
   display: block;
 }
 
 .header {
   display: flex;
-  gap: 56px;
+  gap: var(--chakra-spacing-8);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -29,12 +29,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 8px;
+  gap: var(--chakra-spacing-2);
 }
 
 .sub-title {
-  font-size: 1.6rem;
-  color: #beb5b5;
+  font-size: var(--chakra-font-sizes-body-lg);
+  color: var(--chakra-colors-fg-secondary);
 }
 
 .description {
@@ -55,14 +55,14 @@
 }
 
 .section-title {
-  font-family: "SF Light", sans-serif;
+  font-family: var(--chakra-fonts-heading);
 }
 
 .separator {
   width: 100%;
   height: 1px;
-  background-color: #fff;
-  margin: 28px 0;
+  background-color: var(--chakra-colors-border-default);
+  margin: var(--chakra-spacing-5) 0;
 }
 
 .cards-wrapper {
@@ -70,13 +70,13 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1500px;
-  gap: 16px;
+  gap: var(--chakra-spacing-4);
 }
 
 .key-moment,
 .animation-test {
   width: 640px;
-  border-radius: 4px;
+  border-radius: var(--chakra-radii-sm);
 }
 
 .process-button {
@@ -89,13 +89,13 @@
 }
 
 .process-button:focus-visible {
-  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline: 2px solid var(--chakra-colors-focus-ring);
   outline-offset: 4px;
 }
 
 .process {
   height: 200px;
-  border-radius: 4px;
+  border-radius: var(--chakra-radii-sm);
   display: block;
 }
 
@@ -119,8 +119,8 @@
   .description-wrapper,
   .subtitle-wrapper {
     padding: 0px 20px;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: var(--chakra-font-sizes-caption);
+    line-height: var(--chakra-line-heights-body);
     width: 100%;
     box-sizing: border-box;
   }
@@ -134,18 +134,18 @@
   }
 
   h1 {
-    font-size: 1.5rem !important;
+    font-size: var(--chakra-font-sizes-body-sm) !important;
     padding: 0px 10px;
     margin: 0px;
   }
 
   h2 {
-    font-size: 1.3rem !important;
+    font-size: var(--chakra-font-sizes-caption) !important;
     text-align: center;
   }
 
   .header {
-    padding: 20px 0px;
+    padding: var(--chakra-spacing-5) 0px;
   }
 
   .desc-wrapper {
@@ -157,12 +157,12 @@
 
   .description,
   .credits {
-    font-size: 1.2rem;
+    font-size: var(--chakra-font-sizes-caption);
   }
 }
 
-a {
-  color: #fff !important;
+.credits a {
+  color: var(--chakra-colors-fg-primary) !important;
   display: contents;
 }
 

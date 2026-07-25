@@ -3,7 +3,7 @@
   height: 80svh;
   max-width: 1200px;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: var(--chakra-spacing-4);
   align-items: flex-start;
 }
 
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   flex-grow: 1;
-  gap: 30px;
+  gap: var(--chakra-spacing-6);
   flex-wrap: wrap;
 }
 
@@ -23,7 +23,7 @@
 
 .photo {
   height: 500px;
-  border-radius: 10px;
+  border-radius: var(--chakra-radii-md);
 }
 
 .intro {
@@ -31,8 +31,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
-  padding: 30px;
+  gap: var(--chakra-spacing-6);
+  padding: var(--chakra-spacing-6);
 }
 
 .intro-text {
@@ -40,9 +40,9 @@
   justify-content: center;
   align-items: center;
   max-width: 500px;
-  line-height: 25px;
-  font-family: SF Light;
-  font-size: 1.6rem;
+  line-height: var(--chakra-line-heights-body);
+  font-family: var(--chakra-fonts-body);
+  font-size: var(--chakra-font-sizes-body);
 }
 
 .content {
@@ -50,13 +50,13 @@
   display: grid;
   width: 100%;
   grid-template-columns: auto auto auto;
-  gap: 20px;
+  gap: var(--chakra-spacing-5);
   grid-template-areas: "education experience skills";
-  font-family: SF Light;
-  font-size: 1.4rem;
-  background: #2c2c2c;
-  padding: 30px;
-  border-radius: 20px;
+  font-family: var(--chakra-fonts-body);
+  font-size: var(--chakra-font-sizes-body-sm);
+  background: var(--chakra-colors-surface-sunken);
+  padding: var(--chakra-spacing-6);
+  border-radius: var(--chakra-radii-lg);
 }
 
 @media (max-width: 1023px) {
@@ -75,36 +75,31 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--chakra-spacing-5);
 }
 
 .resume-button {
   text-decoration: none;
-  background-color: #f2ad8a;
-}
-
-.resume-button:hover {
-  background-color: #e89a72 !important;
 }
 
 .resume-link-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: var(--chakra-spacing-4);
   align-items: flex-start;
   justify-content: center;
 }
 
 .press-text {
   max-width: 500px;
-  line-height: 25px;
-  font-family: SF Light;
-  font-size: 1.6rem;
+  line-height: var(--chakra-line-heights-body);
+  font-family: var(--chakra-fonts-body);
+  font-size: var(--chakra-font-sizes-body);
 }
 
 .press-link {
-  font-family: SF Light;
-  font-size: 1.6rem;
-  color: orange;
+  font-family: var(--chakra-fonts-body);
+  font-size: var(--chakra-font-sizes-body);
+  color: var(--chakra-colors-fg-accent);
   text-decoration: underline;
 }

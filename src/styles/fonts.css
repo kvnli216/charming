@@ -1,54 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
 @font-face {
-  font-family: "SF Light";
-  src: url("../fonts/SF-Pro-Display-Light.otf") format("opentype");
-  font-weight: 250;
+  font-family: 'Hanken Grotesk';
   font-style: normal;
+  font-weight: 100 900;
   font-display: swap;
+  src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype-variations'),
+    url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "SF Regular";
-  src: url("../fonts/SF-Pro-Display-Light.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'Hanken Grotesk';
+  font-style: italic;
+  font-weight: 100 900;
   font-display: swap;
-}
-
-html {
-  font-size: 62.5%;
+  src: url('../assets/fonts/HankenGrotesk-Italic-VariableFont_wght.ttf') format('truetype-variations'),
+    url('../assets/fonts/HankenGrotesk-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
 body {
-  font-size: 1.8rem;
-  letter-spacing: 0.05rem;
-  font-family: "SF Light", sans-serif;
+  font-family: var(--chakra-fonts-body);
+  font-weight: var(--chakra-font-weights-regular);
+  line-height: var(--chakra-line-heights-body);
 }
 
-h1 {
-  font-size: 3rem;
-  font-family: "SF Regular", sans-serif;
+h1, h2, h3, h4 {
+  font-family: var(--chakra-fonts-heading);
+  font-weight: var(--chakra-font-weights-extrabold);
+  letter-spacing: var(--chakra-letter-spacings-tight);
+  line-height: var(--chakra-line-heights-tight);
+  margin: 0;
 }
 
-h2 {
-  font-size: 2.5rem;
-  letter-spacing: 0.1rem;
-  font-family: "SF Regular", sans-serif;
-}
-
-h3 {
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
-  font-family: "SF Light", sans-serif;
-}
+h1 { font-size: var(--chakra-font-sizes-h1); }
+h2 { font-size: var(--chakra-font-sizes-h2); }
+h3 { font-size: var(--chakra-font-sizes-h3); }
+h4 { font-size: var(--chakra-font-sizes-h4); }
 
 a {
-  font-family: "SF Light", sans-serif;
+  font-family: var(--chakra-fonts-body);
   text-decoration: none;
-  color: black;
+  color: var(--chakra-colors-fg-accent);
   cursor: pointer;
 }
 
 small {
-  font-family: "SF Light", sans-serif;
-  font-size: 1.2rem;
+  font-family: var(--chakra-fonts-body);
+  font-size: var(--chakra-font-sizes-caption);
 }

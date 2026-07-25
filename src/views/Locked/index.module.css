@@ -4,34 +4,34 @@
   display: -webkit-box;
   display: -webkit-flex;
   justify-content: center;
-  gap: 80px;
+  gap: var(--chakra-spacing-9);
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: var(--chakra-spacing-1);
 }
 
 .sub-text {
-  color: #beb5b5;
+  color: var(--chakra-colors-fg-secondary);
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: var(--chakra-spacing-6);
 }
 
 .buttons-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 8px;
+  gap: var(--chakra-spacing-2);
 }
 
 .error {
-  color: #d32f2f;
+  color: var(--chakra-colors-danger-text);
   margin: 0;
-  font-size: 0.875rem;
+  font-size: var(--chakra-font-sizes-body-sm);
 }

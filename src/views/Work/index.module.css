@@ -5,11 +5,11 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1500px;
-  gap: 30px;
+  gap: var(--chakra-spacing-6);
   width: 100%;
 }
 
 .container.mobile {
-  gap: 10px;
+  gap: var(--chakra-spacing-3);
   display: block;
 }

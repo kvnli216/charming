@@ -4,7 +4,7 @@
   display: -webkit-flex;  
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5px;
+  gap: var(--chakra-spacing-1);
   max-width: 1500px;
 }
 
@@ -29,17 +29,16 @@
 
 @keyframes pulse {
   0% {
-    background-color: rgb(255, 255, 255, 0);
+    background-color: color-mix(in oklch, var(--chakra-colors-fg-on-dark) 0%, transparent);
   }
-  
+
   50% {
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: color-mix(in oklch, var(--chakra-colors-fg-on-dark) 20%, transparent);
   }
 
   100% {
-    background-color: rgb(255, 255, 255, 0);
+    background-color: color-mix(in oklch, var(--chakra-colors-fg-on-dark) 0%, transparent);
   }
-  
 }
 
 .skeleton {

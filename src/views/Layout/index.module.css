@@ -6,7 +6,7 @@
 
 body {
   overflow-y: auto;
-  color: white;
+  color: var(--chakra-colors-fg-primary);
 }
 
 .container {
@@ -16,23 +16,22 @@ body {
     "content";
   grid-template-rows: 80px 1fr;
   box-sizing: border-box;
-  background: black;
+  background: var(--chakra-colors-surface-page);
   height: 100svh;
 }
 
 .header {
   grid-area: header;
   height: 60px;
-  padding: 0 30px;
+  padding: 0 var(--chakra-spacing-6);
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 0px;
   z-index: 1000;
-  background-color: rgba(25, 25, 25, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: var(--chakra-colors-surface-page);
+  border-bottom: 1px solid var(--chakra-colors-border-subtle);
 }
 
 .header.mobile {
@@ -40,11 +39,14 @@ body {
 }
 
 .menu-icon-wrapper {
-  padding: 10px;
+  padding: var(--chakra-spacing-2);
+  display: flex;
+  align-items: center;
+  gap: var(--chakra-spacing-1);
 }
 
 .header-logo-wrapper {
-  padding: 10px;
+  padding: var(--chakra-spacing-2);
 }
 
 .tabs-wrapper {
@@ -56,7 +58,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  background: black;
+  background: var(--chakra-colors-surface-page);
 }
 
 .content-wrapper {
@@ -64,7 +66,7 @@ body {
   overflow-y: auto;
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: var(--chakra-spacing-6);
   flex-grow: 1;
 }
 
@@ -80,18 +82,22 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5px 0 10px 0;
-  background: black;
+  background: var(--chakra-colors-surface-panel-dark);
 }
 
 .icon-link {
-  color: #f2ad8a !important;
-  font-size: 2.5rem !important;
+  color: var(--chakra-colors-accent-on-dark-text) !important;
+  font-size: 1.5rem !important;
+}
+
+.icon-link:hover {
+  color: var(--chakra-colors-accent-on-dark-solid) !important;
 }
 
 .footer-text {
-  font-size: 1rem;
-  color: gray;
-  font-family: SF Light;
+  font-size: var(--chakra-font-sizes-caption);
+  color: var(--chakra-colors-fg-on-dark-secondary);
+  font-family: var(--chakra-fonts-body);
 }
 
 .header-link {
@@ -99,24 +105,28 @@ body {
 }
 
 .header-name {
-  font-family: SF Regular;
-  color: white;
+  font-family: var(--chakra-fonts-heading);
+  color: var(--chakra-colors-fg-primary);
 }
 
 .menu-icon {
-  font-size: 3rem !important;
+  font-size: 1.5rem !important;
 }
 
 .list-item {
   height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--chakra-spacing-5);
 }
 
 .list-item-text {
-  font-size: 2rem !important;
+  font-size: var(--chakra-font-sizes-h4) !important;
   text-transform: capitalize;
-  color: white;
+  color: var(--chakra-colors-fg-on-dark);
+  text-decoration: none;
 }
 
 .menu-button-toggle {
-  color: white !important;
+  color: var(--chakra-colors-fg-primary) !important;
 }

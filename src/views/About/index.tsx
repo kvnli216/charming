@@ -1,7 +1,7 @@
 import AboutMePhoto from '../../assets/AboutMePhoto.jpg';
 import styles from './index.module.css';
-import { Button } from '@mui/material';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import { Button } from '@chakra-ui/react';
+import { LuExternalLink } from 'react-icons/lu';
 
 const RESUME_URL = 'https://drive.google.com/file/d/1A9WbnL1r5rb-qPFIXscR546g-McTT3Be/view?usp=sharing';
 
@@ -30,16 +30,18 @@ const About = () => {
             </div>
           </div>
           <Button
+            asChild
             className={styles['resume-button']}
-            variant="contained"
-            color="primary"
-            component="a"
-            href={RESUME_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            endIcon={<OpenInNewIcon />}
+            variant="solid"
+            size="lg"
+            borderRadius="pill"
+            bg="accent.solid"
+            color="neutral.950"
+            _hover={{ bg: 'accent.solidHover' }}
           >
-            Resume
+            <a href={RESUME_URL} target="_blank" rel="noopener noreferrer">
+              Resume <LuExternalLink />
+            </a>
           </Button>
         </div>
       </div>

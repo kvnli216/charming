@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import { Button, TextField } from "@mui/material";
+import { Button, Field, Input } from "@chakra-ui/react";
 
 const SECRET = 'bagel';
 
@@ -33,27 +33,39 @@ export const Locked = ({
       </div>
       <form className={styles['content']} onSubmit={handleUnlock} noValidate>
 
-        <TextField
-          type="password"
-          placeholder="Password"
-          variant="standard"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          autoFocus
-          sx={{
-            '& .MuiInput-input': { color: 'white' },
-            '& .MuiInputBase-input::placeholder': { color: 'rgba(255, 255, 255, 0.7)', opacity: 1 },
-            '& .MuiInput-underline:before': { borderBottomColor: 'rgba(255, 255, 255, 0.42)' },
-            '& .MuiInput-underline:after': { borderBottomColor: 'white' },
-            '& .MuiInput-underline:hover:not(.Mui-disabled):before': { borderBottomColor: 'rgba(255, 255, 255, 0.87)' },
-          }}
-          helperText={<p className={styles['error']}>{error}</p>}
-        />
+        <Field.Root invalid={Boolean(error)}>
+          <Input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            autoFocus
+            borderRadius="md"
+          />
+          <Field.ErrorText className={styles['error']}>{error}</Field.ErrorText>
+        </Field.Root>
         <div className={styles['buttons-wrapper']}>
-          <Button fullWidth variant="contained" color="primary" type="button" onClick={handleBack}>
+          <Button
+            flex="1"
+            variant="solid"
+            bg="accent.solid"
+            color="neutral.950"
+            _hover={{ bg: 'accent.solidHover' }}
+            borderRadius="pill"
+            type="button"
+            onClick={handleBack}
+          >
             Back
           </Button>
-          <Button fullWidth variant="contained" color="primary" type="submit">
+          <Button
+            flex="1"
+            variant="solid"
+            bg="accent.solid"
+            color="neutral.950"
+            _hover={{ bg: 'accent.solidHover' }}
+            borderRadius="pill"
+            type="submit"
+          >
             Go
           </Button>
         </div>

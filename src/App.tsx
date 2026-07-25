@@ -4,8 +4,9 @@ import Layout from "./views/Layout";
 import Work from "./views/Work";
 import Illustration from "./views/Illustration";
 import Reel from "./views/Reel";
-import { ThemeProvider } from "@mui/material";
-import { theme } from "./components/ThemeProvider";
+import { ChakraProvider } from "@chakra-ui/react";
+import { system } from "./theme/system";
+import { ColorModeProvider } from "./theme/color-mode";
 import Detail from "./views/Detail";
 import { useState } from "react";
 import { routes } from "./routes";
@@ -33,33 +34,35 @@ function App() {
   const isMobile = windowWidth <= mobileBreakpoint;
 
   return (
-    <ThemeProvider theme={theme}>
-      <Router basename="/">
-        <Routes>
-          <Route element={<Layout isMobile={isMobile} />}>
-            <Route
-              path={routes.home.path}
-              element={<Reel isMobile={isMobile} />}
-            />
-            <Route
-              path={routes.reel.path}
-              element={<Reel isMobile={isMobile} />}
-            />
-            <Route
-              path={routes.work.path}
-              element={<Work isMobile={isMobile} />}
-            />
-            <Route
-              path={routes.play.path}
-              element={<Illustration isMobile={isMobile} />}
-            />
-            <Route path={routes.about.path} element={<About />} />
-            <Route path="/:slug" element={<DetailPage isMobile={isMobile} />} />
-            <Route path="*" element={"404 Page not found"} />
-          </Route>
-        </Routes>
-      </Router>
-    </ThemeProvider>
+    <ChakraProvider value={system}>
+      <ColorModeProvider>
+        <Router basename="/">
+          <Routes>
+            <Route element={<Layout isMobile={isMobile} />}>
+              <Route
+                path={routes.home.path}
+                element={<Reel isMobile={isMobile} />}
+              />
+              <Route
+                path={routes.reel.path}
+                element={<Reel isMobile={isMobile} />}
+              />
+              <Route
+                path={routes.work.path}
+                element={<Work isMobile={isMobile} />}
+              />
+              <Route
+                path={routes.play.path}
+                element={<Illustration isMobile={isMobile} />}
+              />
+              <Route path={routes.about.path} element={<About />} />
+              <Route path="/:slug" element={<DetailPage isMobile={isMobile} />} />
+              <Route path="*" element={"404 Page not found"} />
+            </Route>
+          </Routes>
+        </Router>
+      </ColorModeProvider>
+    </ChakraProvider>
   );
 }
 

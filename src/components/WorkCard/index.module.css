@@ -18,8 +18,8 @@
   width: 100%;
   opacity: 0%;
   text-align: center;
-  background-color: rgb(0 0 0 / 50%);
-  transition: all 0.35s ease-in-out;
+  background-color: var(--chakra-colors-surface-overlay);
+  transition: all var(--chakra-durations-slow) var(--chakra-easings-standard);
 }
 
 .hover-text {
@@ -27,9 +27,9 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2rem;
-  color: white;
-  font-family: SF Light;
+  font-size: var(--chakra-font-sizes-h2);
+  color: var(--chakra-colors-fg-on-dark);
+  font-family: var(--chakra-fonts-heading);
   z-index: 100;
 }
 
@@ -38,17 +38,17 @@
   transform: translate(-50%, -50%);
   top: 55%;
   left: 50%;
-  padding: 4px 32px;
-  font-size: 1.2rem;
-  border: 1px solid white;
-  border-radius: 32px;
-  background-color: rgba(0, 0, 0, 0.5);
+  padding: var(--chakra-spacing-1) var(--chakra-spacing-6);
+  font-size: var(--chakra-font-sizes-body-lg);
+  border: 1px solid var(--chakra-colors-border-on-dark);
+  border-radius: var(--chakra-radii-pill);
+  background-color: var(--chakra-colors-surface-overlay);
   z-index: 100;
 }
 
 .work-gif {
   width: 640px;
-  border-radius: 4px;
+  border-radius: var(--chakra-radii-sm);
 }
 
 .work-gif.mobile {

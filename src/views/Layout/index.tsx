@@ -1,21 +1,20 @@
 import React from 'react';
 import styles from './index.module.css';
-import { IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, SwipeableDrawer, Tab, Tabs } from '@mui/material';
+import { Box, Drawer, IconButton, Tabs } from '@chakra-ui/react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import EmailIcon from '@mui/icons-material/Email';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import MenuIcon from '@mui/icons-material/Menu';
+import { LuMail, LuMenu } from 'react-icons/lu';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa6';
 import VimeoIcon from '../../assets/VimeoIcon';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import { ColorModeButton } from '../../theme/color-mode';
 import { routes } from '../../routes';
 
 // TODO: skeleton load for reel
 
-const paths = [
-  'reel',
-  'work',
-  'play',
-  'about',
+const NAV_ITEMS = [
+  { route: 'reel', label: 'Reel' },
+  { route: 'work', label: 'Work' },
+  { route: 'play', label: 'Fun' },
+  { route: 'about', label: 'Connect' },
 ];
 
 interface HeaderProps {
@@ -29,10 +28,6 @@ const Header = ({
   const path = pathname.length > 1 ? pathname.slice(1) : 'home';
 
   const [open, setOpen] = React.useState(false);
-
-  const toggleDrawer = (newOpen: boolean) => () => {
-    setOpen(newOpen);
-  };
 
   const handleOnTabChange = () => {
     window.scrollTo(0, 0);
@@ -52,51 +47,55 @@ const Header = ({
                 </Link >
               </div >
               <div className={styles['menu-icon-wrapper']}>
+                <ColorModeButton />
                 <IconButton
                   className={styles['menu-button-toggle']}
                   aria-label="menu"
+                  variant="ghost"
                   id="nav-menu"
-                  aria-controls={open ? 'long-menu' : undefined}
+                  aria-controls={open ? 'nav-drawer' : undefined}
                   aria-expanded={open ? 'true' : undefined}
                   aria-haspopup="true"
-                  onClick={toggleDrawer(true)}
+                  onClick={() => setOpen(true)}
                 >
-                  <MenuIcon className={styles['menu-icon']} />
+                  <LuMenu className={styles['menu-icon']} />
                 </IconButton>
 
-                <SwipeableDrawer
-                  anchor='right'
+                <Drawer.Root
+                  placement="end"
                   open={open}
-                  onClose={toggleDrawer(false)}
-                  onOpen={toggleDrawer(true)}
-                  PaperProps={{
-                    sx: {
-                      width: 'calc(100svw / 2)',
-                      background: '#f2ad8a',
-                    }
-                  }}
+                  onOpenChange={(details) => setOpen(details.open)}
                 >
-                  <List>
-                    {paths.map((route) => (
-                      <>
-                        <ListItem key={route} disablePadding divider componentsProps={{ root: { className: styles['list-item'] } }}>
-                          <ListItemButton
-                            component={Link}
-                            to={routes[route].path}
-                            onClick={toggleDrawer(false)}
-                            selected={routes[path]?.id === routes[route].id}
+                  <Drawer.Backdrop />
+                  <Drawer.Positioner>
+                    <Drawer.Content
+                      id="nav-drawer"
+                      width="calc(100svw / 2)"
+                      bg="surface.panelDark"
+                    >
+                      <Box as="nav" display="flex" flexDirection="column">
+                        {NAV_ITEMS.map(({ route, label }) => (
+                          <Box
+                            key={route}
+                            className={styles['list-item']}
+                            borderBottom="1px solid"
+                            borderColor="border.onDark"
+                            asChild
                           >
-                            <ListItemIcon>
-                            </ListItemIcon>
-                            <ListItemText classes={{
-                              primary: styles['list-item-text']
-                            }} primary={route} />
-                          </ListItemButton>
-                        </ListItem>
-                      </>
-                    ))}
-                  </List>
-                </SwipeableDrawer>
+                            <Link
+                              to={routes[route].path}
+                              onClick={() => setOpen(false)}
+                              className={styles['list-item-text']}
+                              aria-current={routes[path]?.id === routes[route].id ? 'page' : undefined}
+                            >
+                              {label}
+                            </Link>
+                          </Box>
+                        ))}
+                      </Box>
+                    </Drawer.Content>
+                  </Drawer.Positioner>
+                </Drawer.Root>
               </div>
             </>
           )
@@ -110,12 +109,20 @@ const Header = ({
                 </Link >
               </div >
               <div className={styles['tabs-wrapper']}>
-                <Tabs value={routes[path]?.id} onChange={handleOnTabChange}>
-                  <Tab disableRipple value={routes.reel.id} component={Link} to={routes.reel.path} label='Reel' />
-                  <Tab disableRipple value={routes.work.id} component={Link} to={routes.work.path} label='Work' />
-                  <Tab disableRipple value={routes.play.id} component={Link} to={routes.play.path} label='Fun' />
-                  <Tab disableRipple value={routes.about.id} component={Link} to={routes.about.path} label='Connect' />
-                </Tabs>
+                <Tabs.Root
+                  value={String(routes[path]?.id)}
+                  onValueChange={handleOnTabChange}
+                  variant="line"
+                >
+                  <Tabs.List>
+                    {NAV_ITEMS.map(({ route, label }) => (
+                      <Tabs.Trigger key={route} value={String(routes[route].id)} asChild>
+                        <Link to={routes[route].path}>{label}</Link>
+                      </Tabs.Trigger>
+                    ))}
+                  </Tabs.List>
+                </Tabs.Root>
+                <ColorModeButton marginInlineStart="6" />
               </div>
             </>
           )
@@ -128,27 +135,44 @@ const Footer = () => (
   <>
     <div>
       <IconButton
-        href='https://www.instagram.com/sabrina.art21/'
-        target='_blank'
+        asChild
+        variant="ghost"
+        className={styles['icon-link']}
+        aria-label="Instagram"
       >
-        <InstagramIcon className={styles['icon-link']} />
+        <a href='https://www.instagram.com/sabrina.art21/' target='_blank' rel="noreferrer noopener">
+          <FaInstagram />
+        </a>
       </IconButton>
       <IconButton
-        href='mailto:chen.chiamin16@gmail.com'
+        asChild
+        variant="ghost"
+        className={styles['icon-link']}
+        aria-label="Email"
       >
-        <EmailIcon className={styles['icon-link']} />
+        <a href='mailto:chen.chiamin16@gmail.com'>
+          <LuMail />
+        </a>
       </IconButton>
       <IconButton
-        href='https://www.linkedin.com/in/sabrina-chiamin-chen-05609514b/'
-        target='_blank'
+        asChild
+        variant="ghost"
+        className={styles['icon-link']}
+        aria-label="LinkedIn"
       >
-        <LinkedInIcon className={styles['icon-link']} />
+        <a href='https://www.linkedin.com/in/sabrina-chiamin-chen-05609514b/' target='_blank' rel="noreferrer noopener">
+          <FaLinkedin />
+        </a>
       </IconButton>
       <IconButton
-        href='https://vimeo.com/user194145687'
-        target='_blank'
+        asChild
+        variant="ghost"
+        className={styles['icon-link']}
+        aria-label="Vimeo"
       >
-        <VimeoIcon className={styles['icon-link']} />
+        <a href='https://vimeo.com/user194145687' target='_blank' rel="noreferrer noopener">
+          <VimeoIcon />
+        </a>
       </IconButton>
     </div>
     <div className={styles['footer-text']}>Copyright © 2026 Sabrina Chen</div>

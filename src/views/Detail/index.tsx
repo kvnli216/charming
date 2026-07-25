@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./index.module.css";
-import { Dialog, DialogContent, IconButton } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import { Dialog, IconButton } from "@chakra-ui/react";
+import { LuX } from "react-icons/lu";
 import { Locked } from "../Locked/Locked";
 import { routes } from "../../routes";
 import type { Project } from "../../content/types";
@@ -170,71 +170,61 @@ const Detail = ({
             </div>
           )}
 
-          <Dialog
+          <Dialog.Root
             open={Boolean(processDialogOpen)}
-            onClose={handleProcessDialogClose}
-            maxWidth={false}
-            PaperProps={{
-              sx: {
-                backgroundColor: "transparent",
-                boxShadow: "none",
-                maxWidth: "none",
-                margin: 0,
-              },
+            onOpenChange={(details) => {
+              if (!details.open) handleProcessDialogClose();
             }}
-            BackdropProps={{
-              sx: {
-                backgroundColor: "rgba(0, 0, 0, 0.9)",
-                backdropFilter: "blur(8px)",
-              },
-            }}
-            onClick={handleProcessDialogClose}
           >
-            <DialogContent
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: 2,
-                overflow: "hidden",
-                "&:focus": { outline: "none" },
-              }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <IconButton
-                aria-label="Close"
-                onClick={handleProcessDialogClose}
-                sx={{
-                  position: "absolute",
-                  right: 8,
-                  top: 8,
-                  color: "rgba(255, 255, 255, 0.87)",
-                  zIndex: 1,
-                }}
+            <Dialog.Backdrop bg="surface.overlay" backdropFilter="blur(8px)" />
+            <Dialog.Positioner onClick={handleProcessDialogClose}>
+              <Dialog.Content
+                bg="transparent"
+                boxShadow="none"
+                maxWidth="none"
+                margin="0"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                padding="2"
+                overflow="hidden"
+                _focus={{ outline: "none" }}
+                onClick={(e) => e.stopPropagation()}
               >
-                <CloseIcon />
-              </IconButton>
-              {processDialogOpen && (
-                <img
-                  src={processDialogOpen}
-                  alt="Process (full size)"
-                  style={{
-                    maxWidth: "95vw",
-                    maxHeight: "95vh",
-                    width: "auto",
-                    height: "auto",
-                    objectFit: "contain",
-                  }}
-                  onClick={(e) => e.stopPropagation()}
-                  draggable={false}
-                />
-              )}
-            </DialogContent>
-          </Dialog>
+                <IconButton
+                  aria-label="Close"
+                  onClick={handleProcessDialogClose}
+                  variant="ghost"
+                  position="absolute"
+                  right="2"
+                  top="2"
+                  color="fg.onDark"
+                  zIndex="1"
+                >
+                  <LuX />
+                </IconButton>
+                {processDialogOpen && (
+                  <img
+                    src={processDialogOpen}
+                    alt="Process (full size)"
+                    style={{
+                      maxWidth: "95vw",
+                      maxHeight: "95vh",
+                      width: "auto",
+                      height: "auto",
+                      objectFit: "contain",
+                    }}
+                    onClick={(e) => e.stopPropagation()}
+                    draggable={false}
+                  />
+                )}
+              </Dialog.Content>
+            </Dialog.Positioner>
+          </Dialog.Root>
           <div className={styles["section-wrapper"]}>
             <h3 className={styles["section-title"]}>Credits</h3>
             <div className={styles["separator"]} />
-            {credits}
+            <div className={styles["credits"]}>{credits}</div>
           </div>
         </div >
       )}
