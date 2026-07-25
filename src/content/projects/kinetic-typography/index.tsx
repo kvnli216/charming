@@ -8,7 +8,7 @@ const project: Project = {
   order: 50,
   label: "Kinetic Typography",
   preview: frame1,
-  mediaUrls: ["https://player.vimeo.com/video/1087828815"],
+  mediaUrls: ["https://player.vimeo.com/video/1087828815?title=0&byline=0&portrait=0"],
   route: "/KineticTypography",
   title: (
     <>

@@ -5,12 +5,8 @@ export interface RouteEntry {
 
 export const routes: Record<string, RouteEntry> = {
   home: {
-    id: 0, // id should match the desired route id (e.g. reel = 0)
+    id: -1, // not represented in the nav tabs, so it never falsely highlights another tab
     path: "/",
-  },
-  reel: {
-    id: 0,
-    path: "/reel",
   },
   work: {
     id: 1,

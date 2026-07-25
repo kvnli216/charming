@@ -199,6 +199,7 @@ const Detail = ({
                   right="2"
                   top="2"
                   color="fg.onDark"
+                  _hover={{ bg: "whiteAlpha.200" }}
                   zIndex="1"
                 >
                   <LuX />

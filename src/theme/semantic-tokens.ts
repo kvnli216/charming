@@ -26,7 +26,7 @@ export const semanticColors = defineSemanticTokens.colors({
   },
   accent: {
     solid: { value: "{colors.accent.500}" },
-    solidHover: { value: { base: "{colors.accent.600}", _dark: "{colors.accent.400}" } },
+    solidHover: { value: { base: "{colors.accent.600}", _dark: "{colors.accent.700}" } },
     text: { value: { base: "{colors.accent.700}", _dark: "{colors.accent.300}" } },
     tint: { value: { base: "{colors.accent.50}", _dark: "oklch(30% 0.08 264 / 0.35)" } },
     tagBg: { value: { base: "{colors.accent.100}", _dark: "oklch(30% 0.09 264 / 0.4)" } },

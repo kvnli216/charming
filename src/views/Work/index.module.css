@@ -1,15 +1,19 @@
 .container {
-  display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--chakra-spacing-5);
   max-width: 1500px;
-  gap: var(--chakra-spacing-6);
   width: 100%;
 }
 
 .container.mobile {
+  display: flex;
+  flex-direction: column;
   gap: var(--chakra-spacing-3);
-  display: block;
+}
+
+@media (max-width: 700px) {
+  .container:not(.mobile) {
+    grid-template-columns: 1fr;
+  }
 }

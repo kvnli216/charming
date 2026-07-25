@@ -1,6 +1,9 @@
+/* No blanket `padding: 0` here: this file's `*` selector isn't scoped by
+   CSS Modules, so it applies globally and (being unlayered) beats Chakra's
+   `@layer recipes` button padding regardless of specificity. Elements that
+   truly need zero padding (e.g. Detail's process-button) set it themselves. */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -14,7 +17,7 @@ body {
   grid-template-areas:
     "header"
     "content";
-  grid-template-rows: 80px 1fr;
+  grid-template-rows: 60px 1fr;
   box-sizing: border-box;
   background: var(--chakra-colors-surface-page);
   height: 100svh;
@@ -30,7 +33,7 @@ body {
   position: sticky;
   top: 0px;
   z-index: 1000;
-  background-color: var(--chakra-colors-surface-page);
+  background-color: var(--chakra-colors-surface-card);
   border-bottom: 1px solid var(--chakra-colors-border-subtle);
 }
 
@@ -64,6 +67,7 @@ body {
 .content-wrapper {
   grid-area: content;
   overflow-y: auto;
+  scrollbar-gutter: stable;
   display: flex;
   justify-content: center;
   padding: var(--chakra-spacing-6);
@@ -88,10 +92,12 @@ body {
 .icon-link {
   color: var(--chakra-colors-accent-on-dark-text) !important;
   font-size: 1.5rem !important;
+  background: transparent !important;
 }
 
 .icon-link:hover {
   color: var(--chakra-colors-accent-on-dark-solid) !important;
+  background: transparent !important;
 }
 
 .footer-text {
@@ -107,6 +113,11 @@ body {
 .header-name {
   font-family: var(--chakra-fonts-heading);
   color: var(--chakra-colors-fg-primary);
+  transition: color var(--chakra-durations-standard) var(--chakra-easings-standard);
+}
+
+.header-link:hover .header-name {
+  color: var(--chakra-colors-fg-accent);
 }
 
 .menu-icon {

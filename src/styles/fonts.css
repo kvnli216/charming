@@ -37,10 +37,15 @@ h2 { font-size: var(--chakra-font-sizes-h2); }
 h3 { font-size: var(--chakra-font-sizes-h3); }
 h4 { font-size: var(--chakra-font-sizes-h4); }
 
+/* No default `color` here: every anchor in the app already sets its own
+   (nav tabs, section links, buttons, footer icons, credits, resume link).
+   A blanket color on the bare `a` selector is unlayered plain CSS, so it
+   would beat those more specific rules on ties determined by unrelated
+   import order rather than intent — happened previously with button labels
+   rendering accent-blue and nav links ignoring their intended muted color. */
 a {
   font-family: var(--chakra-fonts-body);
   text-decoration: none;
-  color: var(--chakra-colors-fg-accent);
   cursor: pointer;
 }
 

@@ -16,6 +16,8 @@ export interface Project {
   label: string;
   title: ReactNode;
   subtitle?: ReactNode;
+  /** Extra pill tags shown on the Work grid card, alongside the subtitle. */
+  tags?: string[];
   isLocked?: boolean;
   description?: ReactNode;
   bioLines?: ReactNode[];

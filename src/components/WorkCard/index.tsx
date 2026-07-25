@@ -3,41 +3,41 @@ import { Link } from 'react-router-dom';
 import type { ReactNode } from 'react';
 
 interface WorkCardProps {
-  gif?: string;
+  gif: string;
   label?: ReactNode;
-  route?: string;
-  isMobile?: boolean;
+  route: string;
   subtitle?: ReactNode;
+  tags?: string[];
 }
 
 const WorkCard = ({
   gif,
   label,
   route,
-  isMobile,
   subtitle,
+  tags,
 }: WorkCardProps) => {
+  const pills = [subtitle, ...(tags ?? [])].filter(Boolean);
+
   return (
-    <>
-      {
-        route
-          ? (<Link to={route} >
-            <div className={styles['card']}>
-              <div className={styles['card-hover']}>
-                <div className={styles['hover-text']}>{label}</div>
-                <div className={styles['hover-subtitle']}>{subtitle}</div>
-              </div>
-              <img
-                className={`${styles['work-gif']} ${isMobile && styles['mobile']}`}
-                src={gif}
-                alt='label'></img>
-            </div>
-          </Link >)
-          : <div className={styles['stub-card']} />
-      }
-    </>
+    <Link to={route} className={styles['card']}>
+      <img
+        className={styles['work-gif']}
+        src={gif}
+        alt={typeof label === 'string' ? label : ''}
+      />
+      <div className={styles['overlay']}>
+        <h4 className={styles['title']}>{label}</h4>
+        {pills.length > 0 && (
+          <div className={styles['meta']}>
+            {pills.map((pill, i) => (
+              <span key={i} className={styles['tag']}>{pill}</span>
+            ))}
+          </div>
+        )}
+      </div>
+    </Link>
   );
 };
 
 export default WorkCard;
-

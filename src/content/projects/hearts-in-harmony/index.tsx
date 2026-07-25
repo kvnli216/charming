@@ -13,7 +13,7 @@ const project: Project = {
   preview: cover,
   route: "/HeartsInHarmony",
   title: "Hands On Me",
-  mediaUrls: ["https://player.vimeo.com/video/900298628?h=7d99a41d2c&byline=0"],
+  mediaUrls: ["https://player.vimeo.com/video/900298628?h=7d99a41d2c&title=0&byline=0&portrait=0"],
   subtitle: "Motion Design",
   description: (
     <>

@@ -9,6 +9,9 @@
 # production
 /dist
 
+# raw video masters (too large to commit; keep locally only)
+/raw-media
+
 # misc
 .DS_Store
 .env.local

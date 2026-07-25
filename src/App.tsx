@@ -3,7 +3,7 @@ import About from "./views/About";
 import Layout from "./views/Layout";
 import Work from "./views/Work";
 import Illustration from "./views/Illustration";
-import Reel from "./views/Reel";
+import Home from "./views/Home";
 import { ChakraProvider } from "@chakra-ui/react";
 import { system } from "./theme/system";
 import { ColorModeProvider } from "./theme/color-mode";
@@ -41,11 +41,7 @@ function App() {
             <Route element={<Layout isMobile={isMobile} />}>
               <Route
                 path={routes.home.path}
-                element={<Reel isMobile={isMobile} />}
-              />
-              <Route
-                path={routes.reel.path}
-                element={<Reel isMobile={isMobile} />}
+                element={<Home isMobile={isMobile} />}
               />
               <Route
                 path={routes.work.path}

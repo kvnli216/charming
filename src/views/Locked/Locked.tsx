@@ -48,10 +48,7 @@ export const Locked = ({
           <Button
             flex="1"
             variant="solid"
-            bg="accent.solid"
-            color="neutral.950"
-            _hover={{ bg: 'accent.solidHover' }}
-            borderRadius="pill"
+            size="lg"
             type="button"
             onClick={handleBack}
           >
@@ -60,10 +57,7 @@ export const Locked = ({
           <Button
             flex="1"
             variant="solid"
-            bg="accent.solid"
-            color="neutral.950"
-            _hover={{ bg: 'accent.solidHover' }}
-            borderRadius="pill"
+            size="lg"
             type="submit"
           >
             Go

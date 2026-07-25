@@ -8,6 +8,7 @@ const project: Project = {
   label: "Adobe for Business Series Overview",
   title: "Adobe for Business Series Overview | 2024",
   subtitle: "B2B",
+  tags: ["Branding"],
   bioLines: [
     "During my internship at Skycar, I worked closely with the lead designer to develop visual assets for Adobe B2B campaign videos during a key brand evolution. My role focused on executing design iterations based on client feedback, ensuring every detail aligned with Adobe's brand guidelines.",
     "",
@@ -16,10 +17,10 @@ const project: Project = {
   ],
   route: "/AdobeForBusiness",
   mediaUrls: [
-    "https://player.vimeo.com/video/1211472916?h=f1a6018e50",
-    "https://player.vimeo.com/video/1211473598?h=7648ca7462",
-    "https://player.vimeo.com/video/1211474169?h=8c6ecdad05",
-    "https://player.vimeo.com/video/1211486008?h=3dc568fb08",
+    "https://player.vimeo.com/video/1211472916?h=f1a6018e50&title=0&byline=0&portrait=0",
+    "https://player.vimeo.com/video/1211473598?h=7648ca7462&title=0&byline=0&portrait=0",
+    "https://player.vimeo.com/video/1211474169?h=8c6ecdad05&title=0&byline=0&portrait=0",
+    "https://player.vimeo.com/video/1211486008?h=3dc568fb08&title=0&byline=0&portrait=0",
   ],
   credits: (
     <>

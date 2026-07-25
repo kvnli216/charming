@@ -1,105 +1,91 @@
 .container {
   display: flex;
-  height: 80svh;
-  max-width: 1200px;
   flex-wrap: wrap;
-  gap: var(--chakra-spacing-4);
   align-items: flex-start;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  gap: var(--chakra-spacing-6);
-  flex-wrap: wrap;
-}
-
-.avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: var(--chakra-spacing-7);
+  padding: var(--chakra-spacing-9) 0 var(--chakra-spacing-7);
 }
 
 .photo {
-  height: 500px;
+  flex: 0 0 340px;
+  width: 340px;
+  max-width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
   border-radius: var(--chakra-radii-md);
+  box-shadow: var(--chakra-shadows-md);
 }
 
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  gap: var(--chakra-spacing-6);
-  padding: var(--chakra-spacing-6);
-}
-
-.intro-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 500px;
-  line-height: var(--chakra-line-heights-body);
-  font-family: var(--chakra-fonts-body);
-  font-size: var(--chakra-font-sizes-body);
-}
-
-.content {
-  grid-area: content;
-  display: grid;
-  width: 100%;
-  grid-template-columns: auto auto auto;
-  gap: var(--chakra-spacing-5);
-  grid-template-areas: "education experience skills";
-  font-family: var(--chakra-fonts-body);
-  font-size: var(--chakra-font-sizes-body-sm);
-  background: var(--chakra-colors-surface-sunken);
-  padding: var(--chakra-spacing-6);
-  border-radius: var(--chakra-radii-lg);
-}
-
-@media (max-width: 1023px) {
-  .content {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "education"
-      "experience"
-      "skills";
-    max-width: 500px;
-    margin: auto;
-  }
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  gap: var(--chakra-spacing-5);
-}
-
-.resume-button {
-  text-decoration: none;
-}
-
-.resume-link-wrapper {
-  display: flex;
-  flex-direction: column;
   gap: var(--chakra-spacing-4);
-  align-items: flex-start;
-  justify-content: center;
+  flex: 1 1 360px;
+  min-width: 0;
+  padding-top: var(--chakra-spacing-2);
 }
 
-.press-text {
-  max-width: 500px;
+.eyebrow {
+  font-family: var(--chakra-fonts-mono);
+  font-size: var(--chakra-font-sizes-mono);
+  letter-spacing: var(--chakra-letter-spacings-mono);
+  text-transform: uppercase;
+  color: var(--chakra-colors-fg-secondary);
+}
+
+.bio {
+  margin: 0;
+  max-width: 56ch;
+  font-family: var(--chakra-fonts-body);
+  font-size: var(--chakra-font-sizes-body-lg);
   line-height: var(--chakra-line-heights-body);
-  font-family: var(--chakra-fonts-body);
-  font-size: var(--chakra-font-sizes-body);
+  color: var(--chakra-colors-fg-primary);
 }
 
-.press-link {
+.sub {
+  margin: 0;
+  max-width: 56ch;
   font-family: var(--chakra-fonts-body);
   font-size: var(--chakra-font-sizes-body);
-  color: var(--chakra-colors-fg-accent);
-  text-decoration: underline;
+  line-height: var(--chakra-line-heights-body);
+  color: var(--chakra-colors-fg-secondary);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: var(--chakra-spacing-2);
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--chakra-spacing-7) var(--chakra-spacing-4) var(--chakra-spacing-6);
+  }
+
+  .photo {
+    flex: none;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .intro {
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .actions {
+    justify-content: center;
+  }
 }

@@ -12,6 +12,7 @@ import {
   easings,
 } from "./tokens";
 import { semanticColors, semanticShadows } from "./semantic-tokens";
+import { buttonRecipe } from "./recipes";
 
 const config = defineConfig({
   theme: {
@@ -30,6 +31,9 @@ const config = defineConfig({
     semanticTokens: {
       colors: semanticColors,
       shadows: semanticShadows,
+    },
+    recipes: {
+      button: buttonRecipe,
     },
   },
 });

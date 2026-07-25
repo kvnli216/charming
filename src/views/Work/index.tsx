@@ -14,18 +14,17 @@ const Work = ({ isMobile }: WorkProps) => {
         route,
         preview,
         subtitle,
+        tags,
       }) => (
         <WorkCard
           key={route}
           label={label}
           gif={preview}
           route={route}
-          isMobile={isMobile}
           subtitle={subtitle}
+          tags={tags}
         />
       ))}
-      {/* Trailing empty card to avoid a single centered card on the last row. */}
-      <WorkCard isMobile={isMobile} />
     </div>
   );
 };
