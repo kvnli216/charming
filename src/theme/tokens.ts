@@ -114,6 +114,7 @@ export const spacing = defineTokens.spacing({
 });
 
 export const radii = defineTokens.radii({
+  xs: { value: "4px" },
   sm: { value: "6px" },
   md: { value: "10px" },
   lg: { value: "16px" },
