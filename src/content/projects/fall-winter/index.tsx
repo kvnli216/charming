@@ -68,13 +68,13 @@ const project: Project = {
     <>
       Motion Designers: Sabrina Chen, Harper Chung
       <br />
-      Shoe Designer: Shunchun Hsieh (Check out his refine sketchbook:{" "}
+      Shoe Designer: Shunchun Hsieh (Check out his{" "}
       <a
         href="https://reurl.cc/QELRpp"
         target="_blank"
         rel="noopener noreferrer"
       >
-        https://reurl.cc/QELRpp
+        refine sketchbook
       </a>
       )
     </>

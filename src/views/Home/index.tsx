@@ -25,9 +25,10 @@ const Home = ({ isMobile }: HomeProps) => {
           I turn complex tech and brand stories into motion that moves people.
         </h1>
         <p className={styles.sub}>
-          Hi! I’m Sabrina, a Motion Designer with 3 years of experience. My
-          background spans brand motion, tech B2B visual design, and educational
-          media and I’m always open to new opportunities!
+          Hi! I’m Sabrina, a Motion Designer with 3 years of experience.
+          <br />
+          My background spans brand motion, tech B2B visual design, and
+          educational media and I’m always open to new opportunities!
         </p>
         <div className={styles.actions}>
           <Button asChild variant="solid" size="lg">

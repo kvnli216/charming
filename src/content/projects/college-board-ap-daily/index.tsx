@@ -22,7 +22,7 @@ import process3Small from "./assets/process3_webp_small.jpg";
 
 const project: Project = {
   order: 10,
-  isLocked: false,
+  isLocked: true,
   preview: cover,
   previewPlaceholder: coverSmall,
   label: "College Board AP Daily",
@@ -39,8 +39,8 @@ const project: Project = {
       <br />
       African American Studies, Latin, Biology, and Computer Science A (CSA).
       <br />
-      My role focused on transforming complex academic frameworks into
-      engaging motion graphics to enhance student learning.
+      My role focused on transforming complex academic frameworks into engaging
+      motion graphics to enhance student learning.
       <br />
       Check out one of our full courses{" "}
       <a

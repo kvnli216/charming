@@ -43,7 +43,7 @@
 }
 
 .description a {
-  color: var(--chakra-colors-accent-text);
+  color: var(--chakra-colors-accent-on-dark-text);
   text-decoration: underline;
 }
 
@@ -181,8 +181,8 @@
 }
 
 .credits a {
-  color: var(--chakra-colors-fg-primary) !important;
-  display: contents;
+  color: var(--chakra-colors-accent-on-dark-text) !important;
+  text-decoration: underline;
 }
 
 .embed-wrapper {
