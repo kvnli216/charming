@@ -22,11 +22,12 @@ const Home = ({ isMobile }: HomeProps) => {
       <section className={styles.hero}>
         <span className={styles.eyebrow}>Motion Designer · NYC</span>
         <h1 className={styles.title}>
-          I animate ideas for brands that want their story to move.
+          I turn complex tech and brand stories into motion that moves people.
         </h1>
         <p className={styles.sub}>
-          I'm Sabrina Chen, a motion designer and illustrator who brings brand
-          stories to life through motion.
+          Hi! I’m Sabrina, a Motion Designer with 3 years of experience. My
+          background spans brand motion, tech B2B visual design, and educational
+          media and I’m always open to new opportunities!
         </p>
         <div className={styles.actions}>
           <Button asChild variant="solid" size="lg">
@@ -38,7 +39,10 @@ const Home = ({ isMobile }: HomeProps) => {
       <section className={styles["reel-section"]}>
         <span className={styles.eyebrow}>2026 Reel</span>
         <div className={styles.reel}>
-          <SkeletonMedia placeholder={reelPosterSmall} style={{ position: 'absolute', inset: 0 }}>
+          <SkeletonMedia
+            placeholder={reelPosterSmall}
+            style={{ position: "absolute", inset: 0 }}
+          >
             <video
               className={styles["reel-video"]}
               controls
@@ -58,17 +62,19 @@ const Home = ({ isMobile }: HomeProps) => {
           <Link to={routes.work.path}>View all work →</Link>
         </div>
         <div className={styles.grid}>
-          {featuredProjects.map(({ label, route, preview, previewPlaceholder, subtitle, tags }) => (
-            <WorkCard
-              key={route}
-              label={label}
-              gif={preview}
-              placeholder={previewPlaceholder}
-              route={route}
-              subtitle={subtitle}
-              tags={tags}
-            />
-          ))}
+          {featuredProjects.map(
+            ({ label, route, preview, previewPlaceholder, subtitle, tags }) => (
+              <WorkCard
+                key={route}
+                label={label}
+                gif={preview}
+                placeholder={previewPlaceholder}
+                route={route}
+                subtitle={subtitle}
+                tags={tags}
+              />
+            ),
+          )}
         </div>
       </section>
     </div>

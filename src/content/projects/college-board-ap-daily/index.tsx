@@ -22,7 +22,7 @@ import process3Small from "./assets/process3_webp_small.jpg";
 
 const project: Project = {
   order: 10,
-  isLocked: true,
+  isLocked: false,
   preview: cover,
   previewPlaceholder: coverSmall,
   label: "College Board AP Daily",
@@ -42,14 +42,15 @@ const project: Project = {
       My role focused on transforming complex academic frameworks into
       engaging motion graphics to enhance student learning.
       <br />
-      Check out one of our full course here:{" "}
+      Check out one of our full courses{" "}
       <a
         href="https://reurl.cc/qKQ2Kq"
         target="_blank"
         rel="noopener noreferrer"
       >
-        https://reurl.cc/qKQ2Kq
+        here
       </a>
+      .
     </>
   ),
   route: "/CollegeBoardAPDaily",

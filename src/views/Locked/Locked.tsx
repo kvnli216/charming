@@ -41,6 +41,10 @@ export const Locked = ({
             onChange={(e) => setPassword(e.target.value)}
             autoFocus
             borderRadius="md"
+            autoComplete="off"
+            data-1p-ignore
+            data-lpignore="true"
+            data-bwignore
           />
           <Field.ErrorText className={styles['error']}>{error}</Field.ErrorText>
         </Field.Root>
