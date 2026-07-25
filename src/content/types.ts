@@ -1,7 +1,14 @@
 import type { ReactNode } from "react";
 
+/** An image plus its tiny low-res stand-in, shown blurred-up behind it while it loads. */
+export interface MediaAsset {
+  src: string;
+  placeholder?: string;
+}
+
 export interface ProcessStep {
   img: string;
+  placeholder?: string;
   desc: string;
 }
 
@@ -12,6 +19,8 @@ export interface Project {
   route: string;
   /** Thumbnail shown on the Work grid card. */
   preview: string;
+  /** Tiny low-res stand-in for `preview`, shown blurred-up behind it while it loads. */
+  previewPlaceholder?: string;
   /** Text shown on hover over the Work grid card, and iframe title on Detail. */
   label: string;
   title: ReactNode;
@@ -24,8 +33,8 @@ export interface Project {
   credits?: ReactNode;
   logo?: string;
   mediaUrls?: string[];
-  keyMoments?: string[];
+  keyMoments?: MediaAsset[];
   process?: ProcessStep[];
-  animationTests?: string[];
-  styleFrames?: string[];
+  animationTests?: MediaAsset[];
+  styleFrames?: MediaAsset[];
 }

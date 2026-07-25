@@ -76,7 +76,16 @@
 .key-moment,
 .animation-test {
   width: 640px;
+  aspect-ratio: 16 / 9;
   border-radius: var(--chakra-radii-sm);
+}
+
+.key-moment > :global(img),
+.animation-test > :global(img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .process-button {
@@ -93,11 +102,16 @@
   outline-offset: 4px;
 }
 
-.process {
+.process-frame {
   width: 240px;
   height: 240px;
-  object-fit: cover;
   border-radius: var(--chakra-radii-sm);
+}
+
+.process {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 

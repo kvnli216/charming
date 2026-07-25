@@ -1,16 +1,24 @@
 import type { Project } from "../../types";
 import cover from "./assets/cover.gif";
+import coverSmall from "./assets/cover_small.jpg";
 import frame1 from "./assets/1.png";
+import frame1Small from "./assets/1_small.jpg";
 import frame2 from "./assets/2.png";
+import frame2Small from "./assets/2_small.jpg";
 import frame3 from "./assets/3.png";
+import frame3Small from "./assets/3_small.jpg";
 import frame4 from "./assets/4.png";
+import frame4Small from "./assets/4_small.jpg";
 import frame5 from "./assets/5.png";
+import frame5Small from "./assets/5_small.jpg";
 import frame6 from "./assets/6.png";
+import frame6Small from "./assets/6_small.jpg";
 
 const project: Project = {
   order: 40,
   label: "Hearts in Harmony",
   preview: cover,
+  previewPlaceholder: coverSmall,
   route: "/HeartsInHarmony",
   title: "Hands On Me",
   mediaUrls: ["https://player.vimeo.com/video/900298628?h=7d99a41d2c&title=0&byline=0&portrait=0"],
@@ -28,7 +36,14 @@ const project: Project = {
     </>
   ),
   credits: <>Credits: Personal work</>,
-  styleFrames: [frame1, frame2, frame3, frame4, frame5, frame6],
+  styleFrames: [
+    { src: frame1, placeholder: frame1Small },
+    { src: frame2, placeholder: frame2Small },
+    { src: frame3, placeholder: frame3Small },
+    { src: frame4, placeholder: frame4Small },
+    { src: frame5, placeholder: frame5Small },
+    { src: frame6, placeholder: frame6Small },
+  ],
   process: [],
 };
 

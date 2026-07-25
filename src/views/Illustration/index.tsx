@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import SkeletonMedia from '../../components/SkeletonMedia';
 import Scene1 from '../../assets/Illustrations/Scene01_square.gif';
 import Scene1Skeleton from '../../assets/Illustrations/Scene01_square_small.jpg';
 import Scene2 from '../../assets/Illustrations/Scene02_square.gif';
@@ -51,28 +51,13 @@ const Card = ({
   src,
   isMobile,
 }: CardProps) => {
-  const cardRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const img = cardRef?.current?.querySelector('img');
-    const loaded = () => {
-      cardRef?.current?.classList.add(styles.loaded);
-    };
-
-    if (img?.complete) {
-      loaded();
-    } else {
-      img?.addEventListener('load', loaded);
-    }
-  }, []);
-
-
   return (
-    <div
-      ref={cardRef}
+    <SkeletonMedia
+      placeholder={skeleton}
       className={`${styles['skeleton']} ${isMobile && styles['mobile']}`}
-      style={{ backgroundImage: `url(${skeleton})` }} >
+    >
       <img className={`${styles['work-card']} ${isMobile && styles['mobile']}`} src={src} alt='' loading='lazy' />
-    </div>
+    </SkeletonMedia>
   );
 };
 

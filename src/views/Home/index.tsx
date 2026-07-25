@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 import { Button } from "@chakra-ui/react";
 import styles from "./index.module.css";
 import WorkCard from "../../components/WorkCard";
+import SkeletonMedia from "../../components/SkeletonMedia";
 import { projects } from "../../content/projects";
 import { routes } from "../../routes";
 
 const reelSrc = "/video/reel.mp4";
+const reelPoster = "/video/reel-poster.jpg";
+const reelPosterSmall = "/video/reel-poster-small.jpg";
 
 interface HomeProps {
   isMobile: boolean;
@@ -35,14 +38,17 @@ const Home = ({ isMobile }: HomeProps) => {
       <section className={styles["reel-section"]}>
         <span className={styles.eyebrow}>2026 Reel</span>
         <div className={styles.reel}>
-          <video
-            className={styles["reel-video"]}
-            controls
-            preload="metadata"
-            playsInline
-          >
-            <source src={reelSrc} type="video/mp4" />
-          </video>
+          <SkeletonMedia placeholder={reelPosterSmall} style={{ position: 'absolute', inset: 0 }}>
+            <video
+              className={styles["reel-video"]}
+              controls
+              preload="metadata"
+              poster={reelPoster}
+              playsInline
+            >
+              <source src={reelSrc} type="video/mp4" />
+            </video>
+          </SkeletonMedia>
         </div>
       </section>
 
@@ -52,11 +58,12 @@ const Home = ({ isMobile }: HomeProps) => {
           <Link to={routes.work.path}>View all work →</Link>
         </div>
         <div className={styles.grid}>
-          {featuredProjects.map(({ label, route, preview, subtitle, tags }) => (
+          {featuredProjects.map(({ label, route, preview, previewPlaceholder, subtitle, tags }) => (
             <WorkCard
               key={route}
               label={label}
               gif={preview}
+              placeholder={previewPlaceholder}
               route={route}
               subtitle={subtitle}
               tags={tags}

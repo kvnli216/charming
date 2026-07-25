@@ -13,6 +13,7 @@ const Work = ({ isMobile }: WorkProps) => {
         label,
         route,
         preview,
+        previewPlaceholder,
         subtitle,
         tags,
       }) => (
@@ -20,6 +21,7 @@ const Work = ({ isMobile }: WorkProps) => {
           key={route}
           label={label}
           gif={preview}
+          placeholder={previewPlaceholder}
           route={route}
           subtitle={subtitle}
           tags={tags}

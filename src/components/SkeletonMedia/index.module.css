@@ -1,0 +1,42 @@
+.frame {
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  animation: pulse 1.5s infinite;
+}
+
+.frame.loaded::before {
+  content: none;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: color-mix(in oklch, var(--chakra-colors-fg-on-dark) 0%, transparent);
+  }
+
+  50% {
+    background-color: color-mix(in oklch, var(--chakra-colors-fg-on-dark) 20%, transparent);
+  }
+
+  100% {
+    background-color: color-mix(in oklch, var(--chakra-colors-fg-on-dark) 0%, transparent);
+  }
+}
+
+.frame > :global(img),
+.frame > :global(video) {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.frame.loaded > :global(img),
+.frame.loaded > :global(video) {
+  opacity: 1;
+}

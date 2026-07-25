@@ -1,14 +1,20 @@
 import type { Project } from "../../types";
 import cover from "./assets/cover.gif";
+import coverSmall from "./assets/cover_small.jpg";
 import frame1 from "./assets/TBW_gif1.gif";
+import frame1Small from "./assets/TBW_gif1_small.jpg";
 import frame2 from "./assets/TBW_gif2.gif";
+import frame2Small from "./assets/TBW_gif2_small.jpg";
 import frame3 from "./assets/TBW_gif3.gif";
+import frame3Small from "./assets/TBW_gif3_small.jpg";
 import frame4 from "./assets/TBW_gif4.gif";
+import frame4Small from "./assets/TBW_gif4_small.jpg";
 
 const project: Project = {
   order: 60,
   label: "The Beautiful Way ",
   preview: cover,
+  previewPlaceholder: coverSmall,
   route: "/TheBeautifulWay",
   title: "The Beautiful Way",
   subtitle: "Explainer Video",
@@ -32,7 +38,12 @@ const project: Project = {
       Designer and Animator: Sabrina Chen
     </>
   ),
-  animationTests: [frame1, frame2, frame3, frame4],
+  animationTests: [
+    { src: frame1, placeholder: frame1Small },
+    { src: frame2, placeholder: frame2Small },
+    { src: frame3, placeholder: frame3Small },
+    { src: frame4, placeholder: frame4Small },
+  ],
   process: [],
 };
 

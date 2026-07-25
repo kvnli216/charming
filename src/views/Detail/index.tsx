@@ -5,6 +5,7 @@ import { Dialog, IconButton } from "@chakra-ui/react";
 import { LuX } from "react-icons/lu";
 import { Locked } from "../Locked/Locked";
 import { routes } from "../../routes";
+import SkeletonMedia from "../../components/SkeletonMedia";
 import type { Project } from "../../content/types";
 
 interface DetailProps extends Project {
@@ -92,14 +93,14 @@ const Detail = ({
               <h3 className={styles["section-title"]}>Styleframes</h3>
               <div className={styles["separator"]} />
               <div className={styles["cards-wrapper"]}>
-                {styleFrames.map((url) => (
-                  <div key={`animation-test-${url}`}>
-                    <img
-                      className={styles["animation-test"]}
-                      src={url}
-                      alt="animation test"
-                    />
-                  </div>
+                {styleFrames.map(({ src, placeholder }) => (
+                  <SkeletonMedia
+                    key={`style-frame-${src}`}
+                    placeholder={placeholder}
+                    className={styles["animation-test"]}
+                  >
+                    <img src={src} alt="style frame" />
+                  </SkeletonMedia>
                 ))}
               </div>
             </div>
@@ -110,14 +111,14 @@ const Detail = ({
               <h3 className={styles["section-title"]}>Animation Test</h3>
               <div className={styles["separator"]} />
               <div className={styles["cards-wrapper"]}>
-                {animationTests.map((url) => (
-                  <div key={`animation-test-${url}`}>
-                    <img
-                      className={styles["animation-test"]}
-                      src={url}
-                      alt="animation test"
-                    />
-                  </div>
+                {animationTests.map(({ src, placeholder }) => (
+                  <SkeletonMedia
+                    key={`animation-test-${src}`}
+                    placeholder={placeholder}
+                    className={styles["animation-test"]}
+                  >
+                    <img src={src} alt="animation test" />
+                  </SkeletonMedia>
                 ))}
               </div>
             </div>
@@ -128,14 +129,14 @@ const Detail = ({
               <h3 className={styles["section-title"]}>Key Moments</h3>
               <div className={styles["separator"]} />
               <div className={styles["cards-wrapper"]}>
-                {keyMoments.map((url) => (
-                  <div key={`key-moment-${url}`}>
-                    <img
-                      className={styles["key-moment"]}
-                      src={url}
-                      alt="key moment"
-                    />
-                  </div>
+                {keyMoments.map(({ src, placeholder }) => (
+                  <SkeletonMedia
+                    key={`key-moment-${src}`}
+                    placeholder={placeholder}
+                    className={styles["key-moment"]}
+                  >
+                    <img src={src} alt="key moment" />
+                  </SkeletonMedia>
                 ))}
               </div>
             </div>
@@ -146,7 +147,7 @@ const Detail = ({
               <h3 className={styles["section-title"]}>Process</h3>
               <div className={styles["separator"]} />
               <div className={styles["cards-wrapper"]}>
-                {process.map(({ img, desc }) => (
+                {process.map(({ img, placeholder, desc }) => (
                   <div
                     className={styles["process-wrapper"]}
                     key={`process-${img}`}
@@ -157,11 +158,13 @@ const Detail = ({
                       onClick={handleProcessClick(img)}
                       aria-label="View process image full size"
                     >
-                      <img
-                        className={styles["process"]}
-                        src={img}
-                        alt="process"
-                      />
+                      <SkeletonMedia placeholder={placeholder} className={styles["process-frame"]}>
+                        <img
+                          className={styles["process"]}
+                          src={img}
+                          alt="process"
+                        />
+                      </SkeletonMedia>
                     </button>
                     <small className={styles["process-desc"]}>{desc}</small>
                   </div>

@@ -1,10 +1,12 @@
 import type { Project } from "../../types";
 import cover from "./assets/cover.webp";
+import coverSmall from "./assets/cover_small.jpg";
 
 const project: Project = {
   order: 20,
   isLocked: true,
   preview: cover,
+  previewPlaceholder: coverSmall,
   label: "Adobe for Business Series Overview",
   title: "Adobe for Business Series Overview | 2024",
   subtitle: "B2B",
