@@ -25,22 +25,24 @@ const project: Project = {
   isLocked: true,
   preview: cover,
   previewPlaceholder: coverSmall,
-  label: "College Board AP Daily",
-  title: "College Board AP Daily",
+  label: "AP Computer Science A",
+  title: "AP Computer Science A",
   subtitle: "Educational Courses",
   description: (
     <>
       <br />
-      Visual production for a 17-month comprehensive project aimed at high
-      school students across the U.S.
+      To support the College Board's AP Computer Science A curriculum, we
+      launched a series of 32 animated videos. As the Motion Designer on the
+      project, I was responsible for the visual design and animation production
+      throughout the series.
       <br />
-      We produced 97 instructional videos (5-15 minutes each) spanning diverse
-      subjects including
+      Set in the fictional town of "Instantiation Springs", the story-driven
+      series follows 4 local store owners as they navigate daily challenges and
+      solve them using core coding concepts.
       <br />
-      African American Studies, Latin, Biology, and Computer Science A (CSA).
-      <br />
-      My role focused on transforming complex academic frameworks into engaging
-      motion graphics to enhance student learning.
+      By anchoring abstract technical logic to relatable, narrative scenarios,
+      the project makes complex computer science fundamentals approachable and
+      engaging for students.
       <br />
       Check out one of our full courses{" "}
       <a
@@ -53,7 +55,8 @@ const project: Project = {
       .
     </>
   ),
-  route: "/CollegeBoardAPDaily",
+  route: "/APComputerScienceA",
+  mediaUrls: ["/video/ap-computer-science-a.mp4"],
   keyMoments: [
     { src: webp1CafeOrder, placeholder: webp1CafeOrderSmall },
     { src: webp2CafeOrder, placeholder: webp2CafeOrderSmall },
