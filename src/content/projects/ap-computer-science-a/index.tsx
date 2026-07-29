@@ -56,7 +56,7 @@ const project: Project = {
     </>
   ),
   route: "/APComputerScienceA",
-  mediaUrls: ["/video/ap-computer-science-a.mp4"],
+  trailer: "/video/ap-computer-science-a.mp4",
   keyMoments: [
     { src: webp1CafeOrder, placeholder: webp1CafeOrderSmall },
     { src: webp2CafeOrder, placeholder: webp2CafeOrderSmall },

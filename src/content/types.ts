@@ -32,6 +32,8 @@ export interface Project {
   bioLines?: ReactNode[];
   credits?: ReactNode;
   logo?: string;
+  /** Single video/embed URL rendered like `mediaUrls`, but without a section title or separator. */
+  trailer?: string;
   mediaUrls?: string[];
   keyMoments?: MediaAsset[];
   process?: ProcessStep[];

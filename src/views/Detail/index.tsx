@@ -23,6 +23,7 @@ const Detail = ({
   process = [],
   animationTests = [],
   styleFrames = [],
+  trailer,
   mediaUrls = [],
   isLocked: isLockedProps = false,
   bioLines = [],
@@ -33,6 +34,39 @@ const Detail = ({
 
   const handleProcessClick = (img: string) => () => setProcessDialogOpen(img);
   const handleProcessDialogClose = () => setProcessDialogOpen(null);
+
+  const renderEmbed = (url: string) => (
+    <div className={styles["embed-wrapper"]} key={`embed-wrapper-${url}`}>
+      {url.endsWith(".mp4") ? (
+        <div className={styles["video-frame"]}>
+          <SkeletonMedia
+            placeholder={url.replace(/\.mp4$/, "-poster-small.jpg")}
+            style={{ position: "absolute", inset: 0 }}
+          >
+            <video
+              className={styles["full-video"]}
+              controls
+              preload="metadata"
+              poster={url.replace(/\.mp4$/, "-poster.jpg")}
+              playsInline
+            >
+              <source src={url} type="video/mp4" />
+            </video>
+          </SkeletonMedia>
+        </div>
+      ) : (
+        <iframe
+          id="media-iframe"
+          title={label}
+          src={url}
+          className={styles["iframe-video"]}
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+        />
+      )}
+    </div>
+  );
 
   const handleGoBack = () => {
     navigate(routes.work.path);
@@ -68,42 +102,17 @@ const Detail = ({
             <div className={styles["description"]}>{bioLines.length > 0 ? <Bio /> : description}</div>
           </div>
 
+          {trailer &&
+            <div className={styles["section-wrapper"]}>
+              {renderEmbed(trailer)}
+            </div>
+          }
+
           {mediaUrls.length > 0 &&
             <div className={styles["section-wrapper"]}>
               <h3 className={styles["section-title"]}>Full Video</h3>
               <div className={styles["separator"]} />
-              {mediaUrls.map((url) => (
-                <div className={styles["embed-wrapper"]} key={`embed-wrapper-${url}`}>
-                  {url.endsWith(".mp4") ? (
-                    <div className={styles["video-frame"]}>
-                      <SkeletonMedia
-                        placeholder={url.replace(/\.mp4$/, "-poster-small.jpg")}
-                        style={{ position: "absolute", inset: 0 }}
-                      >
-                        <video
-                          className={styles["full-video"]}
-                          controls
-                          preload="metadata"
-                          poster={url.replace(/\.mp4$/, "-poster.jpg")}
-                          playsInline
-                        >
-                          <source src={url} type="video/mp4" />
-                        </video>
-                      </SkeletonMedia>
-                    </div>
-                  ) : (
-                    <iframe
-                      id="media-iframe"
-                      title={label}
-                      src={url}
-                      className={styles["iframe-video"]}
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowFullScreen
-                    />
-                  )}
-                </div>
-              ))}
+              {mediaUrls.map(renderEmbed)}
             </div>
           }
 
