@@ -67,10 +67,9 @@ body {
 .content-wrapper {
   grid-area: content;
   overflow-y: auto;
-  scrollbar-gutter: stable;
   display: flex;
   justify-content: center;
-  padding: var(--chakra-spacing-6);
+  padding: var(--chakra-spacing-16);
   flex-grow: 1;
 }
 
@@ -113,7 +112,8 @@ body {
 .header-name {
   font-family: var(--chakra-fonts-heading);
   color: var(--chakra-colors-fg-primary);
-  transition: color var(--chakra-durations-standard) var(--chakra-easings-standard);
+  transition: color var(--chakra-durations-standard)
+    var(--chakra-easings-standard);
 }
 
 .header-link:hover .header-name {

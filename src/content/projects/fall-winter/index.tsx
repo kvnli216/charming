@@ -26,14 +26,39 @@ const project: Project = {
   label: "Stepping Through the Seasons",
   title: "Stepping Through the Seasons",
   subtitle: "2D & 3D Motion Design",
+  tags: ["Branding", "Marketing"],
   description: (
     <>
-      We created a shoe apparel line, ZAS.
-      <br />
-      The campaign highlights how ZAS effortlessly adapts to changing seasons
-      while remaining versatile and stylish.
+      <p>
+        This is my thesis film at School of Visual Arts in 2024. I teamed up
+        with Harper Chung to create a full branding campaign for ZAS, our own
+        imaginary footwear brand.
+      </p>
+      <p>
+        ZAS is all about youth culture and modern everyday vibes. We played with
+        a 4-season concept, pairing each season with a different sport to bring
+        the brand to life.
+      </p>
+      <p>
+        Watch full video{" "}
+        <a
+          href="https://drive.google.com/file/d/16MQN5s_FbuYkV5ry39XtnO5wYSOxbVKT/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          here.
+        </a>
+      </p>
+      <p>Below are the highlights of the segments I designed and animated:</p>
     </>
   ),
+  details: [
+    { label: "Role", value: "Art direction, Design, Animation" },
+    {
+      label: "Software Used",
+      value: "After Effects, Illustrator, Photoshop, Cinema 4D",
+    },
+  ],
   route: "/FallWinter",
   logo,
   keyMoments: [

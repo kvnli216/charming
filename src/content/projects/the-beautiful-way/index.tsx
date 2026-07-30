@@ -18,7 +18,10 @@ const project: Project = {
   route: "/TheBeautifulWay",
   title: "The Beautiful Way",
   subtitle: "Explainer Video",
-  mediaUrls: ["https://player.vimeo.com/video/1073021266?title=0&byline=0&portrait=0"],
+  tags: ["Explainer Video"],
+  mediaUrls: [
+    "https://player.vimeo.com/video/1073021266?title=0&byline=0&portrait=0",
+  ],
   description: (
     <>
       This video translates the foundation’s commitment to inclusive,

@@ -21,8 +21,11 @@ const project: Project = {
   previewPlaceholder: coverSmall,
   route: "/HeartsInHarmony",
   title: "Hands On Me",
-  mediaUrls: ["https://player.vimeo.com/video/900298628?h=7d99a41d2c&title=0&byline=0&portrait=0"],
+  mediaUrls: [
+    "https://player.vimeo.com/video/900298628?h=7d99a41d2c&title=0&byline=0&portrait=0",
+  ],
   subtitle: "Motion Design",
+  tags: ["Motion Design"],
   description: (
     <>
       This project is a personal motion design study for a conceptual perfume
@@ -31,8 +34,8 @@ const project: Project = {
       The goal was to translate the essence of romance and elegance into a
       captivating visual narrative.
       <br />
-      By focusing on the interplay of the heart-shaped glass textures and
-      fluid motion, I aimed to evoke a sense of allure and sophistication.
+      By focusing on the interplay of the heart-shaped glass textures and fluid
+      motion, I aimed to evoke a sense of allure and sophistication.
     </>
   ),
   credits: <>Credits: Personal work</>,

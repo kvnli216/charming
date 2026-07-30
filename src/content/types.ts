@@ -12,6 +12,18 @@ export interface ProcessStep {
   desc: string;
 }
 
+/** A label/value pair shown in the Detail page sidebar, e.g. Role, Software Used. */
+export interface ProjectDetail {
+  label: string;
+  value: ReactNode;
+}
+
+/** A description block paired with its own key moments grid, for projects covering multiple subjects (e.g. two courses). Rendered in place of `description`/`keyMoments`. */
+export interface ProjectSection {
+  description?: ReactNode;
+  keyMoments?: MediaAsset[];
+}
+
 export interface Project {
   /** Display order on the Work grid; lower sorts first. */
   order: number;
@@ -29,6 +41,10 @@ export interface Project {
   tags?: string[];
   isLocked?: boolean;
   description?: ReactNode;
+  /** Facts shown in a sidebar beside the description, e.g. Role, Software Used. When present, the header switches to a two-column layout. */
+  details?: ProjectDetail[];
+  /** Multiple description + key-moments blocks rendered in sequence, for projects covering distinct subjects. Takes precedence over `description`/`keyMoments` when present. */
+  sections?: ProjectSection[];
   bioLines?: ReactNode[];
   credits?: ReactNode;
   logo?: string;

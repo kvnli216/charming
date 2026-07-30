@@ -4,7 +4,6 @@
   display: -webkit-box;
   display: -webkit-flex;
   justify-content: center;
-  max-width: 1500px;
   gap: var(--chakra-spacing-9);
   width: 100%;
 }
@@ -38,12 +37,80 @@
 
 .description {
   text-align: center;
-  max-width: 1100px;
+  font-size: var(--chakra-font-sizes-body-lg);
+}
+
+.description p {
+  margin: 0;
 }
 
 .description a {
   color: var(--chakra-colors-accent-on-dark-text);
   text-decoration: underline;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--chakra-spacing-5) var(--chakra-spacing-8);
+  align-items: flex-start;
+  width: 100%;
+}
+
+.header-content .description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--chakra-spacing-3);
+  text-align: left;
+  max-width: none;
+  min-width: 0;
+}
+
+.header-content .cards-wrapper {
+  grid-column: 1 / -1;
+  margin-top: var(--chakra-spacing-5);
+}
+
+.header-content .separator {
+  grid-column: 1 / -1;
+}
+
+.header-content .subject-divider {
+  margin: var(--chakra-spacing-6) 0;
+}
+
+.header-content .section-title + .separator {
+  margin-top: var(--chakra-spacing-2);
+}
+
+.header-content .section-title {
+  grid-column: 1 / -1;
+  margin: var(--chakra-spacing-6) 0 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--chakra-spacing-4);
+  grid-column: 2;
+}
+
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--chakra-spacing-1);
+}
+
+.sidebar-label {
+  font-size: var(--chakra-font-sizes-body-sm);
+  color: var(--chakra-colors-fg-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sidebar-value {
+  font-size: var(--chakra-font-sizes-body-lg);
 }
 
 .bio {
@@ -71,13 +138,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1500px;
   gap: var(--chakra-spacing-4);
 }
 
 .key-moment,
 .animation-test {
   width: 640px;
+  max-width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: var(--chakra-radii-sm);
 }
@@ -176,6 +243,20 @@
   .description,
   .credits {
     font-size: var(--chakra-font-sizes-caption);
+  }
+
+  .header-content {
+    grid-template-columns: 1fr;
+    gap: var(--chakra-spacing-5);
+  }
+
+  .sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--chakra-spacing-4) var(--chakra-spacing-8);
+    width: 100%;
+    grid-column: 1;
+    grid-row: auto;
   }
 }
 

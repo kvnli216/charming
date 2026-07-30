@@ -27,6 +27,8 @@ const Detail = ({
   mediaUrls = [],
   isLocked: isLockedProps = false,
   bioLines = [],
+  details = [],
+  sections = [],
 }: DetailProps) => {
   const navigate = useNavigate();
   const [processDialogOpen, setProcessDialogOpen] = React.useState<string | null>(null);
@@ -78,13 +80,38 @@ const Detail = ({
 
   const Bio = () => {
     return (
-      <div>
+      <>
         {bioLines.map((line, i) => (
           <p key={i}>{line}</p>
         ))}
-      </div>
+      </>
     );
   };
+
+  const KeyMomentsGrid = ({ moments }: { moments: { src: string; placeholder?: string }[] }) => (
+    <div className={styles["cards-wrapper"]}>
+      {moments.map(({ src, placeholder }) => (
+        <SkeletonMedia
+          key={`key-moment-${src}`}
+          placeholder={placeholder}
+          className={styles["key-moment"]}
+        >
+          <img src={src} alt="key moment" />
+        </SkeletonMedia>
+      ))}
+    </div>
+  );
+
+  const Sidebar = () => (
+    <div className={styles["sidebar"]}>
+      {details.map(({ label, value }) => (
+        <div className={styles["sidebar-item"]} key={label}>
+          <span className={styles["sidebar-label"]}>{label}</span>
+          <span className={styles["sidebar-value"]}>{value}</span>
+        </div>
+      ))}
+    </div>
+  );
 
   return (
     <>
@@ -99,7 +126,37 @@ const Detail = ({
               <h2>{title}</h2>
               <h3 className={styles["sub-title"]}>{subtitle}</h3>
             </div>
-            <div className={styles["description"]}>{bioLines.length > 0 ? <Bio /> : description}</div>
+            {details.length > 0 ? (
+              <div className={styles["header-content"]}>
+                {sections.length > 0 ? (
+                  sections.map((section, i) => (
+                    <React.Fragment key={i}>
+                      {i > 0 && (
+                        <div className={`${styles["separator"]} ${styles["subject-divider"]}`} />
+                      )}
+                      {section.description && (
+                        <div className={styles["description"]}>{section.description}</div>
+                      )}
+                      <Sidebar />
+                      {section.keyMoments && section.keyMoments.length > 0 && (
+                        <>
+                          <h3 className={styles["section-title"]}>Key Moments</h3>
+                          <div className={styles["separator"]} />
+                          <KeyMomentsGrid moments={section.keyMoments} />
+                        </>
+                      )}
+                    </React.Fragment>
+                  ))
+                ) : (
+                  <>
+                    <div className={styles["description"]}>{bioLines.length > 0 ? <Bio /> : description}</div>
+                    <Sidebar />
+                  </>
+                )}
+              </div>
+            ) : (
+              <div className={styles["description"]}>{bioLines.length > 0 ? <Bio /> : description}</div>
+            )}
           </div>
 
           {trailer &&
@@ -156,17 +213,7 @@ const Detail = ({
             <div className={styles["section-wrapper"]}>
               <h3 className={styles["section-title"]}>Key Moments</h3>
               <div className={styles["separator"]} />
-              <div className={styles["cards-wrapper"]}>
-                {keyMoments.map(({ src, placeholder }) => (
-                  <SkeletonMedia
-                    key={`key-moment-${src}`}
-                    placeholder={placeholder}
-                    className={styles["key-moment"]}
-                  >
-                    <img src={src} alt="key moment" />
-                  </SkeletonMedia>
-                ))}
-              </div>
+              <KeyMomentsGrid moments={keyMoments} />
             </div>
           )}
 

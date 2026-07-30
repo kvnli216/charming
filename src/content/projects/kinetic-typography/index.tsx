@@ -13,7 +13,9 @@ const project: Project = {
   label: "Kinetic Typography",
   preview: frame1,
   previewPlaceholder: frame1Small,
-  mediaUrls: ["https://player.vimeo.com/video/1087828815?title=0&byline=0&portrait=0"],
+  mediaUrls: [
+    "https://player.vimeo.com/video/1087828815?title=0&byline=0&portrait=0",
+  ],
   route: "/KineticTypography",
   title: (
     <>
@@ -23,6 +25,7 @@ const project: Project = {
     </>
   ),
   subtitle: "2D Motion Design",
+  tags: ["Typography", "Motion Design"],
   description: (
     <>
       To mirror the lyrics's defiant energy, I pushed the boundaries of
@@ -31,8 +34,8 @@ const project: Project = {
       moving away from the 'good girl' aesthetic into a chaotic, high-octane
       visual identity.
       <br />
-      The animation uses sharp shape-layer transitions to echo the
-      unapologetic and obsessive nature of the lyrics.
+      The animation uses sharp shape-layer transitions to echo the unapologetic
+      and obsessive nature of the lyrics.
     </>
   ),
   credits: <>Personal work</>,

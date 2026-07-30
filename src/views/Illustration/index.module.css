@@ -1,11 +1,10 @@
 .container {
   display: flex;
   display: -webkit-box;
-  display: -webkit-flex;  
+  display: -webkit-flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--chakra-spacing-1);
-  max-width: 1500px;
 }
 
 .container.mobile {
