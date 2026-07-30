@@ -12,14 +12,7 @@ interface WorkCardProps {
   tags?: string[];
 }
 
-const WorkCard = ({
-  gif,
-  placeholder,
-  label,
-  route,
-  subtitle,
-  tags,
-}: WorkCardProps) => {
+const WorkCard = ({ gif, placeholder, label, route, tags }: WorkCardProps) => {
   const pills = [...(tags ?? [])].filter(Boolean);
 
   return (
