@@ -271,6 +271,19 @@ const Detail = ({
               alignItems="center"
               justifyContent="center"
             >
+              <IconButton
+                aria-label="Close"
+                onClick={handleProcessDialogClose}
+                variant="ghost"
+                position="fixed"
+                right="4"
+                top="4"
+                color="fg.onDark"
+                _hover={{ bg: "whiteAlpha.200" }}
+                zIndex="1"
+              >
+                <LuX />
+              </IconButton>
               <Dialog.Content
                 bg="transparent"
                 boxShadow="none"
@@ -284,19 +297,6 @@ const Detail = ({
                 _focus={{ outline: "none" }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <IconButton
-                  aria-label="Close"
-                  onClick={handleProcessDialogClose}
-                  variant="ghost"
-                  position="absolute"
-                  right="2"
-                  top="2"
-                  color="fg.onDark"
-                  _hover={{ bg: "whiteAlpha.200" }}
-                  zIndex="1"
-                >
-                  <LuX />
-                </IconButton>
                 {processDialogOpen && (
                   <img
                     src={processDialogOpen}
