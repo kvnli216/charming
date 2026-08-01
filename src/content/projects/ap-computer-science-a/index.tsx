@@ -1,6 +1,4 @@
 import type { Project } from "../../types";
-import cover from "./assets/cover.gif";
-import coverSmall from "./assets/cover_small.jpg";
 import csaHl1 from "./assets/CSA_hl1.webp";
 import csaHl1Small from "./assets/CSA_hl1_small.jpg";
 import csaHl2 from "./assets/CSA_hl2.webp";
@@ -29,8 +27,8 @@ import process3Small from "./assets/process3_webp_small.jpg";
 const project: Project = {
   order: 10,
   isLocked: true,
-  preview: cover,
-  previewPlaceholder: coverSmall,
+  preview: csaHl11,
+  previewPlaceholder: csaHl11Small,
   label: "AP Computer Science A",
   title: "AP Computer Science A",
   subtitle: "Educational Courses",

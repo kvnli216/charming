@@ -35,7 +35,7 @@ function App() {
 
   return (
     <ChakraProvider value={system}>
-      <ColorModeProvider>
+      <ColorModeProvider defaultTheme="dark">
         <Router basename="/">
           <Routes>
             <Route element={<Layout isMobile={isMobile} />}>

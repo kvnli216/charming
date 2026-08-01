@@ -22,7 +22,7 @@ import latinHl9 from "./assets/Latin/Latin_hl9.webp";
 const coverPlaceholder = afamHl1;
 
 const project: Project = {
-  order: 15,
+  order: 20,
   isLocked: true,
   preview: coverPlaceholder,
   label: "AP African American Studies & AP Latin",
