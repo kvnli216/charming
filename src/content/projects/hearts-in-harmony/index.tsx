@@ -21,9 +21,7 @@ const project: Project = {
   previewPlaceholder: coverSmall,
   route: "/HeartsInHarmony",
   title: "Hands On Me",
-  mediaUrls: [
-    "https://player.vimeo.com/video/900298628?h=7d99a41d2c&title=0&byline=0&portrait=0",
-  ],
+  mediaUrls: ["/video/hearts-in-harmony/perfume.mp4"],
   subtitle: "Motion Design",
   tags: ["Motion Design"],
   description: (

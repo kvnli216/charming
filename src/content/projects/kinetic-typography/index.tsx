@@ -13,9 +13,7 @@ const project: Project = {
   label: "Kinetic Typography",
   preview: frame1,
   previewPlaceholder: frame1Small,
-  mediaUrls: [
-    "https://player.vimeo.com/video/1087828815?title=0&byline=0&portrait=0",
-  ],
+  mediaUrls: ["/video/kinetic-typography/kinetic.mp4"],
   route: "/KineticTypography",
   title: (
     <>

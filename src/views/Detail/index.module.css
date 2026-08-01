@@ -265,6 +265,12 @@
   text-decoration: underline;
 }
 
+.media-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .embed-wrapper {
   display: block;
   width: 100%;

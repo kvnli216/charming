@@ -169,7 +169,9 @@ const Detail = ({
             <div className={styles["section-wrapper"]}>
               <h3 className={styles["section-title"]}>Full Video</h3>
               <div className={styles["separator"]} />
-              {mediaUrls.map(renderEmbed)}
+              <div className={styles["media-list"]}>
+                {mediaUrls.map(renderEmbed)}
+              </div>
             </div>
           }
 

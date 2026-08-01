@@ -3,7 +3,7 @@ import cover from "./assets/cover.webp";
 import coverSmall from "./assets/cover_small.jpg";
 
 const project: Project = {
-  order: 20,
+  order: 15,
   isLocked: true,
   preview: cover,
   previewPlaceholder: coverSmall,
@@ -21,10 +21,10 @@ const project: Project = {
   ],
   route: "/AdobeForBusiness",
   mediaUrls: [
-    "https://player.vimeo.com/video/1211472916?h=f1a6018e50&title=0&byline=0&portrait=0",
-    "https://player.vimeo.com/video/1211473598?h=7648ca7462&title=0&byline=0&portrait=0",
-    "https://player.vimeo.com/video/1211474169?h=8c6ecdad05&title=0&byline=0&portrait=0",
-    "https://player.vimeo.com/video/1211486008?h=3dc568fb08&title=0&byline=0&portrait=0",
+    "/video/adobe-b2b/deliver.mp4",
+    "/video/adobe-b2b/transform.mp4",
+    "/video/adobe-b2b/power.mp4",
+    "/video/adobe-b2b/understand.mp4",
   ],
   credits: (
     <>
