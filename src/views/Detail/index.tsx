@@ -6,6 +6,7 @@ import { LuX } from "react-icons/lu";
 import { Locked } from "../Locked/Locked";
 import { routes } from "../../routes";
 import SkeletonMedia from "../../components/SkeletonMedia";
+import ProcessTimeline from "../../components/ProcessTimeline";
 import type { Project } from "../../content/types";
 
 interface DetailProps extends Project {
@@ -21,6 +22,7 @@ const Detail = ({
   isMobile,
   keyMoments = [],
   process = [],
+  processTimeline = [],
   animationTests = [],
   styleFrames = [],
   trailer,
@@ -219,7 +221,13 @@ const Detail = ({
             </div>
           )}
 
-          {process.length > 0 && (
+          {processTimeline.length > 0 ? (
+            <div className={styles["section-wrapper"]}>
+              <h3 className={styles["section-title"]}>Process</h3>
+              <div className={styles["separator"]} />
+              <ProcessTimeline milestones={processTimeline} />
+            </div>
+          ) : process.length > 0 && (
             <div className={styles["section-wrapper"]}>
               <h3 className={styles["section-title"]}>Process</h3>
               <div className={styles["separator"]} />

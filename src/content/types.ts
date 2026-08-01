@@ -12,6 +12,24 @@ export interface ProcessStep {
   desc: string;
 }
 
+/** Reference media for a ProcessMilestone. `src`/`placeholder` are omitted until real assets land — the ProcessTimeline component renders a plain pulsing skeleton in their absence. */
+export interface ProcessMedia {
+  type: "gallery" | "hero";
+  /** Gallery tile count. Ignored for type "hero". */
+  tiles?: number;
+  src?: string;
+  placeholder?: string;
+}
+
+/** A single step in the ProcessTimeline module (vertical/selectable milestone timeline), grouped by `phase`. */
+export interface ProcessMilestone {
+  phase: string;
+  title: string;
+  description: ReactNode;
+  tags?: string[];
+  media: ProcessMedia;
+}
+
 /** A label/value pair shown in the Detail page sidebar, e.g. Role, Software Used. */
 export interface ProjectDetail {
   label: string;
@@ -53,6 +71,8 @@ export interface Project {
   mediaUrls?: string[];
   keyMoments?: MediaAsset[];
   process?: ProcessStep[];
+  /** Milestones for the ProcessTimeline module. Takes precedence over `process` when present. */
+  processTimeline?: ProcessMilestone[];
   animationTests?: MediaAsset[];
   styleFrames?: MediaAsset[];
 }

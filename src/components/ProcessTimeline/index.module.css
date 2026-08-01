@@ -1,0 +1,280 @@
+.component {
+  width: 100%;
+}
+
+/* ---- desktop: numbered split panel ---- */
+.desktop {
+  display: flex;
+  gap: var(--chakra-spacing-8);
+  align-items: flex-start;
+}
+
+.rail {
+  width: 270px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--chakra-spacing-2);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--chakra-spacing-4);
+  width: 100%;
+  padding: var(--chakra-spacing-3) var(--chakra-spacing-4);
+  border: 1px solid transparent;
+  border-radius: var(--chakra-radii-md);
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--chakra-durations-standard) var(--chakra-easings-standard),
+    border-color var(--chakra-durations-standard) var(--chakra-easings-standard);
+}
+
+.row:hover {
+  background: var(--chakra-colors-neutral-50);
+  border-color: var(--chakra-colors-border-subtle);
+}
+
+.row.active {
+  background: var(--chakra-colors-accent-tint);
+  border-color: var(--chakra-colors-accent-solid);
+}
+
+.num {
+  flex: none;
+  width: 22px;
+  font-family: var(--chakra-fonts-mono);
+  font-size: var(--chakra-font-sizes-mono);
+  font-weight: var(--chakra-font-weights-semibold);
+  color: var(--chakra-colors-fg-tertiary);
+}
+
+.row.active .num {
+  color: var(--chakra-colors-fg-accent);
+}
+
+.row-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.row-title {
+  font-size: var(--chakra-font-sizes-body-sm);
+  font-weight: var(--chakra-font-weights-semibold);
+  color: var(--chakra-colors-fg-primary);
+}
+
+.row-phase {
+  font-family: var(--chakra-fonts-mono);
+  font-size: var(--chakra-font-sizes-mono);
+  letter-spacing: var(--chakra-letter-spacings-mono);
+  text-transform: uppercase;
+  color: var(--chakra-colors-fg-tertiary);
+}
+
+.panel {
+  flex: 1;
+  min-width: 0;
+  min-height: 420px;
+  background: var(--chakra-colors-surface-card);
+  border: 1px solid var(--chakra-colors-border-default);
+  border-radius: var(--chakra-radii-lg);
+  padding: var(--chakra-spacing-6);
+}
+
+/* ---- shared panel content (desktop panel + mobile accordion body) ---- */
+.title {
+  margin: 0 0 var(--chakra-spacing-4);
+  padding-bottom: var(--chakra-spacing-4);
+  border-bottom: 1px solid var(--chakra-colors-border-subtle);
+  font-size: var(--chakra-font-sizes-h3);
+  font-weight: var(--chakra-font-weights-extrabold);
+  letter-spacing: var(--chakra-letter-spacings-tight);
+}
+
+.field-label {
+  display: block;
+  margin-bottom: var(--chakra-spacing-2);
+  font-family: var(--chakra-fonts-mono);
+  font-size: var(--chakra-font-sizes-mono);
+  font-weight: var(--chakra-font-weights-semibold);
+  letter-spacing: var(--chakra-letter-spacings-mono);
+  text-transform: uppercase;
+  color: var(--chakra-colors-fg-tertiary);
+}
+
+.copy {
+  margin: 0 0 var(--chakra-spacing-5);
+  max-width: 60ch;
+  font-size: var(--chakra-font-sizes-body);
+  line-height: var(--chakra-line-heights-body);
+  color: var(--chakra-colors-fg-secondary);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--chakra-spacing-2);
+  margin-bottom: var(--chakra-spacing-6);
+}
+
+.tag,
+.tag--alt {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--chakra-spacing-1) var(--chakra-spacing-3);
+  border-radius: var(--chakra-radii-pill);
+  font-family: var(--chakra-fonts-mono);
+  font-size: var(--chakra-font-sizes-mono);
+  letter-spacing: var(--chakra-letter-spacings-mono);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.tag {
+  background: var(--chakra-colors-accent-tag-bg);
+  color: var(--chakra-colors-accent-tag-fg);
+}
+
+.tag--alt {
+  background: var(--chakra-colors-accent-tag-alt-bg);
+  color: var(--chakra-colors-accent-tag-alt-fg);
+}
+
+/* ---- reference media / skeleton loaders ---- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: var(--chakra-spacing-2);
+}
+
+.skeleton-tile,
+.skeleton-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--chakra-colors-border-subtle);
+}
+
+.skeleton-tile {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--chakra-radii-sm);
+}
+
+.skeleton-hero {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--chakra-radii-md);
+}
+
+.skeleton-tile::before,
+.skeleton-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: color-mix(in oklch, var(--chakra-colors-fg-on-dark) 0%, transparent);
+  }
+
+  50% {
+    background-color: color-mix(in oklch, var(--chakra-colors-fg-on-dark) 20%, transparent);
+  }
+
+  100% {
+    background-color: color-mix(in oklch, var(--chakra-colors-fg-on-dark) 0%, transparent);
+  }
+}
+
+/* ---- mobile: stacked accordion ---- */
+.accordion {
+  display: none;
+}
+
+.accordion-row {
+  border-bottom: 1px solid var(--chakra-colors-border-subtle);
+}
+
+.accordion-row:first-child {
+  border-top: 1px solid var(--chakra-colors-border-subtle);
+}
+
+.accordion-head {
+  display: flex;
+  align-items: center;
+  gap: var(--chakra-spacing-3);
+  width: 100%;
+  padding: var(--chakra-spacing-4) var(--chakra-spacing-1);
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion-title {
+  flex: 1;
+  font-size: var(--chakra-font-sizes-body-sm);
+  font-weight: var(--chakra-font-weights-semibold);
+  color: var(--chakra-colors-fg-primary);
+}
+
+.chevron {
+  font-size: 0.8em;
+  color: var(--chakra-colors-fg-tertiary);
+  transition: transform var(--chakra-durations-standard) var(--chakra-easings-standard),
+    color var(--chakra-durations-standard) var(--chakra-easings-standard);
+}
+
+.accordion-row.open .chevron {
+  color: var(--chakra-colors-fg-accent);
+  transform: rotate(180deg);
+}
+
+.accordion-row.open .num,
+.accordion-row.open .accordion-title {
+  color: var(--chakra-colors-fg-accent);
+}
+
+.accordion-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--chakra-durations-slow) var(--chakra-easings-standard);
+}
+
+.accordion-row.open .accordion-wrap {
+  grid-template-rows: 1fr;
+}
+
+.accordion-body {
+  overflow: hidden;
+}
+
+.panel-inner {
+  padding: 0 var(--chakra-spacing-1) var(--chakra-spacing-5);
+}
+
+.panel-inner .title {
+  margin-bottom: var(--chakra-spacing-3);
+  padding-bottom: 0;
+  border-bottom: none;
+  font-size: var(--chakra-font-sizes-h4);
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .accordion {
+    display: block;
+  }
+}

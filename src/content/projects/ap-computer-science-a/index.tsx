@@ -17,12 +17,6 @@ import csaHl11 from "./assets/CSA_hl11.webp";
 import csaHl11Small from "./assets/CSA_hl11_small.jpg";
 import csaHl12 from "./assets/CSA_hl12.webp";
 import csaHl12Small from "./assets/CSA_hl12_small.jpg";
-import process1 from "./assets/process1.png";
-import process1Small from "./assets/process1_small.jpg";
-import process2 from "./assets/process2.png";
-import process2Small from "./assets/process2_small.jpg";
-import process3 from "./assets/process3_webp.webp";
-import process3Small from "./assets/process3_webp_small.jpg";
 
 const project: Project = {
   order: 10,
@@ -78,21 +72,57 @@ const project: Project = {
     { src: csaHl11, placeholder: csaHl11Small },
     { src: csaHl6, placeholder: csaHl6Small },
   ],
-  process: [
+  // Placeholder structure for the ProcessTimeline module — titles, copy, tags,
+  // and reference media are all stand-ins pending real assets and final copy.
+  processTimeline: [
     {
-      img: process1,
-      placeholder: process1Small,
-      desc: 'Brainstorming in Figma: Simplified Boolean Expressions by using a "Cafe Order" analogy to make abstract logic intuitive.',
+      phase: "Phase 1",
+      title: "Milestone 1",
+      description: "Placeholder description copy for this milestone.",
+      tags: ["Placeholder"],
+      media: { type: "gallery", tiles: 6 },
     },
     {
-      img: process2,
-      placeholder: process2Small,
-      desc: "Employing a distraction-free visual style and clear diagrams to maximize learner focus on core concepts.",
+      phase: "Phase 1",
+      title: "Milestone 2",
+      description: "Placeholder description copy for this milestone.",
+      tags: ["Placeholder"],
+      media: { type: "gallery", tiles: 6 },
     },
     {
-      img: process3,
-      placeholder: process3Small,
-      desc: "Developing custom AE templates to ensure visual consistency and a cohesive animation style across the project.",
+      phase: "Phase 2",
+      title: "Milestone 3",
+      description: "Placeholder description copy for this milestone.",
+      tags: ["Placeholder"],
+      media: { type: "hero" },
+    },
+    {
+      phase: "Phase 2",
+      title: "Milestone 4",
+      description: "Placeholder description copy for this milestone.",
+      tags: ["Placeholder"],
+      media: { type: "hero" },
+    },
+    {
+      phase: "Phase 3",
+      title: "Milestone 5",
+      description: "Placeholder description copy for this milestone.",
+      tags: ["Placeholder"],
+      media: { type: "hero" },
+    },
+    {
+      phase: "Phase 3",
+      title: "Milestone 6",
+      description: "Placeholder description copy for this milestone.",
+      tags: ["Placeholder"],
+      media: { type: "hero" },
+    },
+    {
+      phase: "Phase 3",
+      title: "Milestone 7",
+      description: "Placeholder description copy for this milestone.",
+      tags: ["Placeholder"],
+      media: { type: "gallery", tiles: 6 },
     },
   ],
   credits: (
