@@ -20,7 +20,8 @@ import csaHl12Small from "./assets/CSA_hl12_small.jpg";
 
 const project: Project = {
   order: 10,
-  isLocked: true,
+  // isLocked: true,
+  isLocked: false,
   preview: csaHl11,
   previewPlaceholder: csaHl11Small,
   label: "AP Computer Science A",
@@ -72,43 +73,113 @@ const project: Project = {
     { src: csaHl11, placeholder: csaHl11Small },
     { src: csaHl6, placeholder: csaHl6Small },
   ],
-  // Placeholder structure for the ProcessTimeline module — copy and
-  // reference media are stand-ins pending final copy and real assets.
+  // Reference media is still a stand-in pending real assets; the
+  // Animation Template milestone is also awaiting final copy.
   processTimeline: [
     {
       phase: "Phase 1",
       title: "Storyboard",
-      description: "Placeholder description copy for this milestone.",
+      description: (
+        <p>
+          I used split-screen layouts in the early storyboards to bridge the
+          abstract logic with real-world context. One side shows the code
+          editor, while the other side shows the narrative animation. This
+          parallel view lets learners easily connect abstract programming logic
+          with real world.
+        </p>
+      ),
       media: { type: "gallery", tiles: 6 },
     },
     {
       phase: "Phase 1",
       title: "Character Pitch",
-      description: "Placeholder description copy for this milestone.",
+      description: (
+        <>
+          <p>
+            I started with basic shapes to keep the design simple, and
+            consistent throughout the space. While the team ultimately selected
+            a different direction to better align with the overall platform
+            guidelines, this exploration helped establish the narrative tone.
+          </p>
+          <p>
+            For the storefront, I went with a flat, 2D frontal view. And this
+            keeps the visual clean, and easy to read.
+          </p>
+        </>
+      ),
       media: { type: "gallery", tiles: 6 },
     },
     {
       phase: "Phase 2",
       title: "Assets Library",
-      description: "Placeholder description copy for this milestone.",
+      description: (
+        <p>
+          To meet a tight timeline, we broke down the scripts into a complete
+          list of reusable assets, including character animations and visual
+          elements. Instead of working video by video, we produced all the
+          animations in batches and assembled the final educational videos at
+          the end. This system saved significant time and ensured consistency.
+        </p>
+      ),
       media: { type: "hero" },
     },
     {
       phase: "Phase 2",
       title: "Final Character Design",
-      description: "Placeholder description copy for this milestone.",
+      description: (
+        <>
+          <p>Designed by Allen Cousett.</p>
+          <p>
+            <strong>Shape Language:</strong> We built characters using basic
+            geometric shapes to ensure visual consistency throughout the series.
+          </p>
+          <p>
+            <strong>Personality-Driven Outfits:</strong> Costumes were
+            specifically designed to reflect each character's unique personality
+            within the story.
+          </p>
+          <p>
+            <strong>Simplified Anatomy:</strong> We designed rounded, simplified
+            hands to reduce animation complexity, saving substantial production
+            time.
+          </p>
+          <p>
+            <strong>Inclusive Color Palette:</strong> We chose non-realistic
+            skin tones to avoid representing any specific race, making the
+            characters universally relatable.
+          </p>
+        </>
+      ),
       media: { type: "hero" },
     },
     {
       phase: "Phase 3",
       title: "Course Design Guideline",
-      description: "Placeholder description copy for this milestone.",
+      description: (
+        <>
+          <p>Designed by Xiuqi Wang.</p>
+          <p>
+            Our Lead Design built out this design guideline for the non
+            story-driven part of the course. We create style frames based on
+            this guideline to maintain consistency.
+          </p>
+        </>
+      ),
       media: { type: "hero" },
     },
     {
       phase: "Phase 3",
       title: "Final Background",
-      description: "Placeholder description copy for this milestone.",
+      description: (
+        <>
+          <p>Designed by Xiuqi Wang.</p>
+          <p>
+            We used a flat, zero-depth frontal view to keep the visual clean and
+            straightforward. And a monochromatic background so the fully colored
+            characters would stand out immediately.
+          </p>
+        </>
+      ),
       media: { type: "hero" },
     },
     {

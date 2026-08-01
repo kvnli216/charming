@@ -68,7 +68,7 @@
   flex: 1;
   min-width: 0;
   min-height: 420px;
-  max-height: 720px;
+  max-height: 760px;
   overflow-y: auto;
   scrollbar-gutter: stable;
   background: var(--chakra-colors-surface-card);
@@ -104,6 +104,18 @@
   font-size: var(--chakra-font-sizes-body);
   line-height: var(--chakra-line-heights-body);
   color: var(--chakra-colors-fg-secondary);
+}
+
+.copy p {
+  margin: 0 0 var(--chakra-spacing-3);
+}
+
+.copy p:last-child {
+  margin-bottom: 0;
+}
+
+.copy strong {
+  color: var(--chakra-colors-fg-primary);
 }
 
 .tags {

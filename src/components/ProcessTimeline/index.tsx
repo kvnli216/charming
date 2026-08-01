@@ -44,7 +44,7 @@ const MilestonePanel = ({ milestone }: { milestone: ProcessMilestone }) => (
   <>
     <h3 className={styles["title"]}>{milestone.title}</h3>
     <span className={styles["field-label"]}>Description</span>
-    <p className={styles["copy"]}>{milestone.description}</p>
+    <div className={styles["copy"]}>{milestone.description}</div>
     <Tags tags={milestone.tags} />
     <span className={styles["field-label"]}>Reference</span>
     <Media media={milestone.media} />
