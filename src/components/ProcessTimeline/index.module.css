@@ -82,6 +82,9 @@
   flex: 1;
   min-width: 0;
   min-height: 420px;
+  max-height: 640px;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
   background: var(--chakra-colors-surface-card);
   border: 1px solid var(--chakra-colors-border-default);
   border-radius: var(--chakra-radii-lg);
