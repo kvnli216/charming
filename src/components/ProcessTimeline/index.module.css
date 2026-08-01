@@ -35,7 +35,7 @@
 }
 
 .row:hover {
-  background: var(--chakra-colors-neutral-50);
+  background: var(--chakra-colors-surface-sunken);
   border-color: var(--chakra-colors-border-subtle);
 }
 
@@ -57,32 +57,18 @@
   color: var(--chakra-colors-fg-accent);
 }
 
-.row-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 0;
-}
-
 .row-title {
+  min-width: 0;
   font-size: var(--chakra-font-sizes-body-sm);
   font-weight: var(--chakra-font-weights-semibold);
   color: var(--chakra-colors-fg-primary);
-}
-
-.row-phase {
-  font-family: var(--chakra-fonts-mono);
-  font-size: var(--chakra-font-sizes-mono);
-  letter-spacing: var(--chakra-letter-spacings-mono);
-  text-transform: uppercase;
-  color: var(--chakra-colors-fg-tertiary);
 }
 
 .panel {
   flex: 1;
   min-width: 0;
   min-height: 420px;
-  max-height: 640px;
+  max-height: 720px;
   overflow-y: auto;
   scrollbar-gutter: stable;
   background: var(--chakra-colors-surface-card);

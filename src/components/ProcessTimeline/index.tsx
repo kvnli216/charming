@@ -70,10 +70,7 @@ const ProcessTimeline = ({ milestones }: ProcessTimelineProps) => {
               aria-current={i === activeIndex}
             >
               <span className={styles["num"]}>{pad(i + 1)}</span>
-              <span className={styles["row-text"]}>
-                <span className={styles["row-title"]}>{m.title}</span>
-                <span className={styles["row-phase"]}>{m.phase}</span>
-              </span>
+              <span className={styles["row-title"]}>{m.title}</span>
             </button>
           ))}
         </div>
