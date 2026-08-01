@@ -160,7 +160,12 @@ const ProcessTimeline = ({ milestones }: ProcessTimelineProps) => {
         }}
       >
         <Dialog.Backdrop bg="surface.overlay" backdropFilter="blur(8px)" />
-        <Dialog.Positioner onClick={closeLightbox}>
+        <Dialog.Positioner
+          onClick={closeLightbox}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
           <Dialog.Content
             bg="transparent"
             boxShadow="none"

@@ -265,7 +265,12 @@ const Detail = ({
             }}
           >
             <Dialog.Backdrop bg="surface.overlay" backdropFilter="blur(8px)" />
-            <Dialog.Positioner onClick={handleProcessDialogClose}>
+            <Dialog.Positioner
+              onClick={handleProcessDialogClose}
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
               <Dialog.Content
                 bg="transparent"
                 boxShadow="none"
