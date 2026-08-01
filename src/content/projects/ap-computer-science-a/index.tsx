@@ -23,6 +23,8 @@ import timeline02 from "./assets/timeline/CSA02_characterpitch.png";
 import timeline02Small from "./assets/timeline/CSA02_characterpitch_small.jpg";
 import timeline03 from "./assets/timeline/CSA03_AssetsLibrary.png";
 import timeline03Small from "./assets/timeline/CSA03_AssetsLibrary_small.jpg";
+import timeline04 from "./assets/timeline/CSA04_Characterdesign.png";
+import timeline04Small from "./assets/timeline/CSA04_Characterdesign_small.jpg";
 import timeline05 from "./assets/timeline/CSA05_CourseDesignGuideline.png";
 import timeline05Small from "./assets/timeline/CSA05_CourseDesignGuideline_small.jpg";
 import timeline06 from "./assets/timeline/CSA06_backgrounddesign.png";
@@ -177,7 +179,12 @@ const project: Project = {
           </p>
         </>
       ),
-      media: { type: "hero" },
+      media: {
+        type: "hero",
+        src: timeline04,
+        placeholder: timeline04Small,
+        aspectRatio: 2998 / 1090,
+      },
     },
     {
       phase: "Phase 3",
