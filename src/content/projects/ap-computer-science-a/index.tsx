@@ -86,8 +86,6 @@ const project: Project = {
     { src: csaHl11, placeholder: csaHl11Small },
     { src: csaHl6, placeholder: csaHl6Small },
   ],
-  // Reference media is still a stand-in pending real assets; the
-  // Animation Template milestone is also awaiting final copy.
   processTimeline: [
     {
       phase: "Phase 1",
@@ -148,7 +146,7 @@ const project: Project = {
         type: "hero",
         src: timeline03,
         placeholder: timeline03Small,
-        aspectRatio: 2880 / 1764,
+        aspectRatio: 2880 / 1402,
       },
     },
     {
@@ -228,7 +226,15 @@ const project: Project = {
     {
       phase: "Phase 3",
       title: "Animation Template",
-      description: "Placeholder description copy for this milestone.",
+      description: (
+        <p>
+          Once all animation assets were ready, motion designers had 2 to 3
+          days to assemble each full episode (ranging from 5 to 20 minutes)
+          using standardized After Effects templates. The finished videos
+          were then uploaded to Frame.io for team review and client
+          feedback.
+        </p>
+      ),
       media: {
         type: "hero",
         src: timeline07,
