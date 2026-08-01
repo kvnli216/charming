@@ -17,6 +17,18 @@ import csaHl11 from "./assets/CSA_hl11.webp";
 import csaHl11Small from "./assets/CSA_hl11_small.jpg";
 import csaHl12 from "./assets/CSA_hl12.webp";
 import csaHl12Small from "./assets/CSA_hl12_small.jpg";
+import timeline01 from "./assets/timeline/CSA01_storyboard.png";
+import timeline01Small from "./assets/timeline/CSA01_storyboard_small.jpg";
+import timeline02 from "./assets/timeline/CSA02_characterpitch.png";
+import timeline02Small from "./assets/timeline/CSA02_characterpitch_small.jpg";
+import timeline03 from "./assets/timeline/CSA03_AssetsLibrary.png";
+import timeline03Small from "./assets/timeline/CSA03_AssetsLibrary_small.jpg";
+import timeline05 from "./assets/timeline/CSA05_CourseDesignGuideline.png";
+import timeline05Small from "./assets/timeline/CSA05_CourseDesignGuideline_small.jpg";
+import timeline06 from "./assets/timeline/CSA06_backgrounddesign.png";
+import timeline06Small from "./assets/timeline/CSA06_backgrounddesign_small.jpg";
+import timeline07 from "./assets/timeline/CSA07_Animationtemplate.png";
+import timeline07Small from "./assets/timeline/CSA07_Animationtemplate_small.jpg";
 
 const project: Project = {
   order: 10,
@@ -88,7 +100,12 @@ const project: Project = {
           with real world.
         </p>
       ),
-      media: { type: "gallery", tiles: 6 },
+      media: {
+        type: "hero",
+        src: timeline01,
+        placeholder: timeline01Small,
+        aspectRatio: 2880 / 1880,
+      },
     },
     {
       phase: "Phase 1",
@@ -107,7 +124,12 @@ const project: Project = {
           </p>
         </>
       ),
-      media: { type: "gallery", tiles: 6 },
+      media: {
+        type: "hero",
+        src: timeline02,
+        placeholder: timeline02Small,
+        aspectRatio: 2880 / 3495,
+      },
     },
     {
       phase: "Phase 2",
@@ -121,7 +143,12 @@ const project: Project = {
           the end. This system saved significant time and ensured consistency.
         </p>
       ),
-      media: { type: "hero" },
+      media: {
+        type: "hero",
+        src: timeline03,
+        placeholder: timeline03Small,
+        aspectRatio: 2880 / 1764,
+      },
     },
     {
       phase: "Phase 2",
@@ -165,7 +192,12 @@ const project: Project = {
           </p>
         </>
       ),
-      media: { type: "hero" },
+      media: {
+        type: "hero",
+        src: timeline05,
+        placeholder: timeline05Small,
+        aspectRatio: 2880 / 1776,
+      },
     },
     {
       phase: "Phase 3",
@@ -180,13 +212,23 @@ const project: Project = {
           </p>
         </>
       ),
-      media: { type: "hero" },
+      media: {
+        type: "hero",
+        src: timeline06,
+        placeholder: timeline06Small,
+        aspectRatio: 2880 / 1389,
+      },
     },
     {
       phase: "Phase 3",
       title: "Animation Template",
       description: "Placeholder description copy for this milestone.",
-      media: { type: "gallery", tiles: 6 },
+      media: {
+        type: "hero",
+        src: timeline07,
+        placeholder: timeline07Small,
+        aspectRatio: 2880 / 1389,
+      },
     },
   ],
   credits: (

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./index.module.css";
+import SkeletonMedia from "../SkeletonMedia";
 import type { ProcessMilestone } from "../../content/types";
 
 interface ProcessTimelineProps {
@@ -23,9 +24,11 @@ const Tags = ({ tags }: { tags?: string[] }) => {
   );
 };
 
-// Placeholder-only: media has no src/placeholder yet, so this renders a
-// plain pulsing skeleton. Once real assets land, switch to SkeletonMedia
-// (src/components/SkeletonMedia) + <img> for the fade-in-on-load treatment.
+// Gallery tiles have no per-tile src yet, so they always render as plain
+// pulsing skeletons. A "hero" milestone renders its real image (once src is
+// set) via SkeletonMedia for the fade-in-on-load treatment, sized to the
+// asset's own aspect ratio so the frame doesn't crop it; until then it falls
+// back to the same plain skeleton, at that same aspect ratio.
 const Media = ({ media }: { media: ProcessMilestone["media"] }) => {
   if (media.type === "gallery") {
     const tiles = media.tiles ?? 6;
@@ -37,7 +40,22 @@ const Media = ({ media }: { media: ProcessMilestone["media"] }) => {
       </div>
     );
   }
-  return <div className={styles["skeleton-hero"]} />;
+
+  const aspectRatio = media.aspectRatio ?? 16 / 9;
+
+  if (media.src) {
+    return (
+      <SkeletonMedia
+        placeholder={media.placeholder}
+        className={styles["hero-media"]}
+        style={{ aspectRatio }}
+      >
+        <img className={styles["hero-img"]} src={media.src} alt="Reference" />
+      </SkeletonMedia>
+    );
+  }
+
+  return <div className={styles["skeleton-hero"]} style={{ aspectRatio }} />;
 };
 
 const MilestonePanel = ({ milestone }: { milestone: ProcessMilestone }) => (

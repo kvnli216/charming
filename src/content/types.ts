@@ -19,6 +19,8 @@ export interface ProcessMedia {
   tiles?: number;
   src?: string;
   placeholder?: string;
+  /** Natural width/height ratio for a "hero" image, so its frame (and skeleton, pre-load) matches the real asset's shape instead of cropping to a fixed 16:9. Defaults to 16/9 when omitted. Ignored for type "gallery". */
+  aspectRatio?: number;
 }
 
 /** A single step in the ProcessTimeline module (vertical/selectable milestone timeline), grouped by `phase`. */
