@@ -34,7 +34,6 @@ import timeline07Small from "./assets/timeline/CSA07_Animationtemplate_small.jpg
 
 const project: Project = {
   order: 10,
-  isLocked: true,
   preview: csaHl11,
   previewPlaceholder: csaHl11Small,
   label: "AP Computer Science A",
