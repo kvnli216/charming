@@ -4,6 +4,7 @@ import coverSmall from "./assets/cover_small.jpg";
 
 const project: Project = {
   order: 15,
+  isLocked: true,
   preview: cover,
   previewPlaceholder: coverSmall,
   label: "Adobe for Business Series Overview",

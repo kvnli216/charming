@@ -23,6 +23,7 @@ const coverPlaceholder = afamHl1;
 
 const project: Project = {
   order: 20,
+  isLocked: true,
   preview: coverPlaceholder,
   label: "AP African American Studies & AP Latin",
   title: "AP African American Studies & AP Latin",
